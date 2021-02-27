@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Header from '../components/global/header'
+import Header from '../components/global/Header'
 import Footer from '../components/global/Footer'
 // import BodyContainer from '../components/global/BodyContainer'
 
