@@ -1,13 +1,18 @@
 import {
-    Container, LargeText,
+    Container, 
+    LargeText,
+    SmallText,
 } from './LandingPage.styles'
 
 const LandingPage = () => {
     return(
         <Container>
             <LargeText>
-            I'm Gareth. A front-end developer specializing in React.js, with a passion for design.
+                I'm Gareth, a front-end developer specializing in React.js.
             </LargeText>
+            <SmallText>
+                I'm passionate about performant code and good design.
+            </SmallText>
         </Container>
     )
 }

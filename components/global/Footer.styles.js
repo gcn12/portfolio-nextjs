@@ -5,7 +5,7 @@ export const Container = styled.div`
     justify-content: center;
     /* flex-direction: column; */
     /* align-items: center; */
-    margin: 2rem;
+    margin: 5rem;
 `
 
 export const Name = styled.div`
