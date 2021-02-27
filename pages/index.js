@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import WorkCard from '../components/index/WorkCard'
+import LandingPage from '../components/index/LandingPage'
 import {  
   Container
 } from '../styles/index.styles'
@@ -12,6 +13,7 @@ const Home = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       Home
+      <LandingPage />
       <WorkCard />
       <WorkCard />
       <WorkCard />
