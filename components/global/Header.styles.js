@@ -7,7 +7,8 @@ export const Container = styled.div`
 `
 
 export const Title = styled.a`
-
+    font-family: 'Archivo', sans-serif;
+    font-size: 2rem;
 `
 
 export const UL = styled.ul`
@@ -16,5 +17,10 @@ export const UL = styled.ul`
 `
 
 export const LI = styled.li`
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.3rem;
+`
 
+export const Gap = styled.div`
+    margin-left: 1rem;
 `

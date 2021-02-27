@@ -4,6 +4,7 @@ import {
     Title,
     UL,
     LI,
+    Gap,
 } from './Header.styles'
 
 const Header = () => {
@@ -18,6 +19,7 @@ const Header = () => {
                         <a>ABOUT</a>
                     </Link>
                 </LI>
+                <Gap />
                 <LI>
                     <Link href='/contact'>
                         <a>CONTACT</a>
