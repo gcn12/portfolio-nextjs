@@ -4,7 +4,7 @@ import {
     Title,
     UL,
     LI,
-} from './header.styles'
+} from './Header.styles'
 
 const Header = () => {
     return (

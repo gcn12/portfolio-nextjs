@@ -1,10 +1,15 @@
+import Head from 'next/head'
 import {  
   Container
 } from '../styles/index.styles'
 
 const Home = () => {
   return (
-    <Container>
+    <Container style={{minHeight: '85vh'}}>
+      <Head>
+        <title>Gareth Ng</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       Home
     </Container>
   )
