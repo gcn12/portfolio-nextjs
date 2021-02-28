@@ -11,18 +11,18 @@ const Header = () => {
     return (
         <Container>
             <Link passHref={true} href='/'>
-                <Title>GARETH NG</Title>
+                <Title>Gareth Ng</Title>
             </Link>
             <UL>
                 <LI>
                     <Link passHref={true} href='/about'>
-                        <a>ABOUT</a>
+                        <a>About</a>
                     </Link>
                 </LI>
                 <Gap />
                 <LI>
                     <Link href='/contact'>
-                        <a>CONTACT</a>
+                        <a>Contact</a>
                     </Link>
                 </LI>
             </UL>
