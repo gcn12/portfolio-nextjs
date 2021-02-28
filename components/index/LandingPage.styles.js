@@ -10,6 +10,7 @@ export const LargeText = styled.h1`
     font-family: 'Archivo', sans-serif;
     font-family: 'Reenie Beanie', cursive;
     font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Merriweather', serif;
     max-width: 60rem;
     line-height: 7rem;
 `
@@ -20,6 +21,7 @@ export const SmallText = styled.h1`
     font-family: 'Archivo', sans-serif;
     font-family: 'Reenie Beanie', cursive;
     font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Merriweather', serif;
     max-width: 60rem;
 `
 

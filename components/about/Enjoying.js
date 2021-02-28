@@ -4,13 +4,14 @@ import {
     Category,
     Title,
     TitleContainer,
+    EnjoyingTitle,
 } from './Enjoying.styles'
 import { enjoying } from '../../dataObjects/enjoying'
 
 const Enjoying = () => {
     return(
         <Container>
-            What I'm enjoying
+            <EnjoyingTitle>What I'm enjoying</EnjoyingTitle>
             <CategoryContainer>
                 {enjoying.map((item, index) => {
                     return(

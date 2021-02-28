@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Enjoying from '../components/about/Enjoying'
+import Bio from '../components/about/Bio'
 const About = () => {
     return (
         <div style={{minHeight: '65vh'}}>
@@ -7,7 +8,7 @@ const About = () => {
                 <title>Gareth Ng - About</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            About
+            <Bio />
             <Enjoying />
         </div>
     )
