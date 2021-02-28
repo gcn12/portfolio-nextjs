@@ -11,19 +11,25 @@ const Header = () => {
     return (
         <Container>
             <Link passHref={true} href='/'>
-                <Title>Gareth Ng</Title>
+                <Title>gareth ng</Title>
             </Link>
             <UL>
                 <LI>
                     <Link passHref={true} href='/about'>
-                        <a>About</a>
+                        <a>about</a>
                     </Link>
                 </LI>
                 <Gap />
                 <LI>
                     <Link href='/contact'>
-                        <a>Contact</a>
+                        <a>contact</a>
                     </Link>
+                </LI>
+                <Gap />
+                <LI>
+                    {/* <Link> */}
+                        <a>resume</a>
+                    {/* </Link> */}
                 </LI>
             </UL>
         </Container>

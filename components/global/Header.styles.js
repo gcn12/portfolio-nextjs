@@ -10,6 +10,7 @@ export const Container = styled.div`
 export const Title = styled.a`
     font-family: 'Archivo', sans-serif;
     font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
     /* font-family: 'Reenie Beanie', cursive;
     font-family: 'Gloria Hallelujah', cursive; */
     font-size: 2rem;
@@ -23,6 +24,7 @@ export const UL = styled.ul`
 export const LI = styled.li`
     font-family: 'Archivo', sans-serif;
     font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
     /* font-family: 'Reenie Beanie', cursive;
     font-family: 'Gloria Hallelujah', cursive; */
     font-size: 1.3rem;
