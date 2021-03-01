@@ -25,7 +25,7 @@ export const workCard = [
     },
     {
         project: 'Cinematography Portfolio',
-        photo: '', 
+        photo: 'film.png', 
         description: 'Personal portfolio website',
         colorOne: '#fefff7',
         colorTwo: '#f0d5d5',

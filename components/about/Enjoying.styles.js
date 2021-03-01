@@ -6,6 +6,7 @@ export const Container = styled.div`
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
     }
+    justify-items: center;
 `
 
 export const EnjoyingTitle = styled.h1`

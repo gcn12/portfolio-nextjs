@@ -3,13 +3,14 @@ import styled from 'styled-components'
 export const Container = styled.div`
     /* display: flex; */
     align-items: center; 
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 80px 0;
     @media(max-width: 900px) {
         grid-template-columns: 1fr; 
-        justify-items: center;
     }
+    justify-items: center;
 `
 
 export const Illustration = styled.img`
@@ -29,4 +30,9 @@ export const SmallText = styled.h2`
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     max-width: 600px;
+`
+
+export const CineLink = styled.a`
+    color: #D48C07;
+    border-bottom: 1px solid #D48C07;
 `
