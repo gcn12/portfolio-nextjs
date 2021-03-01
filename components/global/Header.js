@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import {
     Container,
     Title,
@@ -9,6 +10,7 @@ import {
 } from './Header.styles'
 
 const Header = () => {
+    const router = useRouter()
     return (
         <Container>
             <Nav>
@@ -16,22 +18,20 @@ const Header = () => {
                     <Title>gareth ng</Title>
                 </Link>
                 <UL>
-                    <LI>
+                    <LI underline={router.pathname==='/about' ? '2px' : '0px'}>
                         <Link passHref={true} href='/about'>
                             <a>about</a>
                         </Link>
                     </LI>
                     <Gap />
-                    <LI>
+                    <LI underline={router.pathname==='/contact' ? '2px' : '0px'}>
                         <Link href='/contact'>
                             <a>contact</a>
                         </Link>
                     </LI>
                     <Gap />
-                    <LI>
-                        {/* <Link> */}
-                            <a>resume</a>
-                        {/* </Link> */}
+                    <LI underline='0px'>
+                        <a target='_blank' href='resume.pdf' rel='nonreferrer noopener'>resume</a>
                     </LI>
                 </UL>
             </Nav>

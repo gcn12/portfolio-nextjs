@@ -1,19 +1,28 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    align-items: center; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 80px 0;
 `
 
 export const Illustration = styled.img`
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
+`
+
+export const LargeText = styled.h1`
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    /* max-width: 600px; */
 `
 
 export const SmallText = styled.h2`
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 300;
-    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
     max-width: 600px;
 `

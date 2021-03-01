@@ -7,7 +7,7 @@ export const Container = styled.header`
 export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 `
 
 export const Title = styled.a`
@@ -25,6 +25,7 @@ export const LI = styled.li`
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 300;
+    border-bottom: ${props=>props.underline} solid #D48C07;
 `
 
 export const Gap = styled.div`

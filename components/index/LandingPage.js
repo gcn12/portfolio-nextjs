@@ -3,6 +3,7 @@ import {
     LargeText,
     SmallText,
     Colored,
+    OrangeButton,
 } from './LandingPage.styles'
 
 const LandingPage = () => {
@@ -18,6 +19,7 @@ const LandingPage = () => {
                     </SmallText>
                 </div>
             </div>
+            <OrangeButton rel='nonreferrer noopener' target='_blank' href='resume.pdf'>View Resume</OrangeButton>
         </Container>
     )
 }

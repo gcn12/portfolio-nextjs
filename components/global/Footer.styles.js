@@ -8,23 +8,8 @@ export const Container = styled.div`
     margin: 5rem;
 `
 
-export const Name = styled.div`
-    font-size: 2rem;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Archivo', sans-serif;
-    font-weight: 700;
-`
-
 export const SocialContainer = styled.div`
     display: flex;
-`
-
-export const Social = styled.a`
-    display: flex;
-    font-size: 1.2rem;
-    font-weight: 700;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Archivo', sans-serif;
 `
 
 export const Gap = styled.div`
