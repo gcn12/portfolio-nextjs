@@ -1,8 +1,8 @@
 export const workCard = [
     {
         project: 'Travel Blogger',
-        photo: '', 
-        description: '',
+        photo: 'travel-flat.png', 
+        description: 'Redefining the travel writing experience',
         colorOne: '#fcfcf5',
         colorTwo: '#f5f7fc',
         colorDirection: 'to bottom right',
@@ -10,7 +10,7 @@ export const workCard = [
     {
         project: 'Rubik\'s Cube Puzzle Timer',
         photo: '', 
-        description: '',
+        description: 'Innovative timer for the puzzle-solving community',
         colorOne: '#e3eaff',
         colorTwo: '#edffe3',
         colorDirection: 'to top left',
@@ -18,7 +18,7 @@ export const workCard = [
     {
         project: 'Messaging App',
         photo: '', 
-        description: '',
+        description: 'Fast, reliable instant messaging',
         colorOne: '#dbffed',
         colorTwo: '#dbf7ff',
         colorDirection: 'to bottom left',
@@ -26,9 +26,9 @@ export const workCard = [
     {
         project: 'Cinematography Portfolio',
         photo: '', 
-        description: '',
-        colorOne: '#fdfff2',
-        colorTwo: '#f7ffff',
+        description: 'Personal portfolio website',
+        colorOne: '#fefff7',
+        colorTwo: '#f0d5d5',
         colorDirection: 'to top right',
     },
 ]

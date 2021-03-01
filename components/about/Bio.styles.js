@@ -6,6 +6,10 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 80px 0;
+    @media(max-width: 900px) {
+        grid-template-columns: 1fr; 
+        justify-items: center;
+    }
 `
 
 export const Illustration = styled.img`

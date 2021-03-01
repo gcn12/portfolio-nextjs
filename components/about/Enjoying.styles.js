@@ -3,6 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media(max-width: 800px) {
+        grid-template-columns: 1fr; 
+    }
 `
 
 export const EnjoyingTitle = styled.h1`
@@ -18,13 +21,17 @@ export const CategoryContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
+    @media(max-width: 900px) {
+        grid-template-columns: 1fr; 
+    }
 `
 
-export const Category = styled.div`
+export const Category = styled.h3`
     font-size: 1.1rem;
     color: #616161;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
+    display: inline-block;
 `
 
 export const TitleContainer = styled.div`

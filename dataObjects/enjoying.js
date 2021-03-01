@@ -30,11 +30,11 @@ export const enjoying = [
         content: [
             {
                 title: 'Zero To Mastery',
-                url: '',
+                url: 'https://zerotomastery.io/blog/',
             },
             {
-                title: 'Blog 2',
-                url: '',
+                title: 'UX Collective',
+                url: 'https://uxdesign.cc',
             }
         ]
     },
@@ -43,11 +43,11 @@ export const enjoying = [
         content: [
             {
                 title: 'Next.js',
-                url: '',
+                url: 'https://nextjs.org',
             },
             {
                 title: 'TypeScript',
-                url: '',
+                url: 'https://www.typescriptlang.org',
             },
         ]
     },
