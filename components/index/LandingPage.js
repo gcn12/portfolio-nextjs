@@ -2,7 +2,7 @@ import {
     Container, 
     LargeText,
     SmallText,
-    Illustration,
+    Colored,
 } from './LandingPage.styles'
 
 const LandingPage = () => {
@@ -11,13 +11,12 @@ const LandingPage = () => {
             <div style={{display: 'flex'}}>
                 <div>
                     <LargeText>
-                        I'm Gareth, a React.js developer.
+                        I'm <Colored>Gareth Ng,</Colored> a React.js developer.
                     </LargeText>
                     <SmallText>
                         I'm passionate about performant code and good design.
                     </SmallText>
                 </div>
-                <Illustration src='/08.png' />
             </div>
         </Container>
     )
