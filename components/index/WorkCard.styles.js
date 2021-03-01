@@ -26,7 +26,7 @@ export const ProjectDescription = styled.h4`
 export const Grid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: end;
     @media(max-width: 1100px) {
         grid-template-columns: 1fr;
         grid-row-gap: 3rem;
@@ -47,4 +47,5 @@ export const OrangeButton = styled.a`
 export const PreviewImage = styled.img`
     height: 250px;
     width: auto;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, .2);
 `

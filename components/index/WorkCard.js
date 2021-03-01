@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
     Container,
     ProjectName,
@@ -14,7 +15,10 @@ const WorkCard = (props) => {
                 <div>
                     <ProjectName>{props.workItem.project}</ProjectName>
                     <ProjectDescription>{props.workItem.description}</ProjectDescription>
-                    <OrangeButton>Read more</OrangeButton>
+                    <Link href={`/work/${props.workItem.url}`} passHref={true}>
+                    {/* <Link passHref={true} href='/about'> */}
+                        <OrangeButton>Read more</OrangeButton>
+                    </Link>
                 </div>
                 <PreviewImage src={props.workItem.photo} />
             </Grid>
