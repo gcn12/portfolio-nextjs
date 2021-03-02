@@ -32,12 +32,16 @@ export const WorkLink = styled.a`
 export const MainImage = styled.img`
     width: auto;
     max-height: 80vh; 
+    max-width: 90vw;
 `
 
 export const SectionContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 8rem;
+    @media(max-width: 800px) {
+        grid-template-columns: 1fr; 
+    }
 `
 
 export const SectionHeader = styled.h3`
@@ -54,6 +58,7 @@ export const SectionParagraph = styled.p`
 export const Photo = styled.img`
     margin-bottom: 8rem;
     max-height: 90vh;
+    max-width: 90vw;
 `
 
 export const PhotoDescriptionContainer = styled.div`
@@ -82,17 +87,20 @@ export const PhotoDescriptionImage = styled.img`
 `
 
 export const CreatedWithGrid = styled.div`
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
 `
 
 export const CreatedWithContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 4fr;
     margin-bottom: 8rem;
-    align-items: center;
+    align-items: start;
     justify-items: end;
+    @media(max-width: 800px) {
+        grid-template-columns: 1fr; 
+        justify-items: start;
+    }
 `
 
 export const CreatedWithItem = styled.h2`
@@ -103,5 +111,6 @@ export const CreatedWithItem = styled.h2`
     border-radius: 10px;
     padding: .5rem 1rem;
     text-align: center;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    white-space: nowrap;
 `

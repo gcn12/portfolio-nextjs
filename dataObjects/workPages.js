@@ -58,7 +58,7 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: 'https://products.ls.graphics/claymockups/images/02_3.jpg',
+                link: '../timer_2.png',
             },
             {
                 type: 'photoDescription',
@@ -87,7 +87,7 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: '../cine_mobile.png',
+                link: '../cine_2.png',
             },
             {
                 type: 'photoDescription',
@@ -116,7 +116,7 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: 'https://products.ls.graphics/claymockups/images/02_3.jpg',
+                link: '../messages_2.png',
             },
             {
                 type: 'photoDescription',
