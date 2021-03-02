@@ -26,9 +26,9 @@ export const Grid = styled.div`
     min-height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     align-items: center;
     @media(max-width: 1100px) {
+        /* justify-items: center; */
         grid-template-columns: 1fr;
         grid-row-gap: 3rem;
     }
@@ -50,4 +50,9 @@ export const PreviewImage = styled.img`
     height: 250px;
     width: auto;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, .2);
+    justify-self: center;
+    @media(max-width: 1100px) {
+        max-width: 60vw;
+        height: auto;
+    }
 `

@@ -8,7 +8,8 @@ export const Title = styled.h1`
     font-size: 2rem;
     font-weight: 300;
     margin: 10rem 0 2rem 0;
-    color: #616161;
+    /* color: #616161; */
+    color: #D48C07;
 `
 
 export const Description = styled.h2`
@@ -45,8 +46,9 @@ export const SectionHeader = styled.h3`
 `
 
 export const SectionParagraph = styled.p`
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
+    line-height: 2rem;
 `
 
 export const Photo = styled.img`
@@ -59,20 +61,47 @@ export const PhotoDescriptionContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-bottom: 8rem;
-    justify-items: center;
+    justify-items: ${props=>props.justify};
 `
 
 export const PhotoDescriptionHeader = styled.h3`
     font-size: 2rem;
     font-weight: 400;
+    margin-bottom: 1rem;
 `
 
 export const PhotoDescriptionParagraph = styled.p`
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
+    line-height: 2rem;
 `
 
 export const PhotoDescriptionImage = styled.img`
     max-width: 30vw;
     height: auto;
+`
+
+export const CreatedWithGrid = styled.div`
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem; */
+`
+
+export const CreatedWithContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 8rem;
+    align-items: center;
+    justify-items: end;
+`
+
+export const CreatedWithItem = styled.h2`
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid black;
+    display: inline;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    text-align: center;
+    margin-right: 10px;
 `

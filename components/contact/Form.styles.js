@@ -53,7 +53,7 @@ export const Submit = styled.input`
 export const Illustration = styled.img`
     height: 300px;
     width: 300px;
-    @media(max-width: 700px) {
+    @media(max-width: 800px) {
         display: none;
         visibility: hidden;
     }
@@ -65,7 +65,18 @@ export const ContactContainer = styled.div`
     margin: 7rem 0 0 0;
     align-items: center;
     justify-items: center;
-    @media(max-width: 700px) {
+    @media(max-width: 800px) {
         grid-template-columns: 1fr;
     }
 `   
+
+export const GetInTouch = styled.h1`
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    @media(max-width: 800px) {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+`

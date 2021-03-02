@@ -3,6 +3,7 @@ import Form from '../components/contact/Form'
 import {
   Illustration, 
   ContactContainer,
+  GetInTouch,
 } from '../components/contact/Form.styles'
 const Contact = () => {
     return (
@@ -13,7 +14,7 @@ const Contact = () => {
         </Head>
         <ContactContainer>
           <div>
-            <h1>Let's get in touch</h1>
+            <GetInTouch>Let's get in touch</GetInTouch>
             <Illustration src='09.png' />
           </div>
           <Form />

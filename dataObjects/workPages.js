@@ -2,7 +2,7 @@ export const workPages = {
     travel: {
         title: 'Travel Blogger',
         description: 'Redefining the travel writing experience',
-        mainImage: 'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/602c049b2dfecf2ed9899e9d_8-p-2000.png',
+        mainImage: '../travel_test.png',
         githubLink: 'https://github.com/gcn12/photo-app',
         projectLink: 'https://gcn12.github.io/photo-app',
         content: [
@@ -12,18 +12,34 @@ export const workPages = {
                 paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
             },
             {
-                type: 'photo',
-                link: 'https://products.ls.graphics/claymockups/images/02_3.jpg',
+                type: 'createdWith',
+                header: 'Created with',
+                items: ['React.js', 'Firebase', 'React-Router', 'Redux', 'Google Places API'],
             },
             {
-                type: 'photoDescription',
+                type: 'photo',
+                link: '../travel_multiple.png',
+            },
+            {
+                type: 'photoDescriptionLeft',
+                header: 'New UI design',
+                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                photoLink: 'https://products.ls.graphics/claymockups/images/02_4.jpg',
+            },
+            {
+                type: 'photoDescriptionRight',
                 header: 'New UI design',
                 paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
                 photoLink: 'https://products.ls.graphics/claymockups/images/02_4.jpg',
             },
             {
                 type: 'section',
-                header: 'Final touches',
+                header: 'Future improvements',
+                paragraph: 'A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+            },
+            {
+                type: 'section',
+                header: 'Key takeaways',
                 paragraph: 'A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
             },
         ],
@@ -31,7 +47,7 @@ export const workPages = {
     timer: {
         title: 'Rubik\'s Cube Puzzle Timer',
         description: 'Innovative timer for the puzzle-solving community',
-        mainImage: 'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/602c049b2dfecf2ed9899e9d_8-p-2000.png',
+        mainImage: '../timer.png',
         githubLink: 'https://github.com/gcn12/cubeclock',
         projectLink: 'https://cubeclock.net',
         content: [
@@ -60,7 +76,7 @@ export const workPages = {
     cinematography: {
         title: 'Cinematography Portfolio',
         description: 'Personal portfolio website',
-        mainImage: 'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/602c049b2dfecf2ed9899e9d_8-p-2000.png',
+        mainImage: '../cine.png',
         githubLink: 'https://github.com/gcn12/film-portfolio',
         projectLink: 'https://gcn12.github.io/film-portfolio',
         content: [
@@ -71,7 +87,7 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: 'https://products.ls.graphics/claymockups/images/02_3.jpg',
+                link: '../cine_mobile.png',
             },
             {
                 type: 'photoDescription',
@@ -89,7 +105,7 @@ export const workPages = {
     messaging: {
         title: 'Messaging App',
         description: 'Fast, reliable instant messaging',
-        mainImage: 'https://assets-global.website-files.com/5bfd6f4468ee7943c2d331dd/602c049b2dfecf2ed9899e9d_8-p-2000.png',
+        mainImage: '../messaging_main.png',
         githubLink: 'https://github.com/gcn12/messaging-app',
         projectLink: 'https://gcn12.github.io/messaging-app/',
         content: [

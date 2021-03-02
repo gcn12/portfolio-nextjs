@@ -15,6 +15,9 @@ import {
     PhotoDescriptionHeader,
     LinkContainer,
     Photo,
+    CreatedWithItem,
+    CreatedWithGrid,
+    CreatedWithContainer,
 } from '../../pageStyles/[project].styles'
 
 const Project = () => {
@@ -44,16 +47,37 @@ const Project = () => {
                                 <SectionParagraph>{content.paragraph}</SectionParagraph>
                             </SectionContainer>
                             }
+                            {content.type==='createdWith' &&
+                            <CreatedWithContainer>
+                                <SectionHeader>{content.header}</SectionHeader>
+                                <CreatedWithGrid>
+                                    {content.items.map((item, index) => {
+                                        return(
+                                            <CreatedWithItem>{item}</CreatedWithItem>
+                                        )
+                                    })}
+                                </CreatedWithGrid>
+                            </CreatedWithContainer>
+                            }
                             {content.type==='photo' &&
                             <Photo src={content.link} />
                             }
-                            {content.type==='photoDescription' && 
-                            <PhotoDescriptionContainer>
+                            {content.type==='photoDescriptionLeft' && 
+                            <PhotoDescriptionContainer justify='end'>
                                 <div>
                                     <PhotoDescriptionHeader>{content.header}</PhotoDescriptionHeader>
                                     <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
                                 </div>
                                 <PhotoDescriptionImage src={content.photoLink} />
+                            </PhotoDescriptionContainer>
+                            }
+                            {content.type==='photoDescriptionRight' && 
+                            <PhotoDescriptionContainer justify='start'>
+                                <PhotoDescriptionImage src={content.photoLink} />
+                                <div>
+                                    <PhotoDescriptionHeader>{content.header}</PhotoDescriptionHeader>
+                                    <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
+                                </div>
                             </PhotoDescriptionContainer>
                             }
                         </div>
