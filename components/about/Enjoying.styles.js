@@ -3,18 +3,17 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @media(max-width: 800px) {
+    @media(max-width: 1000px) {
         grid-template-columns: 1fr; 
+        /* justify-items: center; */
     }
-    justify-items: center;
 `
 
 export const EnjoyingTitle = styled.h1`
     font-size: 2rem;
     font-weight: 500;
-    line-height: 0rem;
     font-family: 'Poppins', sans-serif;
-    /* border-left: 5px solid #D48C07; */
+    margin-bottom: 3rem;
 `
 
 export const CategoryContainer = styled.div`
@@ -22,7 +21,7 @@ export const CategoryContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
-    @media(max-width: 900px) {
+    @media(max-width: 700px) {
         grid-template-columns: 1fr; 
     }
 `
@@ -44,6 +43,7 @@ export const Title = styled.a`
     font-size: 2rem;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
 `
 
 export const Span = styled.span`

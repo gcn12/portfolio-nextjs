@@ -31,7 +31,7 @@ export const workCard = [
         photo: 'film-preview.png', 
         description: 'Personal portfolio website',
         colorOne: '#fefff7',
-        colorTwo: '#f0d5d5',
+        colorTwo: '#faebeb',
         colorDirection: 'to top right',
         url: 'cinematography',
     },

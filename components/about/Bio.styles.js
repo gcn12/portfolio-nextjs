@@ -1,16 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    /* display: flex; */
-    align-items: center; 
-
     display: grid;
+    align-items: center; 
     grid-template-columns: 1fr 1fr;
-    margin: 80px 0;
+    margin: 10rem 0 12rem 0;
     @media(max-width: 900px) {
         grid-template-columns: 1fr; 
     }
-    justify-items: center;
+    /* justify-items: center; */
 `
 
 export const Illustration = styled.img`
@@ -22,7 +20,6 @@ export const LargeText = styled.h1`
     font-size: 3rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    /* max-width: 600px; */
 `
 
 export const SmallText = styled.h2`

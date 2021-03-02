@@ -13,6 +13,8 @@ import {
     PhotoDescriptionImage,
     PhotoDescriptionParagraph,
     PhotoDescriptionHeader,
+    LinkContainer,
+    Photo,
 } from '../../pageStyles/[project].styles'
 
 const Project = () => {
@@ -28,11 +30,11 @@ const Project = () => {
             <Description>{pageData.description}</Description>
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <MainImage src={pageData.mainImage} />
-                <div style={{display: 'flex'}}>
-                    <WorkLink>Visit Live Project</WorkLink>
+                <LinkContainer>
+                    <WorkLink rel='nonreferrer noopener' target='_blank' href={pageData.projectLink}>Visit Live Project</WorkLink>
                     <div style={{marginRight: '2rem'}}></div>
-                    <WorkLink>GitHub Repository</WorkLink>
-                </div>
+                    <WorkLink rel='nonreferrer noopener' target='_blank' href={pageData.githubLink}>GitHub Repository</WorkLink>
+                </LinkContainer>
                 {pageData.content.map((content, index) => {
                     return(
                         <div key={index}>
@@ -43,7 +45,7 @@ const Project = () => {
                             </SectionContainer>
                             }
                             {content.type==='photo' &&
-                            <img src={content.link} />
+                            <Photo src={content.link} />
                             }
                             {content.type==='photoDescription' && 
                             <PhotoDescriptionContainer>

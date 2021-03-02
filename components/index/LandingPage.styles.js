@@ -2,12 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     margin: 3rem 0 0rem 0;
-    height: 100vh;
-    /* background-image: url('70.-Honeydew.jpg') */
-    /* background: radial-gradient(blue, #e6e8eb);
-    margin: 0;
-    background: radial-gradient(#d5d90d, #e6e8eb 60%,  #e6e8eb);
-    background-repeat: no-repeat; */
+    height: 85vh;
 `
 
 export const LargeText = styled.h1`

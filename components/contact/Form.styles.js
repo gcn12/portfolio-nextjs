@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
-    max-width: 30vw;
+    max-width: 60vw;
 `
 
 export const Label = styled.label`
@@ -34,7 +34,7 @@ export const Textarea = styled.textarea`
     }
     outline: none;
     margin-bottom: 20px;
-    max-width: 30vw;
+    max-width: 60vw;
 `
 
 export const Submit = styled.input`
@@ -53,6 +53,10 @@ export const Submit = styled.input`
 export const Illustration = styled.img`
     height: 300px;
     width: 300px;
+    @media(max-width: 700px) {
+        display: none;
+        visibility: hidden;
+    }
 `   
 
 export const ContactContainer = styled.div`
@@ -61,4 +65,7 @@ export const ContactContainer = styled.div`
     margin: 7rem 0 0 0;
     align-items: center;
     justify-items: center;
+    @media(max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 `   
