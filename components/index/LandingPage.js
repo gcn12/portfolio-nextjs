@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+// import './test.css'
 import {
     Container, 
     LargeText,
@@ -6,12 +8,17 @@ import {
     OrangeButton,
 } from './LandingPage.styles'
 
-const LandingPage = () => {
+const LandingPage = (props) => {
+    useEffect(()=> {
+        props.setViewedHome(true)
+    },[])
+    const isViewed = props.viewedHome
     return(
         <Container>
             <div style={{display: 'flex'}}>
                 <div>
                     <LargeText>
+                        {console.log(props.viewedHome)}
                         I'm <Colored>Gareth Ng,</Colored> a React.js developer.
                     </LargeText>
                     <SmallText>

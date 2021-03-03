@@ -40,6 +40,18 @@ const slideIn = keyframes`
         left: 0px;
 `
 
+const test = (a) => keyframes`
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: ${a};
+    } 
+`
+
 export const LargeText = styled.h1`
     font-size: 7rem;
     font-weight: 600;
@@ -54,9 +66,9 @@ export const LargeText = styled.h1`
         font-size: 4rem;
         line-height: 4.4rem;
     }
-    animation: ${fadeIn} 1s;
     position: relative;
     animation: ${fadeIn} .5s, ${slideIn} .5s ease-out;
+    /* ${props=>props.fadeIn === false ? null : fadeIn} */
 `
 
 export const SmallText = styled.h2`
