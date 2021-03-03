@@ -36,7 +36,7 @@ export const Title = styled.h1`
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } .4s, ${props=> props.hasPageBeenViewed ? null : slideUp} .4s ease-out;
     @media(max-width: 500px) {
-        margin: 6rem 0 0rem 0;
+        margin: 6rem 0 2rem 0;
     }
 `
 
@@ -64,6 +64,10 @@ export const ContentContainer = styled.div`
 export const LinkContainer = styled.div`
     display: flex;
     margin: 5rem 0;
+    @media(max-width: 400px) {
+        align-items: center;
+        flex-direction: column
+    }
 `
 
 export const WorkLink = styled.a`
@@ -72,6 +76,13 @@ export const WorkLink = styled.a`
     &:hover {
         color: #F2A414;
         border-bottom: 3px solid #F2A414;
+    }
+`
+
+export const LinkGap = styled.div`
+    margin-right: 2rem;
+    @media(max-width: 400px) {
+        margin-bottom: 2rem;
     }
 `
 
@@ -87,6 +98,7 @@ export const SectionContainer = styled.div`
     margin-bottom: 8rem;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
+        margin-bottom: 4rem;
     }
 `
 
@@ -105,6 +117,9 @@ export const Photo = styled.img`
     margin-bottom: 8rem;
     max-height: 90vh;
     max-width: 90vw;
+    @media(max-width: 800px) {
+        margin-bottom: 4rem;
+    }
 `
 
 export const PhotoDescriptionContainer = styled.div`
@@ -113,23 +128,40 @@ export const PhotoDescriptionContainer = styled.div`
     align-items: center;
     margin-bottom: 8rem;
     justify-items: ${props=>props.justify};
+    @media(max-width: 700px) {
+        grid-template-columns: 1fr;
+        justify-items: left;
+        margin-bottom: 4rem;
+    }
 `
 
 export const PhotoDescriptionHeader = styled.h3`
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1rem;
+    display: ${props=>props.size === 'small' ? 'none' : 'initial'};
+    @media(max-width: 700px) {
+        display: ${props=>props.size === 'large' ? 'none' : 'initial'};
+    }
 `
 
 export const PhotoDescriptionParagraph = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 2rem;
+    display: ${props=>props.size === 'small' ? 'none' : 'initial'};
+    @media(max-width: 700px) {
+        display: ${props=>props.size === 'large' ? 'none' : 'initial'};
+    }
 `
 
 export const PhotoDescriptionImage = styled.img`
     max-width: 30vw;
     height: auto;
+    @media(max-width: 700px) {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
 `
 
 export const CreatedWithGrid = styled.div`
@@ -146,6 +178,7 @@ export const CreatedWithContainer = styled.div`
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
         justify-items: start;
+        margin-bottom: 4rem;
     }
 `
 

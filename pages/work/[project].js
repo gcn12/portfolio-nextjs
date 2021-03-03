@@ -21,6 +21,7 @@ import {
     CreatedWithGrid,
     CreatedWithContainer,
     ContentContainer,
+    LinkGap,
 } from '../../pageStyles/[project].styles'
 
 const Project = (props) => {
@@ -77,8 +78,10 @@ const Project = (props) => {
             <ContentContainer opacity={isPageLoaded ? 1 : 0}>
                 <MainImage onLoad={()=>setIsPageLoaded(true)} src={pageData.mainImage} />
                 <LinkContainer>
-                    <WorkLink rel='nonreferrer noopener' target='_blank' href={pageData.projectLink}>Visit Live Project</WorkLink>
-                    <div style={{marginRight: '2rem'}}></div>
+                    <span>
+                        <WorkLink rel='nonreferrer noopener' target='_blank' href={pageData.projectLink}>Visit Live Project</WorkLink>
+                    </span>
+                    <LinkGap style={{marginRight: '2rem'}}></LinkGap>
                     <WorkLink rel='nonreferrer noopener' target='_blank' href={pageData.githubLink}>GitHub Repository</WorkLink>
                 </LinkContainer>
                 {pageData.content.map((content, index) => {
@@ -109,17 +112,23 @@ const Project = (props) => {
                             <PhotoDescriptionContainer justify='end'>
                                 <div>
                                     <PhotoDescriptionHeader>{content.header}</PhotoDescriptionHeader>
-                                    <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
+                                    <div>
+                                        <PhotoDescriptionParagraph size='large'>{content.paragraph}</PhotoDescriptionParagraph>
+                                    </div>
                                 </div>
                                 <PhotoDescriptionImage src={content.photoLink} />
+                                    <PhotoDescriptionParagraph size='small'>{content.paragraph}</PhotoDescriptionParagraph>
                             </PhotoDescriptionContainer>
                             }
                             {content.type==='photoDescriptionRight' && 
                             <PhotoDescriptionContainer justify='start'>
+                                <PhotoDescriptionHeader size='small'>{content.header}</PhotoDescriptionHeader>
                                 <PhotoDescriptionImage src={content.photoLink} />
                                 <div>
-                                    <PhotoDescriptionHeader>{content.header}</PhotoDescriptionHeader>
-                                    <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
+                                    <PhotoDescriptionHeader size='large'>{content.header}</PhotoDescriptionHeader>
+                                    <div>
+                                        <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
+                                    </div>
                                 </div>
                             </PhotoDescriptionContainer>
                             }
