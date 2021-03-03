@@ -19,10 +19,9 @@ const Enjoying = () => {
                         <div key={index}>
                             <Category>{item.category}</Category>
                             <TitleContainer>
-                                {item.content.map(item2=> {
+                                {item.content.map((item2, index)=> {
                                     return(
-                                        <span>
-
+                                        <span key={index}>
                                             <Title rel='nonreferrer noopener' target='_blank' href={item2.url} key={item2.title}><Span>{item2.title}</Span></Title>
                                         </span>
                                     )

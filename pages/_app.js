@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <div>
       <Header />
-      <div style={{minHeight: '80vh'}}>
+      <div style={{minHeight: '0vh'}}>
         <Component  
           {...pageProps} 
           viewedAbout={viewedAbout}

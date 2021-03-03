@@ -12,19 +12,23 @@ import {
 const WorkCard = (props) => {
     const [isIntersected, setIsIntersected] = useState(false)
     useEffect(() => {
-        const cards = document.querySelectorAll(`#lazy${props.index}`)
-        const lazyLoad = target => {
-            const io = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        setIsIntersected(true)
-                        observer.disconnect()
-                    }
+        if(props.viewedHome) {
+            setIsIntersected(true)
+        }else{
+            const cards = document.querySelectorAll(`#lazy${props.index}`)
+            const lazyLoad = target => {
+                const io = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setIsIntersected(true)
+                            observer.disconnect()
+                        }
+                    })
                 })
-            })
-            io.observe(target)
-        };
-        cards.forEach(lazyLoad)
+                io.observe(target)
+            };
+            cards.forEach(lazyLoad)
+        }
     }, [])
 
     return(

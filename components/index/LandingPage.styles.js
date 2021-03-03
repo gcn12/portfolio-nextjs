@@ -67,8 +67,7 @@ export const LargeText = styled.h1`
         line-height: 4.4rem;
     }
     position: relative;
-    animation: ${fadeIn} .5s, ${slideIn} .5s ease-out;
-    /* ${props=>props.fadeIn === false ? null : fadeIn} */
+    animation: ${props=>props.pageLoaded ? null : fadeIn} .5s, ${props=>props.pageLoaded ? null : slideIn} .5s ease-out;
 `
 
 export const SmallText = styled.h2`
@@ -85,11 +84,12 @@ export const SmallText = styled.h2`
         font-size: 1.2rem;
     }
     position: relative;
-    animation: ${fadeIn} 1s, ${slideIn} 1s ease-out;
+    animation: ${props=>props.pageLoaded ? null : fadeIn} 1s, ${props=>props.pageLoaded ? null : slideIn} 1s ease-out;
 `
 
 export const Colored = styled.span`
     color: #D48C07;
+    white-space: nowrap;
 `
 
 export const OrangeButton = styled.a`
@@ -103,7 +103,7 @@ export const OrangeButton = styled.a`
     cursor: pointer;
     display: inline-block;
     transition: transform 100ms ease-in-out;
-    animation: ${scaleUp} 1s;
+    animation: ${props=>props.pageLoaded ? null : scaleUp} 1s;
     &:hover{
         transform: scale(1.03)
     }

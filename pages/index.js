@@ -13,7 +13,7 @@ const Home = (props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <LandingPage viewedHome={props.viewedHome} setViewedHome={props.setViewedHome} />
-      <CardsComponent />
+      <CardsComponent viewedHome={props.viewedHome} />
     </Container>
   )
 }
