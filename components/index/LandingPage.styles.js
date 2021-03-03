@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
     margin: 3rem 0 0rem 0;
-    height: 85vh;
+    min-height: 85vh;
 `
 
 const fadeIn = keyframes`
@@ -58,7 +58,11 @@ export const LargeText = styled.h1`
     font-family: 'Poppins', sans-serif;
     max-width: 55rem;
     line-height: 7rem;
-    @media(max-width: 900px) {
+    @media(max-width: 1050px) {
+        font-size: 6rem;
+        line-height: 5.4rem;
+    }
+    @media(max-width: 80px) {
         font-size: 5rem;
         line-height: 5.4rem;
     }

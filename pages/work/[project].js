@@ -32,7 +32,7 @@ const Project = (props) => {
 
     useEffect(()=> {
         let func 
-        if(!props.viewedTimer || !props.viewedCinematography || !props.viewedTravel || !props.viewedMessaging) {
+        if((!props.viewedTimer || !props.viewedCinematography || !props.viewedTravel || !props.viewedMessaging) && project) {
             if(project === 'timer') {
                 func = props.setViewedTimer
             }else if(project === 'cinematography') {
@@ -46,7 +46,7 @@ const Project = (props) => {
             }
             setTimeout(()=> func(true), 1000)
         }
-    }, [])
+    }, [router.query])
 
     useEffect(()=> {
         if(project === 'timer' && props.viewedTimer) {
@@ -60,7 +60,6 @@ const Project = (props) => {
         else if(project === 'travel' && props.viewedTravel) {
             setHasPageBeenViewed(true)
         } else{
-            // setIsPageLoaded(false)
         }
     }, [])
     return(

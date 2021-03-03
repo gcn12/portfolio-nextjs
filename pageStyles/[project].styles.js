@@ -4,7 +4,7 @@ const fadeIn = keyframes`
     0% {
         opacity: 0;
     }
-    0% {
+    33% {
         opacity: 0;
     }
     100% {
@@ -16,7 +16,7 @@ const slideUp = keyframes`
     0% {
         top: 20px;
     }
-    0% {
+    33% {
         top: 20px;
     }
     100% {
@@ -34,7 +34,7 @@ export const Title = styled.h1`
     margin: 10rem 0 2rem 0;
     color: #D48C07;
     position: relative;
-    animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } 4s, ${props=> props.hasPageBeenViewed ? null : slideUp} .4s ease-out;
+    animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } .4s, ${props=> props.hasPageBeenViewed ? null : slideUp} .4s ease-out;
 `
 
 export const Description = styled.h2`

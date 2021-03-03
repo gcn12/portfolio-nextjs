@@ -7,6 +7,7 @@ import {
     Grid,
     OrangeButton,
     PreviewImage,
+    LazyDiv,
 } from './WorkCard.styles'
 
 const WorkCard = (props) => {
@@ -15,7 +16,7 @@ const WorkCard = (props) => {
         if(props.viewedHome) {
             setIsIntersected(true)
         }else{
-            const cards = document.querySelectorAll(`#lazy${props.index}`)
+            const cards = document.querySelectorAll(`.lazy${props.index}`)
             const lazyLoad = target => {
                 const io = new IntersectionObserver((entries, observer) => {
                     entries.forEach(entry => {
@@ -38,15 +39,15 @@ const WorkCard = (props) => {
                     <ProjectName>{props.workItem.project}</ProjectName>
                     <ProjectDescription>{props.workItem.description}</ProjectDescription>
                     <Link href={`/work/${props.workItem.url}`} passHref={true}>
-                        <OrangeButton screenSize='large' id={`lazy${props.index}`}>Read more</OrangeButton>
+                        <OrangeButton screenSize='large' className={`lazy${props.index}`}>Read more</OrangeButton>
                     </Link>
-                    <div id={`lazy${props.index}`}></div>
+                    <LazyDiv className={`lazy${props.index}`}></LazyDiv>
                 </div>
                 <PreviewImage src={props.workItem.photo} />
                 <span>
 
                 <Link href={`/work/${props.workItem.url}`} passHref={true}>
-                    <OrangeButton screenSize='small' id={`lazy${props.index}`}>Read more</OrangeButton>
+                    <OrangeButton screenSize='small'>Read more</OrangeButton>
                 </Link>
                 </span>
             </Grid>

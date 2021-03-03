@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
     transition: opacity .7s ease-out;
@@ -21,6 +21,9 @@ export const ProjectDescription = styled.h4`
     font-weight: 500;
     font-size: 2rem;
     margin: 0.5rem 0 2rem 0;
+    @media(max-width: 1100px) {
+        margin: 0.5rem 0 1rem 0;
+    }
 `
 
 export const Grid = styled.div`
@@ -28,9 +31,10 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    align-content: center;
     @media(max-width: 1100px) {
         grid-template-columns: 1fr;
-        grid-row-gap: 3rem;
+        /* grid-row-gap: 3rem; */
     }
 `
 
@@ -43,18 +47,18 @@ export const OrangeButton = styled.a`
     color: white;
     border-radius: 10px;
     cursor: pointer;
-    display: inline-block;
     transition: transform 100ms ease-in-out;
     &:hover{
         transform: scale(1.05)
     }
-    /* visibility: ${props=>props.screenSize=== 'small' ? 'hidden' : 'visible'}; */
-    display: ${props=>props.screenSize === 'small' ? 'none' : 'initial'};
+    visibility: ${props=>props.screenSize=== 'small' ? 'hidden' : 'visible'};
+    display: ${props=>props.screenSize === 'small' ? 'none' : 'inline-block'};
     @media(max-width: 1100px) {
         visibility: ${props=>props.screenSize=== 'large' ? 'hidden' : 'visible'};
-        display: ${props=>props.screenSize === 'large' ? 'none' : 'initial'};
+        display: ${props=>props.screenSize === 'large' ? 'none' : 'inline-block'};
         max-width: 60vw;
         height: auto;
+        margin-top: 3rem;
     }
 `
 
@@ -64,8 +68,14 @@ export const PreviewImage = styled.img`
     box-shadow: 0px 5px 4px rgba(0, 0, 0, .2);
     justify-self: center;
     @media(max-width: 1100px) {
-        /* max-width: 60vw; */
         height: auto;
         width: 100%;
+    }
+`
+
+export const LazyDiv = styled.div`
+    @media(min-width: 1100px) {
+        visibility: 'hidden';
+        display: none;
     }
 `
