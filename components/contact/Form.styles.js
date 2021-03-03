@@ -20,7 +20,7 @@ export const Input = styled.input`
         border-bottom: 3px solid #D48C07;
     }
     outline: none;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 `
 
 export const Textarea = styled.textarea`
@@ -33,7 +33,7 @@ export const Textarea = styled.textarea`
         border-bottom: 3px solid #D48C07;
     }
     outline: none;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     max-width: 60vw;
 `
 
@@ -43,7 +43,7 @@ export const Submit = styled.input`
     font-size: 1.5rem;
     border: none;
     width: 120px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     cursor: pointer;
     color: white;
     background-color: #D48C07;
@@ -77,6 +77,17 @@ export const GetInTouch = styled.h1`
     @media(max-width: 800px) {
         font-size: 2rem;
         font-weight: 600;
-        margin-bottom: 2rem;
     }
+`
+
+export const ErrorMessage = styled.h4`
+    color: red;
+    margin-bottom: 20px;
+    font-weight: 500;
+`
+
+export const EmailSent = styled.h4`
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 400;
 `
