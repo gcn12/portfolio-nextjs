@@ -1,15 +1,40 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+const slideUp = keyframes`
+    0% {
+        top: 20px;
+    }
+    0% {
+        top: 20px;
+    }
+    100% {
+        top: 0px;
+    }
+`
 
 export const Container = styled.div`
-
+    min-height: 100vh;
 `
 
 export const Title = styled.h1`
     font-size: 2rem;
     font-weight: 300;
     margin: 10rem 0 2rem 0;
-    /* color: #616161; */
     color: #D48C07;
+    position: relative;
+    animation: ${fadeIn} .3s, ${slideUp} .3s ease-out;
 `
 
 export const Description = styled.h2`
@@ -17,6 +42,16 @@ export const Description = styled.h2`
     font-weight: 600;
     margin-bottom: 12rem;
     line-height: 4.2rem;
+    position: relative;
+    animation: ${fadeIn} 1s, ${slideUp} 1s ease-out;
+`
+
+export const ContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: ${props=>props.opacity};
+    transition: opacity 400ms ease-out;
 `
 
 export const LinkContainer = styled.div`
@@ -27,6 +62,10 @@ export const LinkContainer = styled.div`
 export const WorkLink = styled.a`
     color: #D48C07;
     border-bottom: 3px solid #D48C07;
+    &:hover {
+        color: #F2A414;
+        border-bottom: 3px solid #F2A414;
+    }
 `
 
 export const MainImage = styled.img`

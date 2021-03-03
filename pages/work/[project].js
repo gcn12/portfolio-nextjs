@@ -1,4 +1,6 @@
 import { useRouter } from 'next/router'
+import { useState } from 'react'
+import Head from 'next/head'
 import { workPages } from '../../dataObjects/workPages'
 import {
     Container,
@@ -18,21 +20,28 @@ import {
     CreatedWithItem,
     CreatedWithGrid,
     CreatedWithContainer,
+    ContentContainer,
 } from '../../pageStyles/[project].styles'
 
 const Project = () => {
+    const [isPageLoaded, setIsPageLoaded] = useState(false)
     const router = useRouter()
     const { project } = router.query
     const pageData = workPages[project]
     return(
         <div>
-            {console.log(pageData)}
+        <Head>
+            <title>
+                Gareth Ng
+            </title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         {pageData &&
         <Container>
             <Title>{pageData.title}</Title>
             <Description>{pageData.description}</Description>
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <MainImage src={pageData.mainImage} />
+            <ContentContainer opacity={isPageLoaded ? 1 : 0}>
+                <MainImage onLoad={()=>setIsPageLoaded(true)} src={pageData.mainImage} />
                 <LinkContainer>
                     <WorkLink rel='nonreferrer noopener' target='_blank' href={pageData.projectLink}>Visit Live Project</WorkLink>
                     <div style={{marginRight: '2rem'}}></div>
@@ -83,7 +92,7 @@ const Project = () => {
                         </div>
                     )
                 })}
-            </div>
+            </ContentContainer>
         </Container>
         }
         </div>

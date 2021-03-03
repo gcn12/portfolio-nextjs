@@ -1,12 +1,21 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const scaleUp = keyframes`
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+`
 
 export const Container = styled.div`
-    /* min-height: 60vh; */
     margin: 0 10vw;
     background-image: linear-gradient(${props=>props.workItem.colorDirection}, ${props=>props.workItem.colorTwo}, ${props=>props.workItem.colorOne});
     border-radius: 30px;
     margin: 20px 0;
     padding: 50px;
+    animation: ${scaleUp} .8s ease-out;
 `
 
 export const ProjectName = styled.h3`
@@ -44,6 +53,10 @@ export const OrangeButton = styled.a`
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
+    transition: transform 100ms ease-in-out;
+    &:hover{
+        transform: scale(1.05)
+    }
 `
 
 export const PreviewImage = styled.img`

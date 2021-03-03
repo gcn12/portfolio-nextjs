@@ -95,7 +95,7 @@ export const workPages = {
                 paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
                 photoLink: 'https://products.ls.graphics/claymockups/images/02_4.jpg',
             },
-            {
+        {
                 type: 'section',
                 header: 'Final touches',
                 paragraph: 'A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 

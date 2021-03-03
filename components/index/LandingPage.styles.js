@@ -1,8 +1,43 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
     margin: 3rem 0 0rem 0;
     height: 85vh;
+`
+
+const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+const scaleUp = keyframes`
+    0% {
+        transform: scale(0);
+    }
+    33% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+`
+
+const slideIn = keyframes`
+    0% {
+        left: -20px;
+    }
+    33% {
+        left: -20px;
+    }
+    100% {
+        left: 0px;
 `
 
 export const LargeText = styled.h1`
@@ -19,6 +54,9 @@ export const LargeText = styled.h1`
         font-size: 4rem;
         line-height: 4.4rem;
     }
+    animation: ${fadeIn} 1s;
+    position: relative;
+    animation: ${fadeIn} .5s, ${slideIn} .5s ease-out;
 `
 
 export const SmallText = styled.h2`
@@ -34,6 +72,8 @@ export const SmallText = styled.h2`
     @media(max-width: 500px) {
         font-size: 1.2rem;
     }
+    position: relative;
+    animation: ${fadeIn} 1s, ${slideIn} 1s ease-out;
 `
 
 export const Colored = styled.span`
@@ -49,4 +89,10 @@ export const OrangeButton = styled.a`
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    display: inline-block;
+    transition: transform 100ms ease-in-out;
+    animation: ${scaleUp} 1s;
+    &:hover{
+        transform: scale(1.03)
+    }
 `
