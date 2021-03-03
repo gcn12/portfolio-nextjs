@@ -23,6 +23,10 @@ export const Title = styled.a`
 export const UL = styled.ul`
     display: flex;
     list-style-type: none;
+    @media(max-width: 700px) {
+        display: none;
+        visibility: hidden;
+    }
 `
 
 export const LI = styled.li`
@@ -38,4 +42,16 @@ export const LI = styled.li`
 
 export const Gap = styled.div`
     margin-left: 1rem;
+`
+
+export const Hamburger = styled.img`
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 17px;
+    cursor: pointer;
+    @media(min-width: 700px) {
+        display: none;
+        visibility: hidden;
+    }
 `

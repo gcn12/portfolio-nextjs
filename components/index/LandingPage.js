@@ -20,7 +20,7 @@ const LandingPage = (props) => {
                         I'm <Colored>Gareth Ng,</Colored> a React.js developer.
                     </LargeText>
                     <SmallText pageLoaded={props.viewedHome}>
-                        I'm passionate about performant code and good design.
+                        I'm focused on performant code and good design.
                     </SmallText>
                 </div>
             </div>

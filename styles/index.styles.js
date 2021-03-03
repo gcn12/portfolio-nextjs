@@ -4,8 +4,8 @@ export const Container = styled.div`
 `
 
 export const LatestProjects = styled.h2`
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2.3rem;
+    font-weight: 300;
     margin: 2rem 0 2rem 0;
     @media(max-width: 1050px) {
         font-size: 2.4rem;
