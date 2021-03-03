@@ -67,7 +67,7 @@ export const LargeText = styled.h1`
         line-height: 5.4rem;
     }
     @media(max-width: 500px) {
-        font-size: 4rem;
+        font-size: 3.5rem;
         line-height: 4.4rem;
     }
     position: relative;

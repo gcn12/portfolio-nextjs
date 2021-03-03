@@ -35,6 +35,9 @@ export const Title = styled.h1`
     color: #D48C07;
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } .4s, ${props=> props.hasPageBeenViewed ? null : slideUp} .4s ease-out;
+    @media(max-width: 500px) {
+        margin: 6rem 0 0rem 0;
+    }
 `
 
 export const Description = styled.h2`
@@ -44,6 +47,10 @@ export const Description = styled.h2`
     line-height: 4.2rem;
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } 1s, ${props=> props.hasPageBeenViewed ? null : slideUp} 1s ease-out;
+    @media(max-width: 500px) {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
 `
 
 export const ContentContainer = styled.div`
