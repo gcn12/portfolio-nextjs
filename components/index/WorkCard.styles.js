@@ -29,7 +29,6 @@ export const Grid = styled.div`
     grid-template-columns: 1fr 1fr;
     align-items: center;
     @media(max-width: 1100px) {
-        /* justify-items: center; */
         grid-template-columns: 1fr;
         grid-row-gap: 3rem;
     }
@@ -49,6 +48,14 @@ export const OrangeButton = styled.a`
     &:hover{
         transform: scale(1.05)
     }
+    /* visibility: ${props=>props.screenSize=== 'small' ? 'hidden' : 'visible'}; */
+    display: ${props=>props.screenSize === 'small' ? 'none' : 'initial'};
+    @media(max-width: 1100px) {
+        visibility: ${props=>props.screenSize=== 'large' ? 'hidden' : 'visible'};
+        display: ${props=>props.screenSize === 'large' ? 'none' : 'initial'};
+        max-width: 60vw;
+        height: auto;
+    }
 `
 
 export const PreviewImage = styled.img`
@@ -57,7 +64,8 @@ export const PreviewImage = styled.img`
     box-shadow: 0px 5px 4px rgba(0, 0, 0, .2);
     justify-self: center;
     @media(max-width: 1100px) {
-        max-width: 60vw;
+        /* max-width: 60vw; */
         height: auto;
+        width: 100%;
     }
 `

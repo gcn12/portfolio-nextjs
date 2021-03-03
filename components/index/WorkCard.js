@@ -38,10 +38,17 @@ const WorkCard = (props) => {
                     <ProjectName>{props.workItem.project}</ProjectName>
                     <ProjectDescription>{props.workItem.description}</ProjectDescription>
                     <Link href={`/work/${props.workItem.url}`} passHref={true}>
-                        <OrangeButton id={`lazy${props.index}`}>Read more</OrangeButton>
+                        <OrangeButton screenSize='large' id={`lazy${props.index}`}>Read more</OrangeButton>
                     </Link>
+                    <div id={`lazy${props.index}`}></div>
                 </div>
                 <PreviewImage src={props.workItem.photo} />
+                <span>
+
+                <Link href={`/work/${props.workItem.url}`} passHref={true}>
+                    <OrangeButton screenSize='small' id={`lazy${props.index}`}>Read more</OrangeButton>
+                </Link>
+                </span>
             </Grid>
         </Container>
     )

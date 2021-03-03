@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import { workPages } from '../../dataObjects/workPages'
 import {
@@ -23,11 +23,46 @@ import {
     ContentContainer,
 } from '../../pageStyles/[project].styles'
 
-const Project = () => {
+const Project = (props) => {
     const [isPageLoaded, setIsPageLoaded] = useState(false)
+    const [hasPageBeenViewed, setHasPageBeenViewed] = useState(false)
     const router = useRouter()
     const { project } = router.query
     const pageData = workPages[project]
+
+    useEffect(()=> {
+        let func 
+        if(!props.viewedTimer || !props.viewedCinematography || !props.viewedTravel || !props.viewedMessaging) {
+            if(project === 'timer') {
+                func = props.setViewedTimer
+            }else if(project === 'cinematography') {
+                func = props.setViewedCinematography
+            }
+            else if(project === 'travel') {
+                func = props.setViewedTravel
+            }
+            else if(project === 'messaging') {
+                func = props.setViewedMessaging
+            }
+            setTimeout(()=> func(true), 1000)
+        }
+    }, [])
+
+    useEffect(()=> {
+        if(project === 'timer' && props.viewedTimer) {
+            setHasPageBeenViewed(true)
+        }else if(project === 'cinematography' && props.viewedCinematography) {
+            setHasPageBeenViewed(true)
+        }
+        else if(project === 'messaging' && props.viewedMessaging) {
+            setHasPageBeenViewed(true)
+        }
+        else if(project === 'travel' && props.viewedTravel) {
+            setHasPageBeenViewed(true)
+        } else{
+            // setIsPageLoaded(false)
+        }
+    }, [])
     return(
         <div>
         <Head>
@@ -38,8 +73,8 @@ const Project = () => {
         </Head>
         {pageData &&
         <Container>
-            <Title>{pageData.title}</Title>
-            <Description>{pageData.description}</Description>
+            <Title hasPageBeenViewed={hasPageBeenViewed}>{pageData.title}</Title>
+            <Description hasPageBeenViewed={hasPageBeenViewed}>{pageData.description}</Description>
             <ContentContainer opacity={isPageLoaded ? 1 : 0}>
                 <MainImage onLoad={()=>setIsPageLoaded(true)} src={pageData.mainImage} />
                 <LinkContainer>
@@ -62,7 +97,7 @@ const Project = () => {
                                 <CreatedWithGrid>
                                     {content.items.map((item, index) => {
                                         return(
-                                            <CreatedWithItem>{item}</CreatedWithItem>
+                                            <CreatedWithItem key={index}>{item}</CreatedWithItem>
                                         )
                                     })}
                                 </CreatedWithGrid>
