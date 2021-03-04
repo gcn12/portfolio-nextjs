@@ -9,9 +9,13 @@ import {
     Textarea,
     ErrorMessage,
     EmailSent,
+    Grid,
+    InputContainer,
 } from './Form.styles'
 
 const ContactForm = () => {
+    const [name, setName] = useState('')
+    const [nameError, setNameError] = useState('')
     const [email, setEmail] = useState('')
     const [emailError, setEmailError] = useState('')
     const [message, setMessage] = useState('')
@@ -20,13 +24,14 @@ const ContactForm = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if(messageError.length===0 && emailError.length===0) {
+        if(messageError.length===0 && emailError.length===0 && nameError.length === 0) {
             emailjs.sendForm('service_xfb4n3g', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
             .then((result) => {
                 console.log(result)
                 setWasEmailSent(true)
                 document.getElementById('form-email').value = ''
                 document.getElementById('form-message').value = ''
+                document.getElementById('form-name').value = ''
                 setEmail('')
                 setMessage('')
             }, (error) => {
@@ -45,6 +50,9 @@ const ContactForm = () => {
         } else{
             setEmailError('')
         }
+        if(wasEmailSent) {
+            setWasEmailSent(false)
+        }
     }
 
     const checkMessage = () => {
@@ -55,22 +63,46 @@ const ContactForm = () => {
         }else{
             setMessageError('')
         }
+        if(wasEmailSent) {
+            setWasEmailSent(false)
+        }
+    }
+
+    const checkName = () => {
+        if(name.length === 0) {
+            setNameError('Field cannot be left blank')
+        }else{
+            setNameError('')
+        }
+        if(wasEmailSent) {
+            setWasEmailSent(false)
+        }
     }
 
     return(
         <Form className="contact-form" onSubmit={sendEmail}>
-            <Label htmlFor='form-email'>email</Label>
-            <Input onBlur={checkEmail} onChange={(e)=> setEmail(e.target.value)} value={email} autoComplete='off' type='text' id='form-email' placeholder='Enter email' name="reply_to" />
-            <ErrorMessage>{emailError}</ErrorMessage>
+            <Grid>
+                <InputContainer>
+                    <Label htmlFor='form-name'>name</Label>
+                    <Input onBlur={checkName} onChange={(e)=> setName(e.target.value)} value={name} autoComplete='off' type='text' id='form-name' placeholder='Enter name' name="name" />
+                    <ErrorMessage>{nameError}</ErrorMessage>
+                </InputContainer>
+                <div style={{marginRight: '10px'}}></div>
+                <InputContainer>
+                    <Label htmlFor='form-email'>email</Label>
+                    <Input onBlur={checkEmail} onChange={(e)=> setEmail(e.target.value)} value={email} autoComplete='off' type='text' id='form-email' placeholder='Enter email' name="reply_to" />
+                    <ErrorMessage>{emailError}</ErrorMessage>
+                </InputContainer>
+            </Grid>
             <Label htmlFor='form-message'>message</Label>
             <Textarea onBlur={checkMessage} onChange={(e)=> setMessage(e.target.value)} value={message} autoComplete='off' type='text' id='form-message' placeholder='Enter message' name="message" />
             <ErrorMessage>{messageError}</ErrorMessage>
-            <span>
-
-            <Submit type='submit' value='submit'/>
-            </span>
-            {wasEmailSent &&
+            {wasEmailSent ? 
             <EmailSent>Email was sent successfully</EmailSent>
+            :
+            <span>
+                <Submit type='submit' value='submit'/>
+            </span>
             }
         </Form>
     )

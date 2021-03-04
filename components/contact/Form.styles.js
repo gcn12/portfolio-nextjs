@@ -37,8 +37,9 @@ export const Textarea = styled.textarea`
     }
     outline: none;
     width: 30vw;
+    width: 100%;
     @media(max-width: 800px) {
-        width: 60vw;
+        /* width: 60vw; */
     }
 `
 
@@ -71,7 +72,7 @@ export const Illustration = styled.img`
 export const ContactContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    margin: 128px 0 0 0;
+    margin: 96px 0 0 0;
     align-items: center;
     justify-items: center;
     @media(max-width: 800px) {
@@ -81,8 +82,8 @@ export const ContactContainer = styled.div`
 
 export const GetInTouch = styled.h1`
     font-size: 2.25rem;
-    font-weight: 600;
-    margin-bottom: 32px;
+    font-weight: 400;
+    margin-bottom: 64px;
     @media(max-width: 800px) {
         font-size: 1.5rem;
         font-weight: 600;
@@ -99,4 +100,16 @@ export const EmailSent = styled.h4`
     margin-top: 30px;
     font-size: 1rem;
     font-weight: 400;
+`
+
+export const Grid = styled.div`
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; */
+    display: flex;
+`
+
+export const InputContainer = styled.div`
+    display: flex;
+    flex-direction: column;
 `

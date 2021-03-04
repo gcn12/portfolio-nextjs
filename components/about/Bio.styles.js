@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const Illustration = styled.img`
     height: auto;
-    width: 300px;
+    width: 90%;
     @media(max-width: 900px) {
         /* justify-self: center;  */
     }
@@ -22,7 +22,7 @@ export const Illustration = styled.img`
 
 export const LargeText = styled.h1`
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 16px;
     @media(max-width: 900px) {
