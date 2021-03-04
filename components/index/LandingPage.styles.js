@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
-    margin: 3rem 0 0rem 0;
+    margin: 48px 0 0 0;
     min-height: 85vh;
 `
 
@@ -53,21 +53,21 @@ const test = (a) => keyframes`
 `
 
 export const LargeText = styled.h1`
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     max-width: 55rem;
     line-height: 7rem;
     @media(max-width: 1050px) {
-        font-size: 6rem;
+        font-size: 4.5rem;
         line-height: 5.4rem;
     }
-    @media(max-width: 80px) {
-        font-size: 5rem;
+    @media(max-width: 800px) {
+        /* font-size: 5rem; */
         line-height: 5.4rem;
     }
     @media(max-width: 500px) {
-        font-size: 3.5rem;
+        font-size: 3.75rem;
         line-height: 4.4rem;
     }
     position: relative;
@@ -75,8 +75,8 @@ export const LargeText = styled.h1`
 `
 
 export const SmallText = styled.h2`
-    margin: 3rem 0;
-    font-size: 2rem;
+    margin: 48px 0;
+    font-size: 2.25rem;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     max-width: 60rem;
@@ -85,7 +85,7 @@ export const SmallText = styled.h2`
         font-size: 1.5rem;
     }
     @media(max-width: 500px) {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
     position: relative;
     animation: ${props=>props.pageLoaded ? null : fadeIn} 1s, ${props=>props.pageLoaded ? null : slideIn} 1s ease-out;

@@ -20,7 +20,6 @@ export const Input = styled.input`
         border-bottom: 3px solid #D48C07;
     }
     outline: none;
-    /* margin-bottom: 20px; */
 `
 
 export const Textarea = styled.textarea`
@@ -33,7 +32,6 @@ export const Textarea = styled.textarea`
         border-bottom: 3px solid #D48C07;
     }
     outline: none;
-    /* margin-bottom: 20px; */
     max-width: 60vw;
 `
 
@@ -43,7 +41,6 @@ export const Submit = styled.input`
     font-size: 1.5rem;
     border: none;
     width: 120px;
-    /* margin-bottom: 20px; */
     cursor: pointer;
     color: white;
     background-color: #D48C07;
@@ -62,7 +59,7 @@ export const Illustration = styled.img`
 export const ContactContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 7rem 0 0 0;
+    margin: 128px 0 0 0;
     align-items: center;
     justify-items: center;
     @media(max-width: 800px) {
@@ -71,11 +68,11 @@ export const ContactContainer = styled.div`
 `   
 
 export const GetInTouch = styled.h1`
-    font-size: 2.3rem;
+    font-size: 2.25rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     @media(max-width: 800px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 `

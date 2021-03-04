@@ -29,27 +29,27 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 300;
-    margin: 10rem 0 2rem 0;
+    margin: 192px 0 32px 0;
     color: #D48C07;
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } .4s, ${props=> props.hasPageBeenViewed ? null : slideUp} .4s ease-out;
     @media(max-width: 500px) {
-        margin: 6rem 0 2rem 0;
+        margin: 96px 0 32px 0;
     }
 `
 
 export const Description = styled.h2`
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
-    margin-bottom: 12rem;
+    margin-bottom: 192px;
     line-height: 4.2rem;
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } 1s, ${props=> props.hasPageBeenViewed ? null : slideUp} 1s ease-out;
     @media(max-width: 500px) {
         font-size: 3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
     }
 `
 
@@ -63,7 +63,7 @@ export const ContentContainer = styled.div`
 
 export const LinkContainer = styled.div`
     display: flex;
-    margin: 5rem 0;
+    margin: 96px 0;
     @media(max-width: 400px) {
         align-items: center;
         flex-direction: column
@@ -80,9 +80,9 @@ export const WorkLink = styled.a`
 `
 
 export const LinkGap = styled.div`
-    margin-right: 2rem;
+    margin-right: 32px;
     @media(max-width: 400px) {
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
     }
 `
 
@@ -95,10 +95,10 @@ export const MainImage = styled.img`
 export const SectionContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 8rem;
+    margin-bottom: 128px;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
     }
 `
 
@@ -108,17 +108,17 @@ export const SectionHeader = styled.h3`
 `
 
 export const SectionParagraph = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 300;
     line-height: 2rem;
 `
 
 export const Photo = styled.img`
-    margin-bottom: 8rem;
+    margin-bottom: 128px;
     max-height: 90vh;
     max-width: 90vw;
     @media(max-width: 800px) {
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
     }
 `
 
@@ -126,19 +126,19 @@ export const PhotoDescriptionContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin-bottom: 8rem;
+    margin-bottom: 128px;
     justify-items: ${props=>props.justify};
     @media(max-width: 700px) {
         grid-template-columns: 1fr;
         justify-items: left;
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
     }
 `
 
 export const PhotoDescriptionHeader = styled.h3`
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};
     @media(max-width: 700px) {
         display: ${props=>props.size === 'large' ? 'none' : 'initial'};
@@ -146,7 +146,7 @@ export const PhotoDescriptionHeader = styled.h3`
 `
 
 export const PhotoDescriptionParagraph = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 300;
     line-height: 2rem;
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};
@@ -160,7 +160,7 @@ export const PhotoDescriptionImage = styled.img`
     height: auto;
     @media(max-width: 700px) {
         max-width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 32;
     }
 `
 
@@ -172,13 +172,13 @@ export const CreatedWithGrid = styled.div`
 export const CreatedWithContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin-bottom: 8rem;
+    margin-bottom: 128px;
     align-items: start;
     justify-items: end;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
         justify-items: start;
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
     }
 `
 

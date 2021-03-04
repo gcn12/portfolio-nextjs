@@ -4,11 +4,11 @@ export const Container = styled.div`
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr;
-    margin: 10rem 0 12rem 0;
+    margin: 192px 0 256px 0;
     @media(max-width: 900px) {
         grid-template-columns: 1fr; 
         justify-items: center;
-        margin: 5rem 0 12rem 0;
+        margin: 96px 0 192px 0;
     }
 `
 
@@ -24,20 +24,20 @@ export const LargeText = styled.h1`
     font-size: 3rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     @media(max-width: 900px) {
-        margin-bottom: 2rem;
-        font-size: 2.5rem;
+        margin-bottom: 32px;
+        font-size: 2.25rem;
     }
 `
 
 export const SmallText = styled.h2`
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     max-width: 600px;
     @media(max-width: 900px) {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
 `
 

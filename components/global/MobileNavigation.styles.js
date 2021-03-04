@@ -35,7 +35,7 @@ export const Nav = styled.div`
 `
 
 export const NavItem = styled.a`
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-weight: 400;
     cursor: pointer;
     display: inline;

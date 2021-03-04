@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.footer`
     display: flex;
     justify-content: center;
-    margin: 5rem;
+    margin: 96px;
 `
 
 export const SocialContainer = styled.div`

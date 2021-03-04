@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-    margin-top: 2rem;
+    margin-top: 32px;
 `
 
 export const Nav = styled.nav`
@@ -12,7 +12,7 @@ export const Nav = styled.nav`
 
 export const Title = styled.a`
     font-family: 'Poppins', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.25rem;
     font-weight: 600;
     &:hover{
         color: #959595;
@@ -31,7 +31,7 @@ export const UL = styled.ul`
 
 export const LI = styled.li`
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 300;
     border-bottom: ${props=>props.underline} solid #D48C07;
     transition: color 80ms ease-in-out;
@@ -41,7 +41,7 @@ export const LI = styled.li`
 `
 
 export const Gap = styled.div`
-    margin-left: 1rem;
+    margin-left: 16px;
 `
 
 export const Hamburger = styled.img`

@@ -13,16 +13,16 @@ export const Container = styled.div`
 export const ProjectName = styled.h3`
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 `
 
 export const ProjectDescription = styled.h4`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 2rem;
-    margin: 0.5rem 0 2rem 0;
+    font-size: 2.25rem;
+    margin: 0.8px 0 32px 0;
     @media(max-width: 1100px) {
-        margin: 0.5rem 0 1rem 0;
+        margin: 8px 0 16px 0;
     }
 `
 
@@ -58,7 +58,7 @@ export const OrangeButton = styled.a`
         display: ${props=>props.screenSize === 'large' ? 'none' : 'inline-block'};
         max-width: 60vw;
         height: auto;
-        margin-top: 3rem;
+        margin-top: 48px;
     }
 `
 
