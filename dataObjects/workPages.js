@@ -45,7 +45,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Key takeaways',
-                paragraph: 'A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
             },
         ],
     },
@@ -78,8 +78,13 @@ export const workPages = {
             },
             {
                 type: 'section',
-                header: 'Final touches',
-                paragraph: 'A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+                header: 'Future improvements',
+                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+            },
+            {
+                type: 'section',
+                header: 'Key takeaways',
+                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
             },
         ],
     },
@@ -93,7 +98,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                paragraph: 'This project was a static website to showcase my cinematography work. It needed to play video from Vimeo and YouTube, and display each project individually. Stylistically, the site needed to be clean and minimalistic. ', 
             },
             {
                 type: 'createdWith',
@@ -105,15 +110,38 @@ export const workPages = {
                 link: '../cine_2.png',
             },
             {
-                type: 'photoDescription',
+                type: 'photoDescriptionRight',
                 header: 'New UI design',
                 paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
-                photoLink: 'https://products.ls.graphics/claymockups/images/02_4.jpg',
+                photoLink: '../cinematography_full_page.png',
+            },
+            {
+                type: 'photoDescriptionLeft',
+                header: 'New UI design',
+                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                photoLink: '../cinematography_work_desktop.png',
+            },
+            {
+                type: 'photoDescriptionRight',
+                header: 'New UI design',
+                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                photoLink: '../cinematography_still_gallery.png',
+            },
+            {
+                type: 'photoDescriptionLeft',
+                header: 'New UI design',
+                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                photoLink: '../cinematography_homepage.png',
             },
             {
                 type: 'section',
-                header: 'Final touches',
-                paragraph: 'A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+                header: 'Future improvements',
+                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+            },
+            {
+                type: 'section',
+                header: 'Key takeaways',
+                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
             },
         ],
     },
@@ -132,7 +160,7 @@ export const workPages = {
             {
                 type: 'createdWith',
                 header: 'Created with',
-                items: ['React.js', 'Firebase', 'Redux', 'Moment.js', 'Styled-Components'],
+                items: ['React.js', 'Google Realtime Database', 'Redux', 'Moment.js', 'Styled-Components'],
             },
             {
                 type: 'photo',
@@ -146,8 +174,13 @@ export const workPages = {
             },
             {
                 type: 'section',
-                header: 'Final touches',
-                paragraph: 'A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+                header: 'Future improvements',
+                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
+            },
+            {
+                type: 'section',
+                header: 'Key takeaways',
+                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque.', 
             },
         ],
     },

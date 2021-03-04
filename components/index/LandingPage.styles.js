@@ -99,7 +99,7 @@ export const Colored = styled.span`
 export const OrangeButton = styled.a`
     font-size: 1.5rem;
     font-weight: 300;
-    padding: 1rem 1.4rem;
+    padding: 16px 24px;
     border: none;
     background-color: #D48C07;
     color: white;

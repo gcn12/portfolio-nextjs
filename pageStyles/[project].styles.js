@@ -158,6 +158,7 @@ export const PhotoDescriptionParagraph = styled.p`
 export const PhotoDescriptionImage = styled.img`
     max-width: 30vw;
     height: auto;
+    border: 1px solid #f5f5f5;
     @media(max-width: 700px) {
         max-width: 100%;
         margin-bottom: 32;
@@ -188,7 +189,7 @@ export const CreatedWithItem = styled.h2`
     border: 1px solid black;
     display: inline;
     border-radius: 10px;
-    padding: .5rem 1rem;
+    padding: 8px 16px;
     text-align: center;
     margin: 0 10px 10px 0;
     white-space: nowrap;

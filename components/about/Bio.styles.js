@@ -13,7 +13,7 @@ export const Container = styled.div`
 `
 
 export const Illustration = styled.img`
-    height: 300px;
+    height: auto;
     width: 300px;
     @media(max-width: 900px) {
         /* justify-self: center;  */

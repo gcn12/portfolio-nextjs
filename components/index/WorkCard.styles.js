@@ -41,7 +41,7 @@ export const Grid = styled.div`
 export const OrangeButton = styled.a`
     font-size: 1rem;
     font-weight: 300;
-    padding: 1rem 1.4rem;
+    padding: 16px 24px;
     border: none;
     background-color: #D48C07;
     color: white;

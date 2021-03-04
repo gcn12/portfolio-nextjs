@@ -11,7 +11,7 @@ export const SocialContainer = styled.div`
 `
 
 export const Gap = styled.div`
-    padding-left: 2.5rem;
+    padding-left: 48px;
 `
 
 export const Logo = styled.img`

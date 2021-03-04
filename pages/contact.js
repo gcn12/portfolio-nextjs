@@ -15,7 +15,7 @@ const Contact = () => {
         <ContactContainer>
           <div>
             <GetInTouch>Let's get in touch</GetInTouch>
-            <Illustration src='09.png' />
+            <Illustration src='undraw_experience_design_eq3j.png' />
           </div>
           <Form />
         </ContactContainer>

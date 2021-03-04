@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
-    max-width: 60vw;
+    /* max-width: 60vw; */
 `
 
 export const Label = styled.label`
@@ -20,11 +20,15 @@ export const Input = styled.input`
         border-bottom: 3px solid #D48C07;
     }
     outline: none;
+    width: 30vw;
+    @media(max-width: 800px) {
+        width: 60vw;
+    }
 `
 
 export const Textarea = styled.textarea`
     font-family: 'Poppins', sans-serif;
-    height: 3rem;
+    height: 6rem;
     font-size: 1.5rem;
     border: none;
     border-bottom: 1px solid #616161;
@@ -32,7 +36,10 @@ export const Textarea = styled.textarea`
         border-bottom: 3px solid #D48C07;
     }
     outline: none;
-    max-width: 60vw;
+    width: 30vw;
+    @media(max-width: 800px) {
+        width: 60vw;
+    }
 `
 
 export const Submit = styled.input`
@@ -48,7 +55,7 @@ export const Submit = styled.input`
 `
 
 export const Illustration = styled.img`
-    height: 300px;
+    height: auto;
     width: 300px;
     @media(max-width: 800px) {
         display: none;
