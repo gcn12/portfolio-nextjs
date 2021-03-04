@@ -21,6 +21,7 @@ export const Input = styled.input`
     }
     outline: none;
     width: 30vw;
+    border-radius: 0;
     @media(max-width: 800px) {
         width: 60vw;
     }
@@ -31,6 +32,7 @@ export const Textarea = styled.textarea`
     height: 6rem;
     font-size: 1.5rem;
     border: none;
+    border-radius: 0;
     border-bottom: 1px solid #616161;
     &:focus {
         border-bottom: 3px solid #D48C07;
