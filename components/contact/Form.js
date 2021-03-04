@@ -65,7 +65,10 @@ const ContactForm = () => {
             <Label htmlFor='form-message'>message</Label>
             <Textarea onBlur={checkMessage} onChange={(e)=> setMessage(e.target.value)} value={message} autoComplete='off' type='text' id='form-message' placeholder='Enter message' name="message" />
             <ErrorMessage>{messageError}</ErrorMessage>
+            <span>
+
             <Submit type='submit' value='submit'/>
+            </span>
             {wasEmailSent &&
             <EmailSent>Email was sent successfully</EmailSent>
             }

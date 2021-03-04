@@ -43,15 +43,20 @@ export const Textarea = styled.textarea`
 `
 
 export const Submit = styled.input`
-    font-family: 'Poppins', sans-serif;
-    min-height: 3rem;
+    -webkit-appearance: none;
     font-size: 1.5rem;
+    font-weight: 300;
+    padding: 16px 24px;
     border: none;
-    width: 120px;
-    cursor: pointer;
-    color: white;
     background-color: #D48C07;
+    color: white;
     border-radius: 10px;
+    cursor: pointer;
+    /* display: inline-block; */
+    transition: transform 100ms ease-in-out;
+    &:hover{
+        transform: scale(1.03)
+    }
 `
 
 export const Illustration = styled.img`
