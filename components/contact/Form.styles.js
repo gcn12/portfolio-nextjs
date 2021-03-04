@@ -65,7 +65,7 @@ export const Illustration = styled.img`
 
 export const ContactContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 128px 0 0 0;
     align-items: center;
     justify-items: center;

@@ -9,7 +9,7 @@ import {
 const Bio = () => {
     return(
         <Container>
-            <Illustration src='undraw_Code_thinking_re_gka2.png' />
+            <Illustration src='undraw_experience_design_eq3j.png' />
             <div>
                 <LargeText>Thanks for stopping by!</LargeText>
                 <SmallText>
