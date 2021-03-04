@@ -1,14 +1,20 @@
 import Head from 'next/head'
+// import { useEffect } from 'react'
 import Enjoying from '../components/about/Enjoying'
 import Bio from '../components/about/Bio'
-const About = () => {
+const About = (props) => {
+    // useEffect(()=> {
+    //     if(props.isModalOpen) {
+    //       props.closeModal()
+    //     }
+    //   }, [])
     return (
         <div style={{minHeight: '65vh'}}>
             <Head>
                 <title>Gareth Ng - About</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <Bio />
+            <Bio closeModal={props.closeModal} />
             <Enjoying />
         </div>
     )

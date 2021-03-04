@@ -172,13 +172,13 @@ export const CreatedWithGrid = styled.div`
 
 export const CreatedWithContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr;
     margin-bottom: 128px;
-    align-items: start;
-    justify-items: end;
+    /* align-items: start; */
+    justify-items: start;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
-        justify-items: start;
+        /* justify-items: start; */
         margin-bottom: 64px;
     }
 `

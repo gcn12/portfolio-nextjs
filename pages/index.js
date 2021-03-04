@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import LandingPage from '../components/index/LandingPage'
 import CardsComponent from '../components/index/CardsComponent'
 import {  
@@ -7,6 +8,11 @@ import {
 } from '../styles/index.styles'
 
 const Home = (props) => {
+  useEffect(()=> {
+    if(props.isModalOpen) {
+      props.closeModal()
+    }
+  }, [])
   return (
     <Container style={{minHeight: '85vh'}}>
       <Head>

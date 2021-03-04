@@ -4,11 +4,16 @@ export const Container = styled.div`
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr;
-    margin: 192px 0 256px 0;
+    margin: 96px 0 192px 0;
+    @media(max-width: 1100px) {
+        margin: 96px 0 192px 0;
+    }
     @media(max-width: 900px) {
         grid-template-columns: 1fr; 
         justify-items: center;
-        margin: 96px 0 192px 0;
+    }
+    @media(max-width: 500px) {
+        margin: 64px 0 128px 0;
     }
 `
 

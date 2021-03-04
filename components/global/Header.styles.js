@@ -44,7 +44,7 @@ export const Gap = styled.div`
     margin-left: 16px;
 `
 
-export const Hamburger = styled.img`
+export const Hamburger = styled.input`
     height: 30px;
     width: 30px;
     position: relative;

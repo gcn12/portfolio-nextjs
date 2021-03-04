@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { useState } from 'react'
+import { enableBodyScroll } from 'body-scroll-lock'
 import Header from '../components/global/Header'
 import Footer from '../components/global/Footer'
 
@@ -11,12 +12,28 @@ const MyApp = ({ Component, pageProps }) => {
   const [viewedTimer, setViewedTimer] = useState(false)
   const [viewedCinematography, setViewedCinematography] = useState(false)
   const [viewedMessaging, setViewedMessaging] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(false)
+  const closeModal = () => {
+    setIsModalOpen(false)
+    enableBodyScroll(document)
+  }
   return (
     <div>
-      <Header />
+      <Header 
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen} 
+        isModalVisible={isModalVisible}
+        setIsModalVisible={setIsModalVisible}
+      />
       <div style={{minHeight: '80vh'}}>
         <Component  
           {...pageProps} 
+          isModalVisible={isModalVisible}
+          setIsModalVisible={setIsModalVisible}
+          closeModal={closeModal}
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
           viewedAbout={viewedAbout}
           viewedContact={viewedContact}
           viewedHome={viewedHome}

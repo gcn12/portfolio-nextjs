@@ -6,10 +6,10 @@ import {
     CineLink,
 } from './Bio.styles'
 
-const Bio = () => {
+const Bio = (props) => {
     return(
         <Container>
-            <Illustration src='undraw_experience_design_eq3j.png' />
+            <Illustration onLoad={props.closeModal} src='undraw_experience_design_eq3j.png' />
             <div>
                 <LargeText>Thanks for stopping by!</LargeText>
                 <SmallText>

@@ -13,6 +13,9 @@ export const EnjoyingTitle = styled.h1`
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 48px;
+    @media(max-width: 500px) {
+        font-size: 2rem;
+    }
 `
 
 export const CategoryContainer = styled.div`

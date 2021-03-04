@@ -1,14 +1,5 @@
 import styled, { keyframes } from 'styled-components'
 
-const fadeIn = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1
-    }
-`
-
 export const Container = styled.div`
     background-color: #F2A414;
     max-width: 100%;
@@ -18,20 +9,29 @@ export const Container = styled.div`
     left: 0;
     right: 0;
     height: 100vh;
-    display: ${props=>props.isMenuOpen ? 'none' : 'flex'};
+    opacity: ${props=>props.isModalOpen ? 1 : 1};
+    transition: transform .3s ease-in-out, opacity 1s ease-in-out;
+    /* transform: ${props=>props.isModalOpen ? 'translate(0%, 0)' : 'translate(100%, 0)'}; */
+    visibility: ${props=>props.isModalVisible ? 'visible' : 'hidden'};
     position: fixed;
     z-index: 10;
-    animation: ${fadeIn} .2s ease-out;
+    @media(min-width: 700px) {
+        display: none;
+        visibility: hidden;
+    }
 `
 
 export const Nav = styled.div`
+    opacity: ${props=>props.isModalOpen ? 1 : 0};
+    transform: ${props=>props.isModalOpen ? 'translate(-50%, -50%)' : 'translate(100%, -50%)'};
+    transition: transform .5s ease-in-out, opacity 1s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 `
 
 export const NavItem = styled.a`
@@ -41,7 +41,7 @@ export const NavItem = styled.a`
     display: inline;
 `
 
-export const Hamburger = styled.img`
+export const Hamburger = styled.input`
     height: 30px;
     width: 30px;
     position: absolute;

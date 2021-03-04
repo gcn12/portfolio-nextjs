@@ -1,8 +1,7 @@
 import Link from 'next/link'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import MobileNavigation from './MobileNavigation'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
 import {
     Container,
     Title,
@@ -13,18 +12,19 @@ import {
     Hamburger,
 } from './Header.styles'
 
-const Header = () => {
+const Header = (props) => {
     const router = useRouter()
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const openMenu = () => {
-        setIsMenuOpen(true)
+        props.setIsModalOpen(true)
         disableBodyScroll(document)
+        props.setIsModalVisible(true)
     }
 
     const closeMenu = () => {
-        setIsMenuOpen(false)
+        props.setIsModalOpen(false)
         enableBodyScroll(document)
+        setTimeout(()=> props.setIsModalVisible(false), 500)
     }
 
     return (
@@ -50,12 +50,10 @@ const Header = () => {
                         <a target='_blank' href='resume.pdf' rel='nonreferrer noopener'>resume</a>
                     </LI>
                 </UL>
-                {isMenuOpen ? 
-                <Hamburger onClick={closeMenu} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgMjAuMTg4bC04LjMxNS04LjIwOSA4LjItOC4yODItMy42OTctMy42OTctOC4yMTIgOC4zMTgtOC4zMS04LjIwMy0zLjY2NiAzLjY2NiA4LjMyMSA4LjI0LTguMjA2IDguMzEzIDMuNjY2IDMuNjY2IDguMjM3LTguMzE4IDguMjg1IDguMjAzeiIvPjwvc3ZnPg==" />
-                :
-                <Hamburger onClick={openMenu} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+" />
-                }
-                {isMenuOpen && <MobileNavigation closeMenu={closeMenu} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}
+                <Hamburger type='image' onClick={openMenu} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+" />
+
+                {/* {props.isModalOpen && <MobileNavigation isModalOpen={props.isModalOpen} router={router} closeMenu={closeMenu} />} */}
+                <MobileNavigation isModalVisible={props.isModalVisible} isModalOpen={props.isModalOpen} router={router} closeMenu={closeMenu} />
             </Nav>
         </Container>
     )

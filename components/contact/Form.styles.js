@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
-    /* max-width: 60vw; */
 `
 
 export const Label = styled.label`
@@ -23,7 +22,7 @@ export const Input = styled.input`
     width: 30vw;
     border-radius: 0;
     @media(max-width: 800px) {
-        width: 60vw;
+        width: 40vw;
     }
 `
 
@@ -38,11 +37,7 @@ export const Textarea = styled.textarea`
         border-bottom: 3px solid #D48C07;
     }
     outline: none;
-    width: 30vw;
     width: 100%;
-    @media(max-width: 800px) {
-        /* width: 60vw; */
-    }
 `
 
 export const Submit = styled.input`
@@ -88,7 +83,6 @@ export const GetInTouch = styled.h1`
     margin-bottom: 64px;
     @media(max-width: 800px) {
         font-size: 1.5rem;
-        font-weight: 600;
     }
 `
 
@@ -96,6 +90,10 @@ export const ErrorMessage = styled.h4`
     color: red;
     margin-bottom: 20px;
     font-weight: 500;
+    font-size: 1rem;
+    @media(max-width: 800px) {
+        font-size: .75rem;
+    }
 `
 
 export const EmailSent = styled.h4`
