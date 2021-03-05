@@ -9,9 +9,9 @@ export const workCard = [
         url: 'travel',
     },
     {
-        project: 'Rubik\'s Cube Puzzle Timer',
+        project: 'CubeClock Timer',
         photo: 'timer-preview.png', 
-        description: 'Innovative timer for the puzzle-solving community',
+        description: 'Innovative Rubik\'s Cube timer',
         colorOne: '#e3eaff',
         colorTwo: '#edffe3',
         colorDirection: 'to top left',

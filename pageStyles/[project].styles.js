@@ -95,7 +95,10 @@ export const MainImage = styled.img`
 export const SectionContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
+    width: 100%;
+    grid-column-gap: 5%;
     margin-bottom: 128px;
+    justify-content: start;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
         margin-bottom: 64px;
@@ -105,12 +108,17 @@ export const SectionContainer = styled.div`
 export const SectionHeader = styled.h3`
     font-size: 2rem;
     font-weight: 400;
+    /* padding: 0 10% 0 0; */
+    justify-self: start;
 `
 
 export const SectionParagraph = styled.p`
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 2rem;
+    align-self: right;
+    white-space: pre-line;
+    /* padding: 0 0 0 10%; */
 `
 
 export const Photo = styled.img`
@@ -124,7 +132,7 @@ export const Photo = styled.img`
 
 export const PhotoDescriptionContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     align-items: center;
     margin-bottom: 128px;
     justify-items: ${props=>props.justify};
@@ -149,6 +157,7 @@ export const PhotoDescriptionParagraph = styled.p`
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 2rem;
+    white-space: pre-line;
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};
     @media(max-width: 700px) {
         display: ${props=>props.size === 'large' ? 'none' : 'initial'};
@@ -161,24 +170,26 @@ export const PhotoDescriptionImage = styled.img`
     border: 1px solid #f5f5f5;
     @media(max-width: 700px) {
         max-width: 100%;
-        margin-bottom: 32;
+        margin-bottom: 32px;
     }
 `
 
 export const CreatedWithGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-content: flex-start;
 `
 
 export const CreatedWithContainer = styled.div`
     display: grid;
+    /* grid-template-columns: 33% 66%; */
     grid-template-columns: 1fr 2fr;
+    grid-column-gap: 5%;
     margin-bottom: 128px;
-    /* align-items: start; */
-    justify-items: start;
+    justify-content: space-between;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
-        /* justify-items: start; */
         margin-bottom: 64px;
     }
 `
@@ -187,10 +198,25 @@ export const CreatedWithItem = styled.h2`
     font-size: 1rem;
     font-weight: 300;
     border: 1px solid black;
-    display: inline;
+    /* display: inline-block; */
     border-radius: 10px;
     padding: 8px 16px;
     text-align: center;
     margin: 0 10px 10px 0;
     white-space: nowrap;
+`
+
+export const Row = styled.div`
+`
+
+export const Left = styled.div`
+float: left;
+  width: 200px;
+`
+
+export const Right = styled.div`
+/* float: left; */
+  /* padding: 10px;
+  width: 75%; */
+  margin-left: 200px;
 `

@@ -1,8 +1,11 @@
 import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
-    margin: 48px 0 0 0;
-    min-height: 85vh;
+    margin: 48px 0 128px 0;
+    /* min-height: 100vh; */
+    @media(max-width: 500px) {
+        margin: 48px 0 96px 0;
+    }
 `
 
 const fadeIn = keyframes`
@@ -29,7 +32,7 @@ const scaleUp = keyframes`
     }
 `
 
-const slideIn = keyframes`
+const slideInFast = keyframes`
     0% {
         left: -20px;
     }
@@ -40,16 +43,15 @@ const slideIn = keyframes`
         left: 0px;
 `
 
-const test = (a) => keyframes`
+const slideInSlow = keyframes`
     0% {
-        opacity: 0;
+        left: -20px;
     }
-    33% {
-        opacity: 0;
+    66% {
+        left: -20px;
     }
     100% {
-        opacity: ${a};
-    } 
+        left: 0px;
 `
 
 export const LargeText = styled.h1`
@@ -71,7 +73,7 @@ export const LargeText = styled.h1`
         line-height: 4.4rem;
     }
     position: relative;
-    animation: ${props=>props.pageLoaded ? null : fadeIn} .5s, ${props=>props.pageLoaded ? null : slideIn} .5s ease-out;
+    animation: ${props=>props.pageLoaded ? null : fadeIn} .5s, ${props=>props.pageLoaded ? null : slideInFast} .5s ease-out;
 `
 
 export const SmallText = styled.h2`
@@ -88,7 +90,7 @@ export const SmallText = styled.h2`
         font-size: 1.25rem;
     }
     position: relative;
-    animation: ${props=>props.pageLoaded ? null : fadeIn} 1s, ${props=>props.pageLoaded ? null : slideIn} 1s ease-out;
+    animation: ${props=>props.pageLoaded ? null : fadeIn} 1.4s, ${props=>props.pageLoaded ? null : slideInSlow} .8s ease-out;
 `
 
 export const Colored = styled.span`

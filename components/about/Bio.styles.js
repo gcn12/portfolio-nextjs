@@ -6,23 +6,18 @@ export const Container = styled.div`
     grid-template-columns: 1fr 1fr;
     margin: 96px 0 192px 0;
     @media(max-width: 1100px) {
-        margin: 96px 0 192px 0;
+        margin: 72px 0 128px 0;
     }
     @media(max-width: 900px) {
         grid-template-columns: 1fr; 
         justify-items: center;
-    }
-    @media(max-width: 500px) {
-        margin: 64px 0 128px 0;
+        margin: 32px 0 128px 0;
     }
 `
 
 export const Illustration = styled.img`
     height: auto;
     width: 90%;
-    @media(max-width: 900px) {
-        /* justify-self: center;  */
-    }
 `
 
 export const LargeText = styled.h1`
@@ -33,6 +28,10 @@ export const LargeText = styled.h1`
     @media(max-width: 900px) {
         margin-bottom: 32px;
         font-size: 2.25rem;
+    }
+    @media(max-width: 950px) {
+        margin-bottom: 32px;
+        font-size: 1.5rem;
     }
 `
 

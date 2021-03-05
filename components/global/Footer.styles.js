@@ -4,6 +4,9 @@ export const Container = styled.footer`
     display: flex;
     justify-content: center;
     margin: 96px;
+    @media(max-width: 700px) {
+        margin: 64px 96px 64px 96px;
+    }
 `
 
 export const SocialContainer = styled.div`

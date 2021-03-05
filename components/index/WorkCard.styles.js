@@ -14,6 +14,9 @@ export const ProjectName = styled.h3`
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1.25rem;
+    @media(max-width: 500px) {
+        font-size: 1rem;
+    }
 `
 
 export const ProjectDescription = styled.h4`
@@ -23,6 +26,9 @@ export const ProjectDescription = styled.h4`
     margin: 0.8px 0 32px 0;
     @media(max-width: 1100px) {
         margin: 8px 0 16px 0;
+    }
+    @media(max-width: 500px) {
+        font-size: 1.5rem;
     }
 `
 
@@ -34,7 +40,6 @@ export const Grid = styled.div`
     align-content: center;
     @media(max-width: 1100px) {
         grid-template-columns: 1fr;
-        /* grid-row-gap: 3rem; */
     }
 `
 
