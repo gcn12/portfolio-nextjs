@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     display: grid;
+    grid-column-gap: 2rem;
     grid-template-columns: 1fr 1fr;
     @media(max-width: 1000px) {
         grid-template-columns: 1fr; 
@@ -25,6 +26,7 @@ export const CategoryContainer = styled.div`
     grid-column-gap: 3rem;
     @media(max-width: 700px) {
         grid-template-columns: 1fr; 
+        grid-row-gap: 3rem;
     }
 `
 

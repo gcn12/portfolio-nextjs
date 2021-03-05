@@ -35,21 +35,36 @@ export const Title = styled.h1`
     color: #D48C07;
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } .4s, ${props=> props.hasPageBeenViewed ? null : slideUp} .4s ease-out;
-    @media(max-width: 500px) {
-        margin: 96px 0 32px 0;
+    @media(max-width: 1000px) {
+        margin-top: 128px;
     }
+    @media(max-width: 500px) {
+        margin: 96px 0 16px 0;
+        font-size: 1.5rem;
+    }
+    
 `
 
 export const Description = styled.h2`
     font-size: 4.5rem;
     font-weight: 600;
     margin-bottom: 192px;
-    line-height: 4.2rem;
+    line-height: 5rem;
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } 1s, ${props=> props.hasPageBeenViewed ? null : slideUp} 1s ease-out;
+    @media(max-width: 1000px) {
+        margin-bottom: 128px;
+        /* font-size: 2.25rem;
+        line-height: 3.3rem; */
+    }
+    @media(max-width: 1000px) {
+        font-size: 3.75rem;
+        line-height: 4rem;
+    }
     @media(max-width: 500px) {
-        font-size: 3rem;
         margin-bottom: 64px;
+        font-size: 2.25rem;
+        line-height: 3.3rem;
     }
 `
 
@@ -110,6 +125,9 @@ export const SectionHeader = styled.h3`
     font-weight: 400;
     /* padding: 0 10% 0 0; */
     justify-self: start;
+    @media(max-width: 800px) {
+        margin-bottom: 24px;
+    }
 `
 
 export const SectionParagraph = styled.p`
@@ -148,8 +166,17 @@ export const PhotoDescriptionHeader = styled.h3`
     font-weight: 400;
     margin-bottom: 16px;
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};
+    @media(max-width: 800px) {
+        margin-bottom: 24px;
+    }
     @media(max-width: 700px) {
         display: ${props=>props.size === 'large' ? 'none' : 'initial'};
+    }
+`
+
+export const Gap = styled.div`
+    @media(max-width: 800px) {
+        margin-bottom: 24px;
     }
 `
 

@@ -22,6 +22,7 @@ import {
     CreatedWithContainer,
     ContentContainer,
     LinkGap,
+    Gap,
 } from '../../pageStyles/[project].styles'
 
 const Project = (props) => {
@@ -113,6 +114,7 @@ const Project = (props) => {
                             <PhotoDescriptionContainer justify='end'>
                                 <div>
                                     <PhotoDescriptionHeader>{content.header}</PhotoDescriptionHeader>
+                                    <Gap />
                                     <div>
                                         <PhotoDescriptionParagraph size='large'>{content.paragraph}</PhotoDescriptionParagraph>
                                     </div>

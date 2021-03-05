@@ -45,7 +45,7 @@ export const workPages = {
             {
                 type: 'photoDescriptionRight',
                 header: 'Full text search',
-                paragraph: 'With Algoia integration, users can search for places, posts, and other travelers. Search results are updated for every post uploading and for every user who signs up.', 
+                paragraph: 'With Algolia integration, users can search for places, posts, and other travelers. Search results are updated for every post uploading and for every user who signs up.', 
                 photoLink: '../travel_full_text_search.png',
             },
             {

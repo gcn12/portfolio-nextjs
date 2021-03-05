@@ -25,7 +25,6 @@ const Enjoying = () => {
                                             <Title rel='nonreferrer noopener' target='_blank' href={item2.url} key={item2.title}><Span>{item2.title}</Span></Title>
                                         </span>
                                     )
-            
                                 })}
                             </TitleContainer>
                         </div>

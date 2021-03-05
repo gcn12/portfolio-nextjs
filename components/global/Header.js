@@ -19,7 +19,6 @@ const Header = (props) => {
         props.setIsModalOpen(true)
         disableBodyScroll(document)
         props.setIsModalVisible(true)
-        console.log(props.isModalOpen)
     }
 
     const closeMenu = () => {
