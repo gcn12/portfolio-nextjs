@@ -72,6 +72,10 @@ export const LargeText = styled.h1`
         font-size: 3.75rem;
         line-height: 4.4rem;
     }
+    @media(max-width: 400px) {
+        font-size: 3rem;
+        line-height: 4.4rem;
+    }
     position: relative;
     animation: ${props=>props.pageLoaded ? null : fadeIn} .5s, ${props=>props.pageLoaded ? null : slideInFast} .5s ease-out;
 `
@@ -110,6 +114,12 @@ export const OrangeButton = styled.a`
     display: inline-block;
     transition: transform 100ms ease-in-out;
     animation: ${props=>props.pageLoaded ? null : scaleUp} 1s;
+    @media(max-width: 1050px) {
+        font-size: 1.25rem;
+    }
+    @media(max-width: 500px) {
+        font-size: 1.125rem;
+    }
     &:hover{
         transform: scale(1.03)
     }

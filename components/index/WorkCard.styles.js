@@ -8,6 +8,9 @@ export const Container = styled.div`
     border-radius: 30px;
     margin: 20px 0;
     padding: 50px;
+    @media(max-width: 500px) {
+        padding: 30px;
+    }
 `
 
 export const ProjectName = styled.h3`
@@ -64,6 +67,10 @@ export const OrangeButton = styled.a`
         max-width: 60vw;
         height: auto;
         margin-top: 48px;
+        font-size: 0.875rem;
+    }
+    @media(max-width: 500px) {
+        font-size: 0.75rem;
     }
 `
 
