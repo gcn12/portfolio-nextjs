@@ -2,7 +2,7 @@ export const workPages = {
     travel: {
         title: 'Travel Blogger',
         description: 'Redefining the travel writing experience',
-        mainImage: '../travel_test.png',
+        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel2.png?alt=media&token=a6edda5b-c440-4fe7-b9f4-511b2e1ca3a4',
         githubLink: 'https://github.com/gcn12/photo-app',
         projectLink: 'https://gcn12.github.io/photo-app',
         content: [
@@ -23,25 +23,25 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: '../travel_multiple.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel.png?alt=media&token=879d829b-1cee-48c9-bc31-aa3584ff6e06',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'Page layout',
                 paragraph: 'Each post displays the title, location, along with user-written paragraphs and photos. Users can heart a post, save it to read later, or add to a collection. Finally, suggested articles are provided for further reading.', 
-                photoLink: '../travel_full_2.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_full_2.png?alt=media&token=69775d39-6c0b-447f-bdb1-5c8d22796d93',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Save posts',
                 paragraph: 'If a user finds a post they are particularly drawn to, they can add it to a collection or save it to read later.', 
-                photoLink: '../travel_add_to_collection_save.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_add_to_collection_save.png?alt=media&token=9bd1e416-b1c5-4deb-83c0-6de7071e0430',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'Full-text search',
                 paragraph: 'With Algolia integration, users can search for places, posts, and other travelers. Search results are updated for every post uploaded and for every user who signs up.', 
-                photoLink: '../travel_full_search.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_full_search.png?alt=media&token=0cbd752b-bfe5-49f6-89b4-00c5cb0f834e',
             },
             {
                 type: 'section',
@@ -50,34 +50,34 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: '../travel_collections.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_collections.png?alt=media&token=8ba5ca39-99f5-4c36-8afa-caac497f88e4',
             },
             {
                 type: 'photo',
-                link: '../travel_edit_profile.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_user_page.png?alt=media&token=77363529-36b3-40b2-97e5-8fd5ba1fa694',
             },
             {
                 type: 'photo',
-                link: '../travel_user_page.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_edit_profile.png?alt=media&token=16ecc020-cef1-421b-9f4d-9f30dce5cbaf',
             },
             {
                 type: 'photo',
-                link: '../travel_explore2.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_explore2.png?alt=media&token=835da03f-e63c-4929-a1e6-657b3a8d2ea1',
             },
             {
                 type: 'photo',
-                link: '../travel_saved_posts.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_saved_posts.png?alt=media&token=6d6de59f-bd10-4984-9372-19ce6d63546f',
             },
             {
                 type: 'photo',
-                link: '../travel_add_collection.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_add_collection.png?alt=media&token=f88d31df-748f-4152-b05a-999d46623fb4',
             },
         ],
     },
     timer: {
         title: 'Rubik\'s Cube Puzzle Timer',
         description: 'Innovative timer for the puzzle-solving community',
-        mainImage: '../timer.png',
+        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer%202.png?alt=media&token=9c1fc278-d076-41fd-9330-41ab89d5ebaf',
         githubLink: 'https://github.com/gcn12/cubeclock',
         projectLink: 'https://cubeclock.net',
         content: [
@@ -98,31 +98,31 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: '../timer_3.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer.png?alt=media&token=8386a7a9-588e-43ef-8d51-76536d9afc3d',
             }, 
             {
                 type: 'photoDescriptionLeft',
                 header: 'Multiple Puzzle Support',
                 paragraph: 'A highly requested feature was the ability to use any World Cube Association puzzle. Puzzles have unique mechanics, therefore requiring different scrambling algorithms. CubeClock makes note of which puzzle is being solved in order to present analyticsand to preserve specific solve data.', 
-                photoLink: '../timer_puzzles_list.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_puzzles_list.png?alt=media&token=900143b9-b7e5-4e46-a4c9-67aaceef86ad',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'User preferences',
                 paragraph: 'CubeClock allows users to customize the app to their tastes. Options include inspection times, the ability to display average times, and various ways of inputting their solve data. \n \n Many puzzle enthusiasts may already have their data saved elsewhere. CubeClock makes it effortless to import and save data, as well as export data to create a backup.', 
-                photoLink: '../timer_preferences.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_preferences.png?alt=media&token=8bad09aa-2a4f-4145-b4c9-04e544c7a890',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Save every session',
                 paragraph: 'Users can create unlimited sessions--a way to categorize multiple solves by puzzle and date. Sessions can be returned to, allowing a solver to pick up where they left off.', 
-                photoLink: '../timer_sessions.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_sessions.png?alt=media&token=fa221d3d-282f-462a-aebb-414f0c599faa',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'Track progress',
                 paragraph: 'Collected and stored data is presented in the form of charts. Solvers can visualize trends in the times and solve frequency. To provide more specific results, charts can be sorted by puzzle type and date.', 
-                photoLink: '../timer_analytics.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_analytics.png?alt=media&token=57887378-9c46-4794-b231-e3949fb782a3',
             },
             {
                 type: 'section',
@@ -134,7 +134,7 @@ export const workPages = {
     cinematography: {
         title: 'Cinematography Portfolio',
         description: 'Personal portfolio website',
-        mainImage: '../cine.png',
+        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcine.png?alt=media&token=d11bf406-bd28-4fe5-8b91-c2fae3bfee19',
         githubLink: 'https://github.com/gcn12/film-portfolio',
         projectLink: 'https://gcn12.github.io/film-portfolio',
         content: [
@@ -155,31 +155,31 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: '../cine_2.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcine2.png?alt=media&token=02b44bad-72dd-4595-97be-32526a20b3f7',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'Project display',
                 paragraph: 'Each piece of work contains a title, video, and a number of still images from the project. Videos can be embedded from YouTube or Vimeo and maintain their aspect ratio. If desired, custom video thumbnails can be used.', 
-                photoLink: '../cinematography_full_page.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_full_page.png?alt=media&token=53be8fc5-c855-4845-b23a-7305e266c17c',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Work page',
                 paragraph: 'Projects are displayed as thumbnails in a grid. When hovered, visitors can see the project name.', 
-                photoLink: '../cinematography_work_desktop.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_work_desktop.png?alt=media&token=cd30fa6b-5846-4e91-8a11-57f6884714ae',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'Stills gallery',
                 paragraph: 'Images from the project pages can be enlarged and viewed through a gallery. When hovered, the image provides arrows to access the previous and next photos. Alternatively, the keyboard arrow keys can be used to navigate through the photos.', 
-                photoLink: '../cinematography_still_gallery.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_still_gallery.png?alt=media&token=0c55d854-26bb-4b00-819e-2fd59ea29d80',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Home page',
                 paragraph: 'Visitors to the site are immediately shown a cinematography highlight reel. A custom play button and thumbnail are displayed on top of an embedded Vimeo video.', 
-                photoLink: '../cinematography_homepage.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_homepage.png?alt=media&token=db0f819c-b4f9-45e6-966c-ea74b27d294b',
             },
             {
                 type: 'section',
@@ -191,7 +191,7 @@ export const workPages = {
     messaging: {
         title: 'Messaging App',
         description: 'Fast, reliable instant messaging',
-        mainImage: '../messaging_main.png',
+        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging.png?alt=media&token=18bde9d6-c431-45ec-a5a1-4ae6cf7fb222',
         githubLink: 'https://github.com/gcn12/messaging-app',
         projectLink: 'https://gcn12.github.io/messaging-app/',
         content: [
@@ -201,24 +201,19 @@ export const workPages = {
                 paragraph: 'This app was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or a Google account--and instantly send messages to other users. \n \n One of the key features is the ability to send message requests, which can be accepted or declined. By hovering over a message, users can see when the message was send. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates whenever a user sends a message or a request, and also handles authentication.', 
             },
             {
-                type: 'features',
-                header: 'Project features',
-                points: ['fjeife', 'eifie', 'efifeh']
-            },
-            {
                 type: 'createdWith',
                 header: 'Created with these technologies',
                 items: ['React.js', 'Google Realtime Database', 'Redux', 'Moment.js', 'Styled-Components'],
             },
             {
                 type: 'photo',
-                link: '../messages_2.png',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging2.png?alt=media&token=2144fbe1-30ec-4c2a-86c5-c47323e0beb3',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Know when you\'ve been seen',
                 paragraph: 'Integration with the Realtime Database means that users can see when their messages have been read by the recipient.', 
-                photoLink: '../messaging_seen.png',
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging_seen.png?alt=media&token=374427f3-a17b-4730-bccf-0290f060c2fd',
             },
             {
                 type: 'section',

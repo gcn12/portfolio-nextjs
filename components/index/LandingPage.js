@@ -24,7 +24,7 @@ const LandingPage = (props) => {
                     </SmallText>
                 </div>
             </div>
-            <OrangeButton pageLoaded={props.viewedHome} rel='nonreferrer noopener' target='_blank' href='resume.pdf'>View Resume</OrangeButton>
+            <OrangeButton pageLoaded={props.viewedHome} rel='nonreferrer noopener' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/resume.pdf?alt=media&token=0378979f-3767-4b0c-8c63-992f186c7e33'>View Resume</OrangeButton>
         </Container>
     )
 }

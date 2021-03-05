@@ -1,13 +1,7 @@
 import Head from 'next/head'
-// import { useEffect } from 'react'
 import Enjoying from '../components/about/Enjoying'
 import Bio from '../components/about/Bio'
 const About = (props) => {
-    // useEffect(()=> {
-    //     if(props.isModalOpen) {
-    //       props.closeModal()
-    //     }
-    //   }, [])
     return (
         <div style={{minHeight: '65vh'}}>
             <Head>

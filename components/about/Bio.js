@@ -9,7 +9,7 @@ import {
 const Bio = (props) => {
     return(
         <Container>
-            <Illustration onLoad={props.closeModal} src='undraw_experience_design_eq3j.png' />
+            <Illustration onLoad={props.closeModal} src='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/about_image_small.png?alt=media&token=fb050f1b-2872-4767-9acd-6053172e5797' />
             <div>
                 <LargeText>Thanks for stopping by!</LargeText>
                 <SmallText>

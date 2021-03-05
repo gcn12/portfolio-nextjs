@@ -27,7 +27,7 @@ const MobileNavigation = (props) => {
                 <Link  passHref={true} href='/contact'>
                     <NavItem onClick={()=>checkIfOnPage('/contact')} underline={props.router.pathname==='/contact' ? '2px' : '0px'}>contact</NavItem>
                 </Link>
-                <NavItem target='_blank' href='resume.pdf' rel='nonreferrer noopener' onClick={props.closeMenu} underline='0px'>resume</NavItem>
+                <NavItem target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/resume.pdf?alt=media&token=0378979f-3767-4b0c-8c63-992f186c7e33' rel='nonreferrer noopener' onClick={props.closeMenu} underline='0px'>resume</NavItem>
             </Nav>
         </Container>
     )

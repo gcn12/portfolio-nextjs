@@ -47,7 +47,7 @@ const Header = (props) => {
                     </LI>
                     <Gap />
                     <LI underline='0px'>
-                        <a target='_blank' href='resume.pdf' rel='nonreferrer noopener'>resume</a>
+                        <a target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/resume.pdf?alt=media&token=0378979f-3767-4b0c-8c63-992f186c7e33' rel='nonreferrer noopener'>resume</a>
                     </LI>
                 </UL>
                 <Hamburger type='image' onClick={openMenu} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjQgNmgtMjR2LTRoMjR2NHptMCA0aC0yNHY0aDI0di00em0wIDhoLTI0djRoMjR2LTR6Ii8+PC9zdmc+" />
