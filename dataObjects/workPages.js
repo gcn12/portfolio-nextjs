@@ -11,11 +11,6 @@ export const workPages = {
                 header: 'Project overview',
                 paragraph: 'Travel Blogger is a full-featured app that allows users to post articles, connect with others, and plan their next vacation. Instead of creating their own website, a traveler can easily create and account and begin posting articles in seconds. Those looking for inspiration can browse posts, search by desination, and add articles to their collections. \n \n Behind the scenes, the app uses Firebase Cloud Functions and Security on the backend.', 
             },
-            // {
-            //     type: 'section',
-            //     header: 'Project key features',
-            //     paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut.', 
-            // },
             {
                 type: 'createdWith',
                 header: 'Created with these technologies',
@@ -24,7 +19,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Challenges and solutions',
-                paragraph: 'Diving deeper into Firebase opened up new possibilities while causing some frustrations', 
+                paragraph: 'Deciding on the right backend was among the largest challenge. The app needed to handle authentication, the ability to upload photos, and integrate easily with a full-text search. It was determined that Google\'s Firebase provided the right features at a reasonable price. \n \n In addition to storing data and handling authentication, Firebase provides security features and server-side functions. With an app of this size, containing potentially thousands of users, data has to be kept up to date and secure. By using Cloud Functions, the app can create transactions to make sure actions take place in the right order, and can prevent users from performing unwanted tasks, such as artificially increasing an article\'s view count. Cloud Functions were also implemented to perform data management tasks. For example, if a user changes their username, the Cloud Function can update the new name across all instances of it.', 
             },
             {
                 type: 'photo',
@@ -33,25 +28,25 @@ export const workPages = {
             {
                 type: 'photoDescriptionRight',
                 header: 'Page layout',
-                paragraph: 'A significant amount of time was put into the article designs. Each post displays the title, location, along with user-written paragraphs and photos. Users can heart a post, save it to read later, or add to a collection. Finally, suggested articles are provided for further reading.', 
+                paragraph: 'Each post displays the title, location, along with user-written paragraphs and photos. Users can heart a post, save it to read later, or add to a collection. Finally, suggested articles are provided for further reading.', 
                 photoLink: '../travel_full_2.png',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Save posts',
-                paragraph: 'Users can save posts to read later and can add them to collections.', 
+                paragraph: 'If a user finds a post they are particularly drawn to, they can add it to a collection or save it to read later.', 
                 photoLink: '../travel_add_to_collection_save.png',
             },
             {
                 type: 'photoDescriptionRight',
-                header: 'Full text search',
-                paragraph: 'With Algolia integration, users can search for places, posts, and other travelers. Search results are updated for every post uploading and for every user who signs up.', 
+                header: 'Full-text search',
+                paragraph: 'With Algolia integration, users can search for places, posts, and other travelers. Search results are updated for every post uploaded and for every user who signs up.', 
                 photoLink: '../travel_full_search.png',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'It was towards the end of this project where I began learning about web accessibility.', 
+                paragraph: 'The largest flaw is the lack of accessibility. There are a number of areas where a keyboard-only user may not be able to use. Accessibility is something that I began learning about near the end of the project and was therefore unable to implement. Moving forward, create accessible apps will be a priority. \n \n Another improvement could be the overall architecture of the program, in both the front-end and back-end. The original idea for the app was much simpler, but then grew to include more features, many of which interconnected. In creating a larger project, the code became more complex and less organized. In future projects, a clearer idea of the end result will provide a structure and ensure a higher quality of code.', 
             },
             {
                 type: 'photo',
@@ -72,6 +67,10 @@ export const workPages = {
             {
                 type: 'photo',
                 link: '../travel_saved_posts.png',
+            },
+            {
+                type: 'photo',
+                link: '../travel_add_collection.png',
             },
         ],
     },
@@ -142,12 +141,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'This project was a static website to showcase my cinematography work. It needed to play video from Vimeo and YouTube, and display each project individually. Stylistically, the site needed to be clean and minimalistic. ', 
-            },
-            {
-                type: 'section',
-                header: 'Project features',
-                paragraph: 'A dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut.', 
+                paragraph: 'This project was a static website to showcase my cinematography work. It needed to play video from Vimeo and YouTube, and display each project individually. Stylistically, the site needed to be clean and minimalistic.', 
             },
             {
                 type: 'createdWith',
@@ -155,31 +149,36 @@ export const workPages = {
                 items: ['React.js', 'Styled-Components', 'React-Router', 'Redux', 'Flickr Photo API'],
             },
             {
+                type: 'section',
+                header: 'Challenges and solutions',
+                paragraph: 'The key challenge was finding a way of easily uploading and accessing photos of different resolutions. Ideally, photos could be grouped and accessed based on project. \n \n Flickr\'s photo APIs was the answer. It is easy to upload multiple photos and can categorize them into albums. Those albums can be accessed by the front-end to display the photos. An extra feature Flickr provides is that each photo is available at multiple resolutions. In this project, smaller resolutions are used for the thumbnails and larger ones are used for the gallery.', 
+            },
+            {
                 type: 'photo',
                 link: '../cine_2.png',
             },
             {
                 type: 'photoDescriptionRight',
-                header: 'New UI design',
-                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                header: 'Project display',
+                paragraph: 'Each piece of work contains a title, video, and a number of still images from the project. Videos can be embedded from YouTube or Vimeo and maintain their aspect ratio. If desired, custom video thumbnails can be used.', 
                 photoLink: '../cinematography_full_page.png',
             },
             {
                 type: 'photoDescriptionLeft',
-                header: 'New UI design',
-                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                header: 'Work page',
+                paragraph: 'Projects are displayed as thumbnails in a grid. When hovered, visitors can see the project name.', 
                 photoLink: '../cinematography_work_desktop.png',
             },
             {
                 type: 'photoDescriptionRight',
-                header: 'New UI design',
-                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                header: 'Stills gallery',
+                paragraph: 'Images from the project pages can be enlarged and viewed through a gallery. When hovered, the image provides arrows to access the previous and next photos. Alternatively, the keyboard arrow keys can be used to navigate through the photos.', 
                 photoLink: '../cinematography_still_gallery.png',
             },
             {
                 type: 'photoDescriptionLeft',
-                header: 'New UI design',
-                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                header: 'Home page',
+                paragraph: 'Visitors to the site are immediately shown a cinematography highlight reel. A custom play button and thumbnail are displayed on top of an embedded Vimeo video.', 
                 photoLink: '../cinematography_homepage.png',
             },
             {
@@ -199,17 +198,12 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                paragraph: 'This app was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or a Google account--and instantly send messages to other users. \n \n One of the key features is the ability to send message requests, which can be accepted or declined. By hovering over a message, users can see when the message was send. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates whenever a user sends a message or a request, and also handles authentication.', 
             },
             {
                 type: 'features',
                 header: 'Project features',
                 points: ['fjeife', 'eifie', 'efifeh']
-            },
-            {
-                type: 'test',
-                header: 'Project features',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, dictumst diam quis maecenas elementum, euismod viverra dictum. Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
             },
             {
                 type: 'createdWith',
@@ -222,14 +216,14 @@ export const workPages = {
             },
             {
                 type: 'photoDescriptionLeft',
-                header: 'New UI design',
-                paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
+                header: 'Know when you\'ve been seen',
+                paragraph: 'Integration with the Realtime Database means that users can see when their messages have been read by the recipient.', 
                 photoLink: '../messaging_seen.png',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'It was towards the end of this project where I began learning about web accessibility.', 
+                paragraph: 'Design and functionality are two weaknesses of this app. Overall, there is a lack of depth and contrast in the interface. The colors could be more vibrant and inviting in order to enhance a user\'s experience. \n \n Fundamentally, this app doesn\'t have any features that are not available with other services. Ideally a project will add something new to the table. In future projects, more time should be spent on figuring out what features potential users may want in order to present a positive experience.', 
             },
         ],
     },
