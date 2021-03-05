@@ -65,7 +65,6 @@ export const LargeText = styled.h1`
         line-height: 5.4rem;
     }
     @media(max-width: 800px) {
-        /* font-size: 5rem; */
         line-height: 5.4rem;
     }
     @media(max-width: 500px) {
@@ -74,7 +73,7 @@ export const LargeText = styled.h1`
     }
     @media(max-width: 400px) {
         font-size: 3rem;
-        line-height: 4.4rem;
+        line-height: 3.5rem;
     }
     position: relative;
     animation: ${props=>props.pageLoaded ? null : fadeIn} .5s, ${props=>props.pageLoaded ? null : slideInFast} .5s ease-out;

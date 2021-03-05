@@ -24,6 +24,9 @@ export const Input = styled.input`
     @media(max-width: 800px) {
         width: 40vw;
     }
+    @media(max-width: 500px) {
+        font-size: 1.125rem;
+    }
 `
 
 export const Textarea = styled.textarea`
@@ -38,6 +41,9 @@ export const Textarea = styled.textarea`
     }
     outline: none;
     width: 100%;
+    @media(max-width: 500px) {
+        font-size: 1.125rem;
+    }
 `
 
 export const Submit = styled.input`
@@ -54,6 +60,9 @@ export const Submit = styled.input`
     transition: transform 100ms ease-in-out;
     &:hover{
         transform: scale(1.03)
+    }
+    @media(max-width: 500px) {
+        font-size: 1.25rem;
     }
 `
 

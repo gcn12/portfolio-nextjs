@@ -117,6 +117,9 @@ export const SectionContainer = styled.div`
         grid-template-columns: 1fr; 
         margin-bottom: 64px;
     }
+    @media(max-width: 500px) {
+        margin-bottom: 48px;
+    }
 `
 
 export const SectionHeader = styled.h3`
@@ -146,6 +149,9 @@ export const Photo = styled.img`
     @media(max-width: 800px) {
         margin-bottom: 64px;
     }
+    @media(max-width: 500px) {
+        margin-bottom: 48px;
+    }
 `
 
 export const PhotoDescriptionContainer = styled.div`
@@ -154,10 +160,13 @@ export const PhotoDescriptionContainer = styled.div`
     align-items: center;
     margin-bottom: 128px;
     justify-items: ${props=>props.justify};
-    @media(max-width: 700px) {
+    @media(max-width: 800px) {
         grid-template-columns: 1fr;
         justify-items: left;
         margin-bottom: 64px;
+    }
+    @media(max-width: 500px) {
+        margin-bottom: 48px;
     }
 `
 
@@ -195,7 +204,7 @@ export const PhotoDescriptionImage = styled.img`
     max-width: 30vw;
     height: auto;
     border: 1px solid #f5f5f5;
-    @media(max-width: 700px) {
+    @media(max-width: 800px) {
         max-width: 100%;
         margin-bottom: 32px;
     }
@@ -218,6 +227,9 @@ export const CreatedWithContainer = styled.div`
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
         margin-bottom: 64px;
+    }
+    @media(max-width: 500px) {
+        margin-bottom: 48px;
     }
 `
 

@@ -35,7 +35,7 @@ export const ProjectDescription = styled.h4`
         margin: 8px 0 16px 0;
     }
     @media(max-width: 500px) {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 `
 
