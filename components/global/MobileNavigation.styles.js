@@ -39,6 +39,7 @@ export const NavItem = styled.a`
     font-weight: 400;
     cursor: pointer;
     display: inline;
+    border-bottom: ${props=>props.underline} solid black;
 `
 
 export const Hamburger = styled.input`

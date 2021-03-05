@@ -17,6 +17,7 @@ const MyApp = ({ Component, pageProps }) => {
   const [isModalVisible, setIsModalVisible] = useState(false)
   const closeModal = () => {
     setIsModalOpen(false)
+    setTimeout(()=> setIsModalVisible(false), 500)
     enableBodyScroll(document)
   }
   return (

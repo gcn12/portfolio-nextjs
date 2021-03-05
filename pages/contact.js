@@ -8,8 +8,10 @@ import {
 
 const Contact = (props) => {
   useEffect(()=> {
+    console.log(props.isModalOpen)
     if(props.isModalOpen) {
       props.closeModal()
+      // setTimeout(()=> props.setIsModalVisible(false), 500)
     }
   }, [])
   return (
