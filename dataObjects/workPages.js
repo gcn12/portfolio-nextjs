@@ -46,12 +46,32 @@ export const workPages = {
                 type: 'photoDescriptionRight',
                 header: 'Full text search',
                 paragraph: 'With Algolia integration, users can search for places, posts, and other travelers. Search results are updated for every post uploading and for every user who signs up.', 
-                photoLink: '../travel_full_text_search.png',
+                photoLink: '../travel_full_search.png',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
                 paragraph: 'It was towards the end of this project where I began learning about web accessibility.', 
+            },
+            {
+                type: 'photo',
+                link: '../travel_collections.png',
+            },
+            {
+                type: 'photo',
+                link: '../travel_edit_profile.png',
+            },
+            {
+                type: 'photo',
+                link: '../travel_user_page.png',
+            },
+            {
+                type: 'photo',
+                link: '../travel_explore2.png',
+            },
+            {
+                type: 'photo',
+                link: '../travel_saved_posts.png',
             },
         ],
     },
@@ -201,10 +221,10 @@ export const workPages = {
                 link: '../messages_2.png',
             },
             {
-                type: 'photoDescription',
+                type: 'photoDescriptionLeft',
                 header: 'New UI design',
                 paragraph: 'Tellus tristique adipiscing blandit congue faucibus ut tortor. Elementum sit etiam vestibulum tincidunt a pulvinar pharetra, eleifend. Vel velit elementum diam interdum viverra duis ut. Blandit turpis tincidunt etiam ultrices scelerisque. Mauris, nunc nulla accumsan tellus purus tincidunt viverra magna.', 
-                photoLink: 'https://products.ls.graphics/claymockups/images/02_4.jpg',
+                photoLink: '../messaging_seen.png',
             },
             {
                 type: 'section',

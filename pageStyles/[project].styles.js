@@ -54,8 +54,6 @@ export const Description = styled.h2`
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } 1s, ${props=> props.hasPageBeenViewed ? null : slideUp} 1s ease-out;
     @media(max-width: 1000px) {
         margin-bottom: 128px;
-        /* font-size: 2.25rem;
-        line-height: 3.3rem; */
     }
     @media(max-width: 1000px) {
         font-size: 3.75rem;
@@ -102,6 +100,7 @@ export const LinkGap = styled.div`
 `
 
 export const MainImage = styled.img`
+    border: 1px solid #f5f5f5;
     width: auto;
     max-height: 80vh; 
     max-width: 90vw;
@@ -143,6 +142,7 @@ export const Photo = styled.img`
     margin-bottom: 128px;
     max-height: 90vh;
     max-width: 90vw;
+    border: 1px solid #f5f5f5;
     @media(max-width: 800px) {
         margin-bottom: 64px;
     }
@@ -162,7 +162,7 @@ export const PhotoDescriptionContainer = styled.div`
 `
 
 export const PhotoDescriptionHeader = styled.h3`
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 16px;
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};

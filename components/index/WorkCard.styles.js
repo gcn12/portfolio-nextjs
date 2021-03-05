@@ -8,7 +8,11 @@ export const Container = styled.div`
     border-radius: 30px;
     margin: 20px 0;
     padding: 50px;
+    @media(max-width: 800px) {
+        border-radius: 20px;
+    }
     @media(max-width: 500px) {
+        border-radius: 15px;
         padding: 30px;
     }
 `

@@ -18,15 +18,6 @@ export const workCard = [
         url: 'timer',
     },
     {
-        project: 'Messaging App',
-        photo: 'messaging-preview.png', 
-        description: 'Fast, reliable instant messaging',
-        colorOne: '#dbffed',
-        colorTwo: '#dbf7ff',
-        colorDirection: 'to bottom left',
-        url: 'messaging',
-    },
-    {
         project: 'Cinematography Portfolio',
         photo: 'film-preview.png', 
         description: 'Personal portfolio website',
@@ -34,5 +25,14 @@ export const workCard = [
         colorTwo: '#faebeb',
         colorDirection: 'to top right',
         url: 'cinematography',
+    },
+    {
+        project: 'Messaging App',
+        photo: 'messaging-preview.png', 
+        description: 'Fast, reliable instant messaging',
+        colorOne: '#dbffed',
+        colorTwo: '#dbf7ff',
+        colorDirection: 'to bottom left',
+        url: 'messaging',
     },
 ]
