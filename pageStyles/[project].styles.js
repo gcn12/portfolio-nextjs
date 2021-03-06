@@ -216,7 +216,7 @@ export const PhotoDescriptionImage = styled.img`
     border: 1px solid #f5f5f5;
     @media(max-width: 800px) {
         max-width: 100%;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
 `
 
