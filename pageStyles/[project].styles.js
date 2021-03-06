@@ -115,7 +115,7 @@ export const SectionContainer = styled.div`
     justify-content: start;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
-        margin-bottom: 64px;
+        /* margin-bottom: 64px; */
     }
     @media(max-width: 500px) {
         margin-bottom: 48px;
@@ -128,7 +128,8 @@ export const SectionHeader = styled.h3`
     /* padding: 0 10% 0 0; */
     justify-self: start;
     @media(max-width: 800px) {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
+        line-height: 2.4rem;
     }
 `
 
@@ -176,7 +177,7 @@ export const PhotoDescriptionHeader = styled.h3`
     margin-bottom: 240px;
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};
     @media(max-width: 800px) {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
     @media(max-width: 700px) {
         display: ${props=>props.size === 'large' ? 'none' : 'initial'};
@@ -187,6 +188,12 @@ export const Gap = styled.div`
     @media(max-width: 800px) {
         margin-bottom: 24px;
     }
+    @media(min-width: 800px) {
+        margin-bottom: 8px;
+    }
+`
+
+export const Gap2 = styled.div`
     @media(min-width: 800px) {
         margin-bottom: 8px;
     }

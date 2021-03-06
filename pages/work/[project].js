@@ -23,6 +23,7 @@ import {
     ContentContainer,
     LinkGap,
     Gap,
+    Gap2,
 } from '../../pageStyles/[project].styles'
 
 const Project = (props) => {
@@ -120,7 +121,7 @@ const Project = (props) => {
                                     </div>
                                 </div>
                                 <PhotoDescriptionImage src={content.photoLink} />
-                                    <PhotoDescriptionParagraph size='small'>{content.paragraph}</PhotoDescriptionParagraph>
+                                <PhotoDescriptionParagraph size='small'>{content.paragraph}</PhotoDescriptionParagraph>
                             </PhotoDescriptionContainer>
                             }
                             {content.type==='photoDescriptionRight' && 
@@ -129,7 +130,7 @@ const Project = (props) => {
                                 <PhotoDescriptionImage src={content.photoLink} />
                                 <div>
                                     <PhotoDescriptionHeader size='large'>{content.header}</PhotoDescriptionHeader>
-                                    <Gap />
+                                    <Gap2 />
                                     <div>
                                         <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
                                     </div>
