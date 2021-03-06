@@ -129,6 +129,7 @@ const Project = (props) => {
                                 <PhotoDescriptionImage src={content.photoLink} />
                                 <div>
                                     <PhotoDescriptionHeader size='large'>{content.header}</PhotoDescriptionHeader>
+                                    <Gap />
                                     <div>
                                         <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
                                     </div>

@@ -173,7 +173,7 @@ export const PhotoDescriptionContainer = styled.div`
 export const PhotoDescriptionHeader = styled.h3`
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: 240px;
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};
     @media(max-width: 800px) {
         margin-bottom: 24px;
@@ -181,11 +181,14 @@ export const PhotoDescriptionHeader = styled.h3`
     @media(max-width: 700px) {
         display: ${props=>props.size === 'large' ? 'none' : 'initial'};
     }
-`
+` 
 
 export const Gap = styled.div`
     @media(max-width: 800px) {
         margin-bottom: 24px;
+    }
+    @media(min-width: 800px) {
+        margin-bottom: 8px;
     }
 `
 
