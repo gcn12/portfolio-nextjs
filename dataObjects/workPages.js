@@ -9,7 +9,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'Travel Blogger is a full-featured app that allows users to post articles, connect with others, and plan their next vacation. Instead of creating their own website, a traveler can easily create and account and begin posting articles in seconds. Those looking for inspiration can browse posts, search by desination, and add articles to their collections. \n \n Behind the scenes, the app uses Firebase Cloud Functions and Security on the backend.', 
+                paragraph: 'Travel Blogger is a full-featured app that allows users to post articles, connect with others, and plan their next vacation. This app saves travelers the work of creating their own websites. Instead, they can create an account and begin posting articles in minutes. Those looking for inspiration can browse posts, search by desination, and add articles to their collections.', 
             },
             {
                 type: 'createdWith',
@@ -19,7 +19,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Challenges and solutions',
-                paragraph: 'Deciding on the right backend was among the largest challenge. The app needed to handle authentication, the ability to upload photos, and integrate easily with a full-text search. It was determined that Google\'s Firebase provided the right features at a reasonable price. \n \n In addition to storing data and handling authentication, Firebase provides security features and server-side functions. With an app of this size, containing potentially thousands of users, data has to be kept up to date and secure. By using Cloud Functions, the app can create transactions to make sure actions take place in the right order, and can prevent users from performing unwanted tasks, such as artificially increasing an article\'s view count. Cloud Functions were also implemented to perform data management tasks. For example, if a user changes their username, the Cloud Function can update the new name across all instances of it.', 
+                paragraph: 'Deciding on the right backend was a difficult task. The app needed to handle authentication, the ability to upload photos, and integrate easily with a full-text search. After researching, it was determined that Google\'s Firebase provided the right features at a reasonable price. \n \n In addition to storing data and handling authentication, Firebase provides security features and server-side functions. With an app of this size, containing potentially thousands of users, data has to be kept up to date and secure. With Cloud Functions, the app uses transactions to make sure tasks are performed in the right order. They can prevent unwanted behavior, such as artificially increasing an article\'s view count. Cloud Functions were also implemented to handle data changes. For example, a user\'s username may be stored across multiple documents. Cloud Functions can update every instance of that username in the back-end.', 
             },
             {
                 type: 'photo',
@@ -28,7 +28,7 @@ export const workPages = {
             {
                 type: 'photoDescriptionRight',
                 header: 'Page layout',
-                paragraph: 'Each post displays the title, location, along with user-written paragraphs and photos. Users can heart a post, save it to read later, or add to a collection. Finally, suggested articles are provided for further reading.', 
+                paragraph: 'Each post displays the title, location, along with user-written paragraphs and photos. To further personalize posts, users can choose from a variety of fonts. After reading an article, users can give it a heart, save it to read later, or add it to a collection. At the bottom of each post, suggested articles are provided for further reading.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_full_2.png?alt=media&token=69775d39-6c0b-447f-bdb1-5c8d22796d93',
             },
             {
@@ -40,13 +40,13 @@ export const workPages = {
             {
                 type: 'photoDescriptionRight',
                 header: 'Full-text search',
-                paragraph: 'With Algolia integration, users can search for places, posts, and other travelers. Search results are updated for every post uploaded and for every user who signs up.', 
+                paragraph: 'Integration with Algolia enables searching through places, posts, and other travelers. Search results are updated for every post uploaded and for every user who signs up.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel_full_search.png?alt=media&token=0cbd752b-bfe5-49f6-89b4-00c5cb0f834e',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'The largest flaw is the lack of accessibility. There are a number of areas where a keyboard-only user may not be able to use. Accessibility is something that I began learning about near the end of the project and was therefore unable to implement. Moving forward, create accessible apps will be a priority. \n \n Another improvement could be the overall architecture of the program, in both the front-end and back-end. The original idea for the app was much simpler, but then grew to include more features, many of which interconnected. In creating a larger project, the code became more complex and less organized. In future projects, a clearer idea of the end result will provide a structure and ensure a higher quality of code.', 
+                paragraph: 'The largest flaw is the lack of accessibility. There are a number of areas a keyboard-only user may not be able to use. Accessibility is something that I began learning about near the end of the project, so moving forward, creating accessible apps will be a priority. \n \n Another improvement could be the overall architecture of the program, in both the front-end and back-end. The original idea for the app was much simpler, but then grew to include more features, many of which interconnected. In creating a larger project, the code became more complex and less organized. In future projects, careful planning will provide a solid app structure and ensure a higher quality of code.', 
             },
             {
                 type: 'photo',
@@ -84,7 +84,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'CubeClock is an innovative, modern puzzle timer. The app was designed with input from the puzzle-solving community in order to fit their needs. \n \n The backend features integration with PostgresQL, which allows users to create accounts and to save their solve data. To protect the user, passwords are hashed and salted with bcrypt. \n \n A unique feature is the integration of Progressive Web App technology. This allows the app to run offline. A user can select the offline mode, which downloads their data. Subsequent data is saved to the device and then uploaded to the database when the user reconnects.', 
+                paragraph: 'CubeClock is an innovative, modern puzzle timer. The app was designed with input from the puzzle-solving community in order to fit their needs. \n \n The backend features integration with PostgresQL, which allows users to create accounts and to save their solve data. To protect the user\'s information, passwords are hashed and salted with bcrypt. \n \n A unique feature is the integration of Progressive Web App technology, allowing the app to run offline. A user can select the offline mode, which downloads their data. Newly-created data is saved to the device and then uploaded to the database when the user reconnects.', 
             },
             {
                 type: 'createdWith',
@@ -94,7 +94,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Challenges and solutions',
-                paragraph: 'I was in the process of learning web development during the creation of this app. The idea of incorporating a front-end, back-end, and a user interface was challenging, and at times overwhelming. \n \n To complete the project, I referenced a web development course, which provided a solid foundation on the topic. The process resulted in a lot of research and experimentation to fully understand how to build a complete app.', 
+                paragraph: 'I was in the process of learning web development during the creation of this app. The idea of creating a full-stack app was challenging, and at times overwhelming. \n \n To complete the project, I referenced a web development course, which provided a solid foundation on the topic. The course, along with a lot of research and experimentation, enabled the creation of the finished app.', 
             },
             {
                 type: 'photo',
@@ -103,31 +103,31 @@ export const workPages = {
             {
                 type: 'photoDescriptionLeft',
                 header: 'Multiple Puzzle Support',
-                paragraph: 'A highly requested feature was the ability to use any World Cube Association puzzle. Puzzles have unique mechanics, therefore requiring different scrambling algorithms. CubeClock makes note of which puzzle is being solved in order to present analyticsand to preserve specific solve data.', 
+                paragraph: 'A highly requested feature was the ability to use any World Cube Association puzzle. Puzzles have unique mechanics, therefore requiring different scrambling algorithms. Users can select a puzzle of their choice, which allows CubeClock to deliver analytics and to preserve specific solve data.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_puzzles_list.png?alt=media&token=900143b9-b7e5-4e46-a4c9-67aaceef86ad',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'User preferences',
-                paragraph: 'CubeClock allows users to customize the app to their tastes. Options include inspection times, the ability to display average times, and various ways of inputting their solve data. \n \n Many puzzle enthusiasts may already have their data saved elsewhere. CubeClock makes it effortless to import and save data, as well as export data to create a backup.', 
+                paragraph: 'CubeClock allows users to customize the app to their tastes. Options include inspection times, the ability to display averages, and various ways of inputting their solve times. \n \n Many puzzle enthusiasts already have their data saved elsewhere. CubeClock makes it effortless to import and export data.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_preferences.png?alt=media&token=8bad09aa-2a4f-4145-b4c9-04e544c7a890',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Save every session',
-                paragraph: 'Users can create unlimited sessions--a way to categorize multiple solves by puzzle and date. Sessions can be returned to, allowing a solver to pick up where they left off.', 
+                paragraph: 'Users can create unlimited sessions--a way of categorizing multiple solves by puzzle and date. Sessions can always be returned to, allowing a solver to pick up where they left off.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_sessions.png?alt=media&token=fa221d3d-282f-462a-aebb-414f0c599faa',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'Track progress',
-                paragraph: 'Collected and stored data is presented in the form of charts. Solvers can visualize trends in the times and solve frequency. To provide more specific results, charts can be sorted by puzzle type and date.', 
+                paragraph: 'Collected and stored data is presented in the form of charts. Solvers can visualize trends in their times and in their solve frequency. To provide more specific results, charts can be sorted by puzzle type and date.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_analytics.png?alt=media&token=57887378-9c46-4794-b231-e3949fb782a3',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'Looking back on this project, there are a number of improvements that can be made. This was my first real development project, and created when I only had a month or two of experience. The largest inefficiency is that data is stored in a single PostgresQL row. As a result, all of the user\'s data must be downloaded at login, and reuploaded after every solve. Another issue is that all session data, such as averages, are recalculated when a user visits the dashboard. This is problematic because a user may only need to see a select few sessions, rather than all of them. The calculations being run are also intenstive on the JS engine, since there are a number of nested loops, resulting in quadratic time complexities. \n \n The design of the app also leaves something to be desired, as the white and black color combination provides little depth to the interface. In the future, the layout and color schemes could be improved upon to deliver a satisfying user experience.', 
+                paragraph: 'Looking back on this project, there are a number of improvements that can be made. This was my first real development project, and was created when I only had a month or two of experience. The largest inefficiency is that data is stored in a single PostgresQL row. As a result, all of the user\'s data must be downloaded at login and reuploaded after every solve. This can slow down the start times of the app and also causes unnecessary data transfers. \n \n Another issue is that all session data, such as averages, are recalculated when a user visits the dashboard. This is problematic because a user may only need to see a select few sessions, rather than all of them. The calculations being run are also intenstive on the JS engine, since there are a number of nested loops. \n \n The design of the app also leaves something to be desired, as the white and black color combination provides little depth to the interface. In the future, the layout and color schemes could be improved upon to deliver a satisfying user experience.', 
             },
         ],
     },
@@ -141,7 +141,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'This project was a static website to showcase my cinematography work. It needed to play video from Vimeo and YouTube, and display each project individually. Stylistically, the site needed to be clean and minimalistic.', 
+                paragraph: 'This project was a static website to showcase my cinematography work. It needed to play videos from Vimeo and YouTube, and display each project individually. Stylistically, the site needed to be clean and minimalistic to keep the focus on the work itself.', 
             },
             {
                 type: 'createdWith',
@@ -151,7 +151,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Challenges and solutions',
-                paragraph: 'The key challenge was finding a way of easily uploading and accessing photos of different resolutions. Ideally, photos could be grouped and accessed based on project. \n \n Flickr\'s photo APIs was the answer. It is easy to upload multiple photos and can categorize them into albums. Those albums can be accessed by the front-end to display the photos. An extra feature Flickr provides is that each photo is available at multiple resolutions. In this project, smaller resolutions are used for the thumbnails and larger ones are used for the gallery.', 
+                paragraph: 'The key challenge was finding a way of easily uploading and accessing photos of different resolutions. Ideally, photos could be grouped and accessed based on project. \n \n Flickr\'s photo APIs were the answer. It is easy to upload multiple photos and categorize them into albums. Those albums can then be accessed by the front-end to display the photos. Flickr also resizes images into different resolutions, removing the need to do it manually. In this project, smaller resolutions are used for the thumbnails and larger ones are used for the gallery.', 
             },
             {
                 type: 'photo',
@@ -160,31 +160,31 @@ export const workPages = {
             {
                 type: 'photoDescriptionRight',
                 header: 'Project display',
-                paragraph: 'Each piece of work contains a title, video, and a number of still images from the project. Videos can be embedded from YouTube or Vimeo and maintain their aspect ratio. If desired, custom video thumbnails can be used.', 
+                paragraph: 'Each piece of work contains a title, video, and a number of still images from the project. Videos can be embedded from YouTube or Vimeo while maintaining their aspect ratio. Custom video thumbnails are used to enhance the presentation.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_full_page.png?alt=media&token=53be8fc5-c855-4845-b23a-7305e266c17c',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Work page',
-                paragraph: 'Projects are displayed as thumbnails in a grid. When hovered, visitors can see the project name.', 
+                paragraph: 'Projects are displayed as thumbnails in a grid. When hovered, visitors can see the project name. On mobile devices, project names are displayed by default.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_work_desktop.png?alt=media&token=cd30fa6b-5846-4e91-8a11-57f6884714ae',
             },
             {
                 type: 'photoDescriptionRight',
                 header: 'Stills gallery',
-                paragraph: 'Images from the project pages can be enlarged and viewed through a gallery. When hovered, the image provides arrows to access the previous and next photos. Alternatively, the keyboard arrow keys can be used to navigate through the photos.', 
+                paragraph: 'Images from the project pages can be enlarged and viewed through a gallery. When hovered, the image provides arrows to navigate through photos. If preferred, the keyboard arrow keys can also be used.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_still_gallery.png?alt=media&token=0c55d854-26bb-4b00-819e-2fd59ea29d80',
             },
             {
                 type: 'photoDescriptionLeft',
                 header: 'Home page',
-                paragraph: 'Visitors to the site are immediately shown a cinematography highlight reel. A custom play button and thumbnail are displayed on top of an embedded Vimeo video.', 
+                paragraph: 'Visitors to the site are immediately presented with a cinematography highlight reel. A custom play button and thumbnail are displayed on top of an embedded Vimeo video.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_homepage.png?alt=media&token=db0f819c-b4f9-45e6-966c-ea74b27d294b',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'It was towards the end of this project where I began learning about web accessibility.', 
+                paragraph: 'In the original version of this site, a lot of CSS styling was overcomplicated and sometimes unnecessary. Other styles that were not set correctly, such as grids resulted in mismatched margins. In a recent refactor, these improvements have been made. \n \n Redux is something that could likely be removed as all state management requirements can be handled by React itself. Although Redux was used to make the code cleaner, in this case its inclusion has made the project more complicated.', 
             },
         ],
     },
@@ -198,7 +198,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'This app was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or a Google account--and instantly send messages to other users. \n \n One of the key features is the ability to send message requests, which can be accepted or declined. By hovering over a message, users can see when the message was send. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates whenever a user sends a message or a request, and also handles authentication.', 
+                paragraph: 'This app was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or Google account--and instantly send messages to others. \n \n One of the key features is the ability to send message requests, which can then be accepted or declined. By clicking on a message bubble, users can see when the message was sent. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates for messages and requests, and also handles authentication.', 
             },
             {
                 type: 'createdWith',
@@ -218,7 +218,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'Design and functionality are two weaknesses of this app. Overall, there is a lack of depth and contrast in the interface. The colors could be more vibrant and inviting in order to enhance a user\'s experience. \n \n Fundamentally, this app doesn\'t have any features that are not available with other services. Ideally a project will add something new to the table. In future projects, more time should be spent on figuring out what features potential users may want in order to present a positive experience.', 
+                paragraph: 'Design and functionality are two weaknesses of this app. Overall, there is a lack of depth and contrast in the interface. The colors could be more vibrant and inviting in order to enhance a user\'s experience. \n \n Fundamentally, this app doesn\'t have any features that are not available with other services. Ideally a project should add something new to the table. In future projects, more time should be spent on determining innovative features in order to present a positive experience.', 
             },
         ],
     },
