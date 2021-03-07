@@ -175,6 +175,7 @@ export const PhotoDescriptionHeader = styled.h3`
     display: ${props=>props.size === 'small' ? 'none' : 'initial'};
     @media(max-width: 800px) {
         margin-bottom: 16px;
+        line-height: 2.4rem;
     }
     @media(max-width: 700px) {
         display: ${props=>props.size === 'large' ? 'none' : 'initial'};
