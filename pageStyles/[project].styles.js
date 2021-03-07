@@ -225,13 +225,14 @@ export const CreatedWithGrid = styled.div`
     flex-wrap: wrap;
     /* justify-content: space-between; */
     align-content: flex-start;
+    margin-top: 8px;
 `
 
 export const CreatedWithContainer = styled.div`
     display: grid;
     /* grid-template-columns: 33% 66%; */
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
+    /* grid-template-rows: auto; */
     align-items: start;
     grid-column-gap: 5%;
     margin-bottom: 128px;
