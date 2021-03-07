@@ -8,7 +8,6 @@ export const LatestProjects = styled.h2`
     font-weight: 300;
     margin: 32px 0 32px 0;
     @media(max-width: 1050px) {
-        /* font-size: 2.4rem; */
         margin: 0rem 0 32px 0;
     }
 `

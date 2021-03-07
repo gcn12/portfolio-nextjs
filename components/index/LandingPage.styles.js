@@ -2,7 +2,6 @@ import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
     margin: 48px 0 128px 0;
-    /* min-height: 100vh; */
     @media(max-width: 500px) {
         margin: 48px 0 96px 0;
     }
@@ -90,9 +89,6 @@ export const SmallText = styled.h2`
         font-size: 1.5rem;
         margin: 32px 0 32px 0;
     }
-    /* @media(max-width: 500px) {
-        font-size: 1.25rem;
-    } */
     position: relative;
     animation: ${props=>props.pageLoaded ? null : fadeIn} 1.4s, ${props=>props.pageLoaded ? null : slideInSlow} .8s ease-out;
 `

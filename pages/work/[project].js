@@ -98,13 +98,10 @@ const Project = (props) => {
                             {content.type==='createdWith' &&
                             <CreatedWithContainer>
                                 <SectionHeader>{content.header}</SectionHeader>
-                                {/* Diving deeper into Firebase opened up new possibilities while causing some frustrations Diving deeper into Firebase opened up new possibilities while causing some frustrations */}
                                 <CreatedWithGrid>
                                     {content.items.map((item, index) => {
                                         return(
-                                            // <span>
                                                 <CreatedWithItem key={index}>{item}</CreatedWithItem>
-                                            // </span>
                                         )
                                     })}
                                 </CreatedWithGrid>

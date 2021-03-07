@@ -51,7 +51,6 @@ export const Title = styled.a`
 `
 
 export const Span = styled.span`
-    /* border-bottom: 0px; */
     opacity: 1;
     transition: opacity 80ms;
     &:hover{

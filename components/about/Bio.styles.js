@@ -23,7 +23,6 @@ export const Illustration = styled.img`
 export const LargeText = styled.h1`
     font-size: 3rem;
     font-weight: 400;
-    /* font-weight: black; */
     font-family: 'Poppins', sans-serif;
     margin-bottom: 16px;
     @media(max-width: 900px) {

@@ -56,7 +56,6 @@ export const Submit = styled.input`
     color: white;
     border-radius: 10px;
     cursor: pointer;
-    /* display: inline-block; */
     transition: transform 100ms ease-in-out;
     &:hover{
         transform: scale(1.03)
@@ -112,9 +111,6 @@ export const EmailSent = styled.h4`
 `
 
 export const Grid = styled.div`
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; */
     display: flex;
 `
 

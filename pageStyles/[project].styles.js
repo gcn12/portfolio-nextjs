@@ -115,7 +115,6 @@ export const SectionContainer = styled.div`
     justify-content: start;
     @media(max-width: 800px) {
         grid-template-columns: 1fr; 
-        /* margin-bottom: 64px; */
     }
     @media(max-width: 500px) {
         margin-bottom: 48px;
@@ -125,7 +124,6 @@ export const SectionContainer = styled.div`
 export const SectionHeader = styled.h3`
     font-size: 2rem;
     font-weight: 400;
-    /* padding: 0 10% 0 0; */
     justify-self: start;
     @media(max-width: 800px) {
         margin-bottom: 16px;
@@ -139,7 +137,6 @@ export const SectionParagraph = styled.p`
     line-height: 2rem;
     align-self: right;
     white-space: pre-line;
-    /* padding: 0 0 0 10%; */
 `
 
 export const Photo = styled.img`
@@ -223,16 +220,13 @@ export const PhotoDescriptionImage = styled.img`
 export const CreatedWithGrid = styled.div`
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-content: flex-start;
     margin-top: 8px;
 `
 
 export const CreatedWithContainer = styled.div`
     display: grid;
-    /* grid-template-columns: 33% 66%; */
     grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: auto; */
     align-items: start;
     grid-column-gap: 5%;
     margin-bottom: 128px;
@@ -267,8 +261,5 @@ float: left;
 `
 
 export const Right = styled.div`
-/* float: left; */
-  /* padding: 10px;
-  width: 75%; */
   margin-left: 200px;
 `

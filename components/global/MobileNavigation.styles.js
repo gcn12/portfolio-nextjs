@@ -11,7 +11,6 @@ export const Container = styled.div`
     height: 100vh;
     opacity: ${props=>props.isModalOpen ? 1 : 1};
     transition: transform .3s ease-in-out, opacity 1s ease-in-out;
-    /* transform: ${props=>props.isModalOpen ? 'translate(0%, 0)' : 'translate(100%, 0)'}; */
     visibility: ${props=>props.isModalVisible ? 'visible' : 'hidden'};
     position: fixed;
     z-index: 10;
@@ -31,7 +30,6 @@ export const Nav = styled.div`
     position: fixed;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
 `
 
 export const NavItem = styled.a`
