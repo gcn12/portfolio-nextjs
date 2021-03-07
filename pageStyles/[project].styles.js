@@ -62,7 +62,7 @@ export const Description = styled.h2`
     @media(max-width: 500px) {
         margin-bottom: 64px;
         font-size: 2.25rem;
-        line-height: 3.3rem;
+        line-height: 3rem;
     }
 `
 

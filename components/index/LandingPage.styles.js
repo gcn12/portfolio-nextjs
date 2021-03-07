@@ -88,10 +88,11 @@ export const SmallText = styled.h2`
     color: #616161;
     @media(max-width: 900px) {
         font-size: 1.5rem;
+        margin: 32px 0 32px 0;
     }
-    @media(max-width: 500px) {
+    /* @media(max-width: 500px) {
         font-size: 1.25rem;
-    }
+    } */
     position: relative;
     animation: ${props=>props.pageLoaded ? null : fadeIn} 1.4s, ${props=>props.pageLoaded ? null : slideInSlow} .8s ease-out;
 `
