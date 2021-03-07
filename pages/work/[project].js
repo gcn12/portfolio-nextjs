@@ -102,7 +102,9 @@ const Project = (props) => {
                                 <CreatedWithGrid>
                                     {content.items.map((item, index) => {
                                         return(
-                                            <CreatedWithItem key={index}>{item}</CreatedWithItem>
+                                            // <span>
+                                                <CreatedWithItem key={index}>{item}</CreatedWithItem>
+                                            // </span>
                                         )
                                     })}
                                 </CreatedWithGrid>

@@ -231,6 +231,8 @@ export const CreatedWithContainer = styled.div`
     display: grid;
     /* grid-template-columns: 33% 66%; */
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    align-items: start;
     grid-column-gap: 5%;
     margin-bottom: 128px;
     justify-content: space-between;
@@ -247,7 +249,7 @@ export const CreatedWithItem = styled.h2`
     font-size: 1rem;
     font-weight: 300;
     border: 1px solid black;
-    /* display: inline-block; */
+    display: inline;
     border-radius: 10px;
     padding: 8px 16px;
     text-align: center;
