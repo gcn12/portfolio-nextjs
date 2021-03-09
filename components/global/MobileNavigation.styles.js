@@ -53,3 +53,11 @@ export const Hamburger = styled.input`
         visibility: hidden;
     }
 `
+
+export const SunMoon = styled.img`
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10%;
+    /* filter: var(--color-invert); */
+`
