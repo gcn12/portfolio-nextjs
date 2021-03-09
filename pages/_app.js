@@ -1,6 +1,8 @@
 import '../styles/globals.css'
 import Head from 'next/head'
+import { COLORS } from '../pageStyles/globalStyles'
 import { useState } from 'react'
+import { createGlobalStyle } from 'styled-components'
 import { enableBodyScroll } from 'body-scroll-lock'
 import Header from '../components/global/Header'
 import Footer from '../components/global/Footer'
@@ -15,22 +17,50 @@ const MyApp = ({ Component, pageProps }) => {
   const [viewedMessaging, setViewedMessaging] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isLightMode, setIsLightMode] = useState(true)
   const closeModal = () => {
     setIsModalOpen(false)
     setTimeout(()=> setIsModalVisible(false), 500)
     enableBodyScroll(document)
   }
+
+  const GlobalStyles = createGlobalStyle`
+  html {
+    --color-text: ${isLightMode ? COLORS.light.textMain : COLORS.dark.textMain};
+    --color-text-light: ${isLightMode ? COLORS.light.textLight : COLORS.dark.textLight};
+    --color-text-lightest: ${isLightMode ? COLORS.light.textLightest : COLORS.dark.textLightest};
+    --color-accent: ${isLightMode ? COLORS.light.textAccent : COLORS.dark.textAccent};
+    --color-accent-light: ${isLightMode ? COLORS.light.textAccentLight : COLORS.dark.textAccentLight};
+    --color-invert: ${isLightMode ? COLORS.light.invert : COLORS.dark.invert};
+    --color-background: ${isLightMode ? COLORS.light.background : COLORS.dark.background};
+    --color-background-light: ${isLightMode ? COLORS.light.backgroundLight : COLORS.dark.backgroundLight};
+  }
+  html, body {
+    background-color: ${isLightMode ? COLORS.light.background : COLORS.dark.background};
+  }
+  h1, h2, h3, h4, p {
+    color: ${isLightMode ? COLORS.light.textMain : COLORS.dark.textMain};
+  }
+`
   return (
     <div>
+      {/* <Head>
+        <script>
+        </script>
+      </Head> */}
       <Header 
+        isLightMode={isLightMode}
+        setIsLightMode={setIsLightMode}
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen} 
         isModalVisible={isModalVisible}
         setIsModalVisible={setIsModalVisible}
       />
       <div style={{minHeight: '80vh'}}>
+        <GlobalStyles />
         <Component  
           {...pageProps} 
+          isLightMode={isLightMode}
           isModalVisible={isModalVisible}
           setIsModalVisible={setIsModalVisible}
           closeModal={closeModal}

@@ -14,8 +14,10 @@ export const Title = styled.a`
     font-family: 'Poppins', sans-serif;
     font-size: 2.25rem;
     font-weight: 600;
+    color: var(--color-text);
     &:hover{
-        color: #959595;
+        /* color: #959595; */
+        color: var(--color-text-light);
     }
     transition: color 80ms ease-in-out;
 `
@@ -33,10 +35,12 @@ export const LI = styled.li`
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
-    border-bottom: ${props=>props.underline} solid #D48C07;
+    color: var(--color-text);
+    border-bottom: ${props=>props.underline} solid var(--color-accent);
     transition: color 80ms ease-in-out;
     &:hover{
-        color: #959595;
+        /* color: #959595; */
+        color: var(--color-text-light);
     }
 `
 
@@ -47,11 +51,30 @@ export const Gap = styled.div`
 export const Hamburger = styled.input`
     height: 30px;
     width: 30px;
-    position: relative;
-    top: 17px;
+    /* position: relative;
+    top: 17px; */
     cursor: pointer;
+    /* @media(min-width: 700px) {
+        display: none;
+        visibility: hidden;
+    } */
+    filter: var(--color-invert);
+`
+
+export const SunMoon = styled.img`
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10%;
+    filter: var(--color-invert);
+`
+
+export const MobileHeader = styled.div`
+    display: flex;
     @media(min-width: 700px) {
         display: none;
         visibility: hidden;
     }
+    position: relative;
+    top: 17px;
 `

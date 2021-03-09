@@ -46,6 +46,6 @@ export const SmallText = styled.h2`
 `
 
 export const CineLink = styled.a`
-    color: #D48C07;
-    border-bottom: 1px solid #D48C07;
+    color: var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
 `

@@ -32,7 +32,7 @@ export const Title = styled.h1`
     font-size: 2.25rem;
     font-weight: 300;
     margin: 192px 0 32px 0;
-    color: #D48C07;
+    color: var(--color-accent);
     position: relative;
     animation: ${props=> props.hasPageBeenViewed ? null : fadeIn } .4s, ${props=> props.hasPageBeenViewed ? null : slideUp} .4s ease-out;
     @media(max-width: 1000px) {
@@ -84,8 +84,8 @@ export const LinkContainer = styled.div`
 `
 
 export const WorkLink = styled.a`
-    color: #D48C07;
-    border-bottom: 3px solid #D48C07;
+    color: var(--color-accent);
+    border-bottom: 3px solid var(--color-accent);
     &:hover {
         color: #F2A414;
         border-bottom: 3px solid #F2A414;
@@ -100,7 +100,7 @@ export const LinkGap = styled.div`
 `
 
 export const MainImage = styled.img`
-    border: 1px solid #f5f5f5;
+    border: 1px solid var(--background-light);
     width: auto;
     max-height: 80vh; 
     max-width: 90vw;
@@ -143,7 +143,7 @@ export const Photo = styled.img`
     margin-bottom: 128px;
     max-height: 90vh;
     max-width: 90vw;
-    border: 1px solid #f5f5f5;
+    border: 1px solid var(--background-light);
     @media(max-width: 800px) {
         margin-bottom: 64px;
     }
@@ -211,7 +211,7 @@ export const PhotoDescriptionParagraph = styled.p`
 export const PhotoDescriptionImage = styled.img`
     max-width: 30vw;
     height: auto;
-    border: 1px solid #f5f5f5;
+    border: 1px solid var(--background-light);
     @media(max-width: 800px) {
         max-width: 100%;
         margin-bottom: 24px;
@@ -244,7 +244,7 @@ export const CreatedWithContainer = styled.div`
 export const CreatedWithItem = styled.h2`
     font-size: 1rem;
     font-weight: 300;
-    border: 1px solid black;
+    border: 1px solid var(--color-text);
     display: inline;
     border-radius: 10px;
     padding: 8px 16px;

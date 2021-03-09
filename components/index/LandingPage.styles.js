@@ -84,7 +84,8 @@ export const SmallText = styled.h2`
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     max-width: 60rem;
-    color: #616161;
+    /* color: #616161; */
+    color: var(--color-text-light);
     @media(max-width: 900px) {
         font-size: 1.5rem;
         margin: 32px 0 32px 0;
@@ -94,7 +95,7 @@ export const SmallText = styled.h2`
 `
 
 export const Colored = styled.span`
-    color: #D48C07;
+    color: var(--color-accent);
     white-space: nowrap;
 `
 
@@ -103,7 +104,7 @@ export const OrangeButton = styled.a`
     font-weight: 300;
     padding: 16px 24px;
     border: none;
-    background-color: #D48C07;
+    background-color: var(--color-accent);
     color: white;
     border-radius: 10px;
     cursor: pointer;

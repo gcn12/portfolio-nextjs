@@ -4,7 +4,7 @@ export const Container = styled.div`
     transition: opacity .7s ease-out;
     opacity: ${props=> props.opacity};
     margin: 0 10vw;
-    background-image: linear-gradient(${props=>props.workItem.colorDirection}, ${props=>props.workItem.colorTwo}, ${props=>props.workItem.colorOne});
+    background-image: linear-gradient(${props=>props.workItem.colorDirection}, ${props=> props.isLightMode ? props.workItem.light.colorOne : props.workItem.dark.colorOne}, ${props=> props.isLightMode ? props.workItem.light.colorTwo : props.workItem.dark.colorTwo});
     border-radius: 30px;
     margin: 20px 0;
     padding: 50px;
@@ -55,7 +55,7 @@ export const OrangeButton = styled.a`
     font-weight: 300;
     padding: 16px 24px;
     border: none;
-    background-color: #D48C07;
+    background-color: var(--color-accent);
     color: white;
     border-radius: 10px;
     cursor: pointer;

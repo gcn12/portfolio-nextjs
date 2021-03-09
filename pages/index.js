@@ -21,7 +21,7 @@ const Home = (props) => {
       </Head>
       <LandingPage viewedHome={props.viewedHome} setViewedHome={props.setViewedHome} />
       <LatestProjects>Latest projects</LatestProjects>
-      <CardsComponent viewedHome={props.viewedHome} />
+      <CardsComponent isLightMode={props.isLightMode} viewedHome={props.viewedHome} />
     </Container>
   )
 }

@@ -7,7 +7,7 @@ const CardsComponent = (props) => {
             {workCard.map((workItem, index)=> {
                 return(
                     <div className='lazy' key={index}>
-                        <WorkCard viewedHome={props.viewedHome} index={index} workItem={workItem} />
+                        <WorkCard isLightMode={props.isLightMode} viewedHome={props.viewedHome} index={index} workItem={workItem} />
                     </div>
                 )
             })}

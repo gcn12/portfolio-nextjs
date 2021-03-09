@@ -11,6 +11,7 @@ export const Container = styled.footer`
 
 export const SocialContainer = styled.div`
     display: flex;
+    filter: var(--color-invert);
 `
 
 export const Gap = styled.div`

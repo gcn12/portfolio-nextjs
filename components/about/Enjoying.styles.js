@@ -32,7 +32,8 @@ export const CategoryContainer = styled.div`
 
 export const Category = styled.h3`
     font-size: 1.125rem;
-    color: #616161;
+    /* color: #616161; */
+    color: var(--color-text-lightest);
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     display: inline-block;
@@ -48,12 +49,13 @@ export const Title = styled.a`
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     white-space: nowrap;
+    color: var(--color-text);
 `
 
 export const Span = styled.span`
     opacity: 1;
     transition: opacity 80ms;
     &:hover{
-        border-bottom: 2px solid #D48C07;
+        border-bottom: 2px solid var(--color-accent);
     }
 `

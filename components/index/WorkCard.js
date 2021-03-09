@@ -38,7 +38,8 @@ const WorkCard = (props) => {
     }, [])
 
     return(
-        <Container opacity={isIntersected ? 1 : 0} workItem={props.workItem}>
+        <Container isLightMode={props.isLightMode} opacity={isIntersected ? 1 : 0} workItem={props.workItem}>
+        {console.log(props.workItem.dark)}
             <Grid>
                 <div>
                     <ProjectName>{props.workItem.project}</ProjectName>

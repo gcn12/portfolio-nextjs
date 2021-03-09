@@ -1,7 +1,8 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
-    background-color: #F2A414;
+    /* background-color: #F2A414; */
+    background-color: var(--color-accent-light);
     max-width: 100%;
     margin: 0;
     top: 0;

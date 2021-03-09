@@ -6,17 +6,19 @@ export const Form = styled.form`
 `
 
 export const Label = styled.label`
-
+    color: var(--color-text);
 `
 
 export const Input = styled.input`
+    color: var(--color-text);
+    background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
     min-height: 3rem;
     font-size: 1.5rem;
     border: none;
     border-bottom: 1px solid #616161;
     &:focus {
-        border-bottom: 3px solid #D48C07;
+        border-bottom: 3px solid var(--color-accent);
     }
     outline: none;
     width: 30vw;
@@ -30,14 +32,16 @@ export const Input = styled.input`
 `
 
 export const Textarea = styled.textarea`
+    background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
     height: 6rem;
     font-size: 1.5rem;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #616161;
     &:focus {
-        border-bottom: 3px solid #D48C07;
+        border-bottom: 3px solid var(--color-accent);
     }
     outline: none;
     width: 100%;
@@ -52,7 +56,7 @@ export const Submit = styled.input`
     font-weight: 300;
     padding: 16px 24px;
     border: none;
-    background-color: #D48C07;
+    background-color: var(--color-accent);
     color: white;
     border-radius: 10px;
     cursor: pointer;
