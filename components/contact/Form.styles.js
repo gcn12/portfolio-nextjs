@@ -57,7 +57,7 @@ export const Submit = styled.input`
     padding: 16px 24px;
     border: none;
     background-color: var(--color-accent);
-    color: white;
+    color: var(--color-text-inverted);
     border-radius: 10px;
     cursor: pointer;
     transition: transform 100ms ease-in-out;

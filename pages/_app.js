@@ -27,10 +27,11 @@ const MyApp = ({ Component, pageProps }) => {
   const GlobalStyles = createGlobalStyle`
   html {
     --color-text: ${isLightMode ? COLORS.light.textMain : COLORS.dark.textMain};
+    --color-text-inverted: ${isLightMode ? COLORS.dark.textMain : COLORS.light.textMain};
     --color-text-light: ${isLightMode ? COLORS.light.textLight : COLORS.dark.textLight};
     --color-text-lightest: ${isLightMode ? COLORS.light.textLightest : COLORS.dark.textLightest};
     --color-accent: ${isLightMode ? COLORS.light.textAccent : COLORS.dark.textAccent};
-    --color-accent-light: ${isLightMode ? COLORS.light.textAccentLight : COLORS.dark.textAccentLight};
+    --color-accent-light: ${isLightMode ? COLORS.light.textAccentLight : COLORS.dark.textAccent};
     --color-invert: ${isLightMode ? COLORS.light.invert : COLORS.dark.invert};
     --color-background: ${isLightMode ? COLORS.light.background : COLORS.dark.background};
     --color-background-light: ${isLightMode ? COLORS.light.backgroundLight : COLORS.dark.backgroundLight};

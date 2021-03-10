@@ -61,7 +61,7 @@ export const Hamburger = styled.input`
     filter: var(--color-invert);
 `
 
-export const SunMoon = styled.img`
+export const SunMoon = styled.input`
     /* height: 30px;
     width: 30px; */
     position: relative;

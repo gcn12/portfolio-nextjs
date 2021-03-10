@@ -10,8 +10,8 @@ export const COLORS = {
         invert: 'invert(0)',
     },
     dark: {
-        textMain: '#e1e8f2',
-        textLight: '#566987',
+        textMain: '#e6edf7',
+        textLight: '#9fadc2',
         textLightest: '#95b5e8',
         textAccent: '#a2c4fc',
         textAccentLight: '#c7dcff',

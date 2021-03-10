@@ -8,8 +8,8 @@ export const workCard = [
             colorTwo: '#f5f7fc',
         },
         dark: {
-            colorOne: '#b1c9f0', 
-            colorTwo: '#6d81a1',
+            colorOne: '#69779b', 
+            colorTwo: '#acdbdf',
         },
         colorDirection: 'to bottom right',
         url: 'travel',
@@ -23,8 +23,8 @@ export const workCard = [
             colorTwo: '#edffe3',
         },
         dark: {
-            colorOne: '#b1c9f0', 
-            colorTwo: '#6d81a1',
+            colorOne: '#14ffec', 
+            colorTwo: '#0d7377',
         },
         colorDirection: 'to top left',
         url: 'timer',
@@ -38,8 +38,8 @@ export const workCard = [
             colorTwo: '#faebeb',
         },
         dark: {
-            colorOne: '#b1c9f0', 
-            colorTwo: '#6d81a1',
+            colorOne: '#3c434f', 
+            colorTwo: '#a3b6d9',
         },
         colorDirection: 'to top right',
         url: 'cinematography',
@@ -53,8 +53,8 @@ export const workCard = [
             colorTwo: '#dbf7ff',
         },
         dark: {
-            colorOne: '#b1c9f0', 
-            colorTwo: '#6d81a1',
+            colorOne: '#738fbf', 
+            colorTwo: '#89909c',
         },
         colorDirection: 'to bottom left',
         url: 'messaging',

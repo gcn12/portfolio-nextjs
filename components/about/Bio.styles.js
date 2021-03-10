@@ -18,6 +18,9 @@ export const Container = styled.div`
 export const Illustration = styled.img`
     height: auto;
     width: 90%;
+    @media(max-width: 900px) {
+        margin-bottom: 48px;
+    }
 `
 
 export const LargeText = styled.h1`
@@ -32,6 +35,9 @@ export const LargeText = styled.h1`
     @media(max-width: 950px) {
         margin-bottom: 32px;
         font-size: 1.5rem;
+    }
+    @media(max-width: 900px) {
+        margin-bottom: 16px;
     }
 `
 
