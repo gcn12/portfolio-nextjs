@@ -108,6 +108,7 @@ export const Colored = styled.span`
 export const ButtonDiv = styled.div`
     display: inline-block;
     transform: scale(${props=>props.pageLoaded ? 1 : 0});
+    -webkit-transform: scale(${props=>props.pageLoaded ? 1 : 0});
     transition: transform 500ms ease-in-out;
 `
 
