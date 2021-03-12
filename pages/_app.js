@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import Head from 'next/head'
 import { COLORS } from '../pageStyles/globalStyles'
 import { useState } from 'react'
 import { createGlobalStyle } from 'styled-components'
@@ -44,11 +43,7 @@ const MyApp = ({ Component, pageProps }) => {
   }
 `
   return (
-    <div>
-      {/* <Head>
-        <script>
-        </script>
-      </Head> */}
+    <div className='preload'>
       <Header 
         isLightMode={isLightMode}
         setIsLightMode={setIsLightMode}
@@ -57,6 +52,7 @@ const MyApp = ({ Component, pageProps }) => {
         isModalVisible={isModalVisible}
         setIsModalVisible={setIsModalVisible}
       />
+
       <div style={{minHeight: '80vh'}}>
         <GlobalStyles />
         <Component  

@@ -6,11 +6,13 @@ import {
     SmallText,
     Colored,
     OrangeButton,
+    ButtonDiv,
 } from './LandingPage.styles'
 
 const LandingPage = (props) => {
     useEffect(()=> {
-        setTimeout(()=>props.setViewedHome(true), 1000)
+        // setTimeout(()=>props.setViewedHome(true), 0)
+        props.setViewedHome(true)
     },[])
     return(
         <Container>
@@ -24,7 +26,9 @@ const LandingPage = (props) => {
                     </SmallText>
                 </div>
             </div>
-            <OrangeButton pageLoaded={props.viewedHome} rel='nonreferrer noopener' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/resume.pdf?alt=media&token=0378979f-3767-4b0c-8c63-992f186c7e33'>View Resume</OrangeButton>
+            <ButtonDiv pageLoaded={props.viewedHome}>
+                <OrangeButton pageLoaded={props.viewedHome} rel='nonreferrer noopener' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/resume.pdf?alt=media&token=0378979f-3767-4b0c-8c63-992f186c7e33'>View Resume</OrangeButton>
+            </ButtonDiv>
         </Container>
     )
 }
