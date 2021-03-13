@@ -11,7 +11,6 @@ import {
 
 const LandingPage = (props) => {
     useEffect(()=> {
-        // setTimeout(()=>props.setViewedHome(true), 0)
         props.setViewedHome(true)
     },[])
     return(

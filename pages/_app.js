@@ -26,7 +26,7 @@ const MyApp = ({ Component, pageProps }) => {
   const GlobalStyles = createGlobalStyle`
   html {
     --color-text: ${isLightMode ? COLORS.light.textMain : COLORS.dark.textMain};
-    --color-text-inverted: ${isLightMode ? COLORS.dark.textMain : COLORS.light.textMain};
+    --color-text-inverted: ${isLightMode ? '#FFFFFF' : COLORS.light.textMain};
     --color-text-light: ${isLightMode ? COLORS.light.textLight : COLORS.dark.textLight};
     --color-text-lightest: ${isLightMode ? COLORS.light.textLightest : COLORS.dark.textLightest};
     --color-accent: ${isLightMode ? COLORS.light.textAccent : COLORS.dark.textAccent};
