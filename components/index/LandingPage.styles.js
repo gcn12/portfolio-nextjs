@@ -75,10 +75,12 @@ export const LargeText = styled.h1`
         line-height: 3.5rem;
     }
     position: relative;
-    opacity: ${props=>props.pageLoaded ? 1 : 0};
-    transition: opacity 500ms;
-    animation: ${props=>props.pageLoaded ? slideInFast : null} .5s ease-out;
+    /* opacity: ${props=>props.pageLoaded ? 1 : 0};
+    transition: opacity 500ms; */
+    visibility: ${props=>props.pageLoaded ? 'visible' : 'hidden'};
+    /* animation: ${props=>props.pageLoaded ? slideInFast : null} .5s ease-out; */
     /* animation: ${props=>props.pageLoaded ? null : fadeIn} .5s, ${props=>props.pageLoaded ? null : slideInFast} .5s ease-out; */
+    animation: ${props=>props.pageLoaded ? fadeIn : null} .5s, ${props=>props.pageLoaded ? slideInFast : null} .5s ease-out;
 `
 
 export const SmallText = styled.h2`
@@ -94,10 +96,12 @@ export const SmallText = styled.h2`
         margin: 32px 0 32px 0;
     }
     position: relative;
-    opacity: ${props=>props.pageLoaded ? 1 : 0};
-    transition: opacity 800ms;
-    animation: ${props=>props.pageLoaded ? slideInSlow : null} .8s ease-out;
+    /* opacity: ${props=>props.pageLoaded ? 1 : 0};
+    transition: opacity 800ms; */
+    visibility: ${props=>props.pageLoaded ? 'visible': 'hidden'};
+    /* animation: ${props=>props.pageLoaded ? slideInSlow : null} .8s ease-out; */
     /* animation: ${props=>props.pageLoaded ? null : fadeIn} 1.4s, ${props=>props.pageLoaded ? null : slideInSlow} .8s ease-out; */
+    animation: ${props=>props.pageLoaded ? fadeIn : null} 1.4s, ${props=>props.pageLoaded ? slideInSlow : null} .8s ease-out;
 `
 
 export const Colored = styled.span`
@@ -105,12 +109,11 @@ export const Colored = styled.span`
     white-space: nowrap;
 `
 
-export const ButtonDiv = styled.div`
+/* export const ButtonDiv = styled.div`
     display: inline-block;
     transform: scale(${props=>props.pageLoaded ? 1 : 0});
-    -webkit-transform: scale(${props=>props.pageLoaded ? 1 : 0});
     transition: transform 500ms ease-in-out;
-`
+` */
 
 export const OrangeButton = styled.a`
     font-size: 1.5rem;
@@ -124,6 +127,8 @@ export const OrangeButton = styled.a`
     display: inline-block;
     transition: transform 100ms ease-in-out;
     /* animation: ${props=>props.pageLoaded ? null : scaleUp} 1s; */
+    animation: ${props=>props.pageLoaded ? scaleUp : null} 1s;
+    visibility: ${props=>props.pageLoaded ? 'visible' : 'hidden'};
     /* transform: scale(${props=>props.pageLoaded ? 1 : 0}); */
     @media(max-width: 1050px) {
         font-size: 1.25rem;
