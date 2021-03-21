@@ -19,7 +19,7 @@ const Home = (props) => {
         <title>Gareth Ng</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <LandingPage viewedHome={props.viewedHome} setViewedHome={props.setViewedHome} />
+      <LandingPage setHomeButtonScaled={props.setHomeButtonScaled} homeButtonScaled={props.homeButtonScaled} viewedHome={props.viewedHome} setViewedHome={props.setViewedHome} />
       <LatestProjects>Latest projects</LatestProjects>
       <CardsComponent isLightMode={props.isLightMode} viewedHome={props.viewedHome} />
     </Container>

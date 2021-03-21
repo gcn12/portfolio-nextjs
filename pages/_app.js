@@ -8,6 +8,7 @@ import Footer from '../components/global/Footer'
 
 const MyApp = ({ Component, pageProps }) => {
   const [viewedHome, setViewedHome] = useState(false)
+  const [homeButtonScaled, setHomeButtonScaled] = useState(false)
   const [viewedAbout, setViewedAbout] = useState(false)
   const [viewedContact, setViewedContact] = useState(false)
   const [viewedTravel, setViewedTravel] = useState(false)
@@ -57,6 +58,8 @@ const MyApp = ({ Component, pageProps }) => {
         <GlobalStyles />
         <Component  
           {...pageProps} 
+          setHomeButtonScaled={setHomeButtonScaled}
+          homeButtonScaled={homeButtonScaled}
           isLightMode={isLightMode}
           isModalVisible={isModalVisible}
           setIsModalVisible={setIsModalVisible}

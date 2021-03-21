@@ -23,7 +23,7 @@ const scaleUp = keyframes`
     0% {
         transform: scale(0);
     }
-    33% {
+    50% {
         transform: scale(0);
     }
     100% {
@@ -76,7 +76,10 @@ export const LargeText = styled.h1`
     }
     position: relative;
     visibility: ${props=>props.pageLoaded ? 'visible' : 'hidden'};
-    animation: ${props=>props.pageLoaded ? fadeIn : null} .5s, ${props=>props.pageLoaded ? slideInFast : null} .5s ease-out;
+    left: ${props=>props.pageLoaded ? '0px' : '-20px'};
+    opacity: ${props=>props.pageLoaded ? 1 : 0};
+    transition: left 300ms ease-in-out, opacity 300ms ease-in-out;
+    /* animation: ${props=>props.pageLoaded ? fadeIn : null} .5s, ${props=>props.pageLoaded ? slideInFast : null} .5s ease-out; */
 `
 
 export const SmallText = styled.h2`
@@ -92,7 +95,11 @@ export const SmallText = styled.h2`
     }
     position: relative;
     visibility: ${props=>props.pageLoaded ? 'visible': 'hidden'};
-    animation: ${props=>props.pageLoaded ? fadeIn : null} 1.4s, ${props=>props.pageLoaded ? slideInSlow : null} .8s ease-out;
+    left: ${props=>props.pageLoaded ? '0px' : '-20px'};
+    opacity: ${props=>props.pageLoaded ? 1 : 0};
+    transition: left 300ms ease-in-out, opacity 300ms ease-in-out;
+    transition-delay: 400ms;
+    /* animation: ${props=>props.pageLoaded ? fadeIn : null} 1.4s, ${props=>props.pageLoaded ? slideInSlow : null} .8s ease-out; */
 `
 
 export const Colored = styled.span`
@@ -100,8 +107,18 @@ export const Colored = styled.span`
     white-space: nowrap;
 `
 
+export const ButtonContainer = styled.div`
+    transform: scale(${props=>props.pageLoaded ? 1 : 0});
+    transition: transform 1000ms ease-in-out;
+    display: inline;
+    &:hover{
+        transform: scale(2);
+    }
+`
+
 export const OrangeButton = styled.a`
     font-size: 1.5rem;
+    
     font-weight: 300;
     padding: 16px 24px;
     border: none;
@@ -110,9 +127,11 @@ export const OrangeButton = styled.a`
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
+    visibility: ${props=>props.pageLoaded ? 'visible' : 'null'};
+    opacity: ${props=>props.pageLoaded ? 1 : 0};
     transition: transform 100ms ease-in-out;
-    animation: ${props=>props.pageLoaded ? scaleUp : null} 1s;
-    visibility: ${props=>props.pageLoaded ? 'visible' : 'hidden'};
+    animation: ${props=>props.pageLoadedScale ? scaleUp : null} 1.3s;
+    
     @media(max-width: 1050px) {
         font-size: 1.25rem;
     }
@@ -120,6 +139,6 @@ export const OrangeButton = styled.a`
         font-size: 1.125rem;
     }
     &:hover{
-        transform: scale(1.03)
+        transform: scale(1.03);
     }
 `
