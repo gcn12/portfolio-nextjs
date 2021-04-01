@@ -46,6 +46,7 @@ export const SmallText = styled.h2`
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     max-width: 600px;
+    margin-bottom: 20px;
     @media(max-width: 900px) {
         font-size: 1.25rem;
     }
@@ -54,4 +55,10 @@ export const SmallText = styled.h2`
 export const CineLink = styled.a`
     color: var(--color-accent);
     border-bottom: 1px solid var(--color-accent);
+`
+
+export const ArrowQuote = styled.h3`
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
 `

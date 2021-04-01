@@ -19,9 +19,7 @@ const Contact = (props) => {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <ContactContainer>
-        <div>
-          <GetInTouch>Let's get in touch</GetInTouch>
-        </div>
+        <GetInTouch>Let's get in touch</GetInTouch>
         <Form />
       </ContactContainer>
     </div>

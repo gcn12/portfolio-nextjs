@@ -4,6 +4,7 @@ import {
     SmallText,
     LargeText,
     CineLink,
+    ArrowQuote,
 } from './Bio.styles'
 
 const Bio = (props) => {
@@ -13,9 +14,14 @@ const Bio = (props) => {
             <div>
                 <LargeText>Thanks for stopping by!</LargeText>
                 <SmallText>
-                Gareth Ng is a front-end developer who specializes in React.js.
-                He previously worked in the film industry as a camera assistant and <CineLink rel='nonreferrer noopener' target='_blank' href='https://gcn12.github.io/film-portfolio/'>cinematographer</CineLink>.
+                I'm Gareth, a front-end developer who specializes in React.js. After briefly working in the film industry as a 
+                camera assistant and <CineLink rel='nonreferrer noopener' target='_blank' href='https://gcn12.github.io/film-portfolio/'>cinematographer</CineLink>, 
+                I decided to make a career change into the programming world. 
                 </SmallText>
+                <ArrowQuote>{'Film industry -> tech industry'}</ArrowQuote>
+                {/* <SmallText>
+                    I'm devoted to continued learning, 
+                </SmallText> */}
             </div>
         </Container>
     )

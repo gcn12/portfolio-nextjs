@@ -76,9 +76,10 @@ export const LargeText = styled.h1`
     }
     position: relative;
     visibility: ${props=>props.pageLoaded ? 'visible' : 'hidden'};
-    left: ${props=>props.pageLoaded ? '0px' : '-20px'};
+    left: ${props=>props.pageLoaded ? '0px' : '-50px'};
     opacity: ${props=>props.pageLoaded ? 1 : 0};
-    transition: left 300ms ease-in-out, opacity 300ms ease-in-out;
+    transition: left 500ms ease-in-out, opacity 500ms ease-in-out;
+    transition-delay: 150ms;
     /* animation: ${props=>props.pageLoaded ? fadeIn : null} .5s, ${props=>props.pageLoaded ? slideInFast : null} .5s ease-out; */
 `
 
@@ -95,11 +96,10 @@ export const SmallText = styled.h2`
     }
     position: relative;
     visibility: ${props=>props.pageLoaded ? 'visible': 'hidden'};
-    left: ${props=>props.pageLoaded ? '0px' : '-20px'};
+    left: ${props=>props.pageLoaded ? '0px' : '-50px'};
     opacity: ${props=>props.pageLoaded ? 1 : 0};
-    transition: left 300ms ease-in-out, opacity 300ms ease-in-out;
+    transition: left 500ms ease-in-out, opacity 500ms ease-in-out;
     transition-delay: 400ms;
-    /* animation: ${props=>props.pageLoaded ? fadeIn : null} 1.4s, ${props=>props.pageLoaded ? slideInSlow : null} .8s ease-out; */
 `
 
 export const Colored = styled.span`
@@ -130,7 +130,7 @@ export const OrangeButton = styled.a`
     visibility: ${props=>props.pageLoaded ? 'visible' : 'null'};
     opacity: ${props=>props.pageLoaded ? 1 : 0};
     transition: transform 100ms ease-in-out;
-    animation: ${props=>props.pageLoadedScale ? scaleUp : null} 1.3s;
+    animation: ${props=>props.pageLoadedScale ? scaleUp : null} 1.5s;
     
     @media(max-width: 1050px) {
         font-size: 1.25rem;
