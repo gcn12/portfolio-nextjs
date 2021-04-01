@@ -7,7 +7,7 @@ export const Container = styled.header`
 export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
 `
 
 export const Title = styled.a`
@@ -24,6 +24,7 @@ export const Title = styled.a`
 
 export const UL = styled.ul`
     display: flex;
+    /* align-items: center; */
     list-style-type: none;
     @media(max-width: 700px) {
         display: none;
