@@ -1,6 +1,6 @@
 export const workPages = {
     travel: {
-        title: 'Travel Blogger',
+        title: 'Voyager',
         description: 'Redefining the travel writing experience',
         mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel2.png?alt=media&token=a6edda5b-c440-4fe7-b9f4-511b2e1ca3a4',
         githubLink: 'https://github.com/gcn12/photo-app',
@@ -9,7 +9,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'Travel Blogger is a full-featured app that allows users to post articles, connect with others, and plan their next vacation. This app saves travelers the work of creating their own websites. Instead, they can create an account and begin posting articles in minutes. Those looking for inspiration can browse posts, search by desination, and add articles to their collections.', 
+                paragraph: 'Voyager is a full-featured app that allows users to post articles, connect with others, and plan their next vacation. This app saves travelers the work of creating their own websites. Instead, they can create an account and begin posting articles in minutes. Those looking for inspiration can browse posts, search by desination, and add articles to their collections.', 
             },
             {
                 type: 'createdWith',
@@ -189,7 +189,7 @@ export const workPages = {
         ],
     },
     messaging: {
-        title: 'Messaging App',
+        title: 'Pigeon',
         description: 'Fast, reliable instant messaging',
         mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging.png?alt=media&token=18bde9d6-c431-45ec-a5a1-4ae6cf7fb222',
         githubLink: 'https://github.com/gcn12/messaging-app',
@@ -198,7 +198,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'This app was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or Google account--and instantly send messages to others. \n \n One of the key features is the ability to send message requests, which can then be accepted or declined. By clicking on a message bubble, users can see when the message was sent. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates for messages and requests, and also handles authentication.', 
+                paragraph: 'Pigeon was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or Google account--and instantly send messages to others. \n \n One of the key features is the ability to send message requests, which can then be accepted or declined. By clicking on a message bubble, users can see when the message was sent. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates for messages and requests, and also handles authentication.', 
             },
             {
                 type: 'createdWith',

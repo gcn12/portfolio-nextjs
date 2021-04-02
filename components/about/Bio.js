@@ -5,6 +5,8 @@ import {
     LargeText,
     CineLink,
     ArrowQuote,
+    ArrowQuoteContainer,
+    ArrowIcon,
 } from './Bio.styles'
 
 const Bio = (props) => {
@@ -18,7 +20,12 @@ const Bio = (props) => {
                 camera assistant and <CineLink rel='nonreferrer noopener' target='_blank' href='https://gcn12.github.io/film-portfolio/'>cinematographer</CineLink>, 
                 I decided to make a career change into the programming world. 
                 </SmallText>
-                <ArrowQuote>{'Film industry -> tech industry'}</ArrowQuote>
+                <ArrowQuoteContainer>
+                    <ArrowQuote>Film industry</ArrowQuote>
+                        <ArrowIcon src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMS44ODMgMTJsLTcuNTI3IDYuMjM1LjY0NC43NjUgOS03LjUyMS05LTcuNDc5LS42NDUuNzY0IDcuNTI5IDYuMjM2aC0yMS44ODR2MWgyMS44ODN6Ii8+PC9zdmc+" />
+                    <ArrowQuote>tech industry</ArrowQuote>
+                </ArrowQuoteContainer>
+
                 {/* <SmallText>
                     I'm devoted to continued learning, 
                 </SmallText> */}

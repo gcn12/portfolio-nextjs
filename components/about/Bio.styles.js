@@ -62,3 +62,16 @@ export const ArrowQuote = styled.h3`
     font-weight: 500;
     margin-bottom: 20px;
 `
+
+export const ArrowIcon = styled.img`
+    align-self: flex-start;
+    margin: 0 6px;
+    position: relative;
+    top: 5px;
+    filter: var(--color-invert);
+`
+
+export const ArrowQuoteContainer = styled.div`
+    display: flex;
+    align-items: center;
+`

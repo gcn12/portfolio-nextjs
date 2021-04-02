@@ -1,6 +1,6 @@
 export const workCard = [
     {
-        project: 'Travel Blogger',
+        project: 'Voyager',
         photo: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel-flat.png?alt=media&token=b441bbf2-dcb4-46bc-8694-84ed72ef61b5', 
         description: 'Redefining the travel writing experience', 
         light: {
@@ -45,7 +45,7 @@ export const workCard = [
         url: 'cinematography',
     },
     {
-        project: 'Messaging App',
+        project: 'Pigeon',
         photo: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging-preview.png?alt=media&token=45316f1f-f9e7-4df2-b80c-22dea71f7a86', 
         description: 'Fast, reliable instant messaging',
         light: {
