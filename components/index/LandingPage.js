@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { RESUME } from '../resume'
 // import './test.css'
 import {
     Container, 
@@ -27,7 +28,7 @@ const LandingPage = (props) => {
                 </div>
             </div>
             {/* <ButtonContainer pageLoaded={props.viewedHome}> */}
-                <OrangeButton pageLoaded={props.viewedHome} pageLoadedScale={props.homeButtonScaled ? null : props.viewedHome} rel='nonreferrer noopener' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/Resume-front-end.pdf?alt=media&token=1ca4c599-7a38-4947-830a-b76e6b2921e0'>View Resume</OrangeButton>
+                <OrangeButton pageLoaded={props.viewedHome} pageLoadedScale={props.homeButtonScaled ? null : props.viewedHome} rel='nonreferrer noopener' target='_blank' href={RESUME}>View Resume</OrangeButton>
             {/* </ButtonContainer> */}
         </Container>
     )

@@ -1,0 +1,1 @@
+export const RESUME = 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/Resume-front-end.pdf?alt=media&token=cc7854a2-2355-4856-bd99-6f414c2c6759'

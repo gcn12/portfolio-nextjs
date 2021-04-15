@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { RESUME } from '../resume'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import MobileNavigation from './MobileNavigation'
 import { useRouter } from 'next/router'
@@ -49,7 +50,7 @@ const Header = (props) => {
                     </LI>
                     <Gap />
                     <LI underline='0px'>
-                        <a target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/Resume-front-end.pdf?alt=media&token=1ca4c599-7a38-4947-830a-b76e6b2921e0' rel='nonreferrer noopener'>resume</a>
+                        <a target='_blank' href={RESUME} rel='nonreferrer noopener'>resume</a>
                     </LI>
                     <Gap />
                     <LI role='button' label='dark mode toggle' underline='0px'>
