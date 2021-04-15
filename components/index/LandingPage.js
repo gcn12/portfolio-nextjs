@@ -27,7 +27,7 @@ const LandingPage = (props) => {
                 </div>
             </div>
             {/* <ButtonContainer pageLoaded={props.viewedHome}> */}
-                <OrangeButton pageLoaded={props.viewedHome} pageLoadedScale={props.homeButtonScaled ? null : props.viewedHome} rel='nonreferrer noopener' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/resume.pdf?alt=media&token=0378979f-3767-4b0c-8c63-992f186c7e33'>View Resume</OrangeButton>
+                <OrangeButton pageLoaded={props.viewedHome} pageLoadedScale={props.homeButtonScaled ? null : props.viewedHome} rel='nonreferrer noopener' target='_blank' href='https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/Resume-front-end.pdf?alt=media&token=1ca4c599-7a38-4947-830a-b76e6b2921e0'>View Resume</OrangeButton>
             {/* </ButtonContainer> */}
         </Container>
     )
