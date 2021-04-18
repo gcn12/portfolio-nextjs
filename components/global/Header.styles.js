@@ -77,5 +77,5 @@ export const MobileHeader = styled.div`
         visibility: hidden;
     }
     position: relative;
-    top: 17px;
+    top: 5px;
 `
