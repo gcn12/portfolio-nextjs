@@ -16,7 +16,6 @@ export const Title = styled.a`
     font-weight: 600;
     color: var(--color-text);
     &:hover{
-        /* color: #959595; */
         color: var(--color-text-light);
     }
     transition: color 80ms ease-in-out;
@@ -24,7 +23,6 @@ export const Title = styled.a`
 
 export const UL = styled.ul`
     display: flex;
-    /* align-items: center; */
     list-style-type: none;
     @media(max-width: 700px) {
         display: none;
@@ -40,7 +38,6 @@ export const LI = styled.li`
     border-bottom: ${props=>props.underline} solid var(--color-accent);
     transition: color 80ms ease-in-out;
     &:hover{
-        /* color: #959595; */
         color: var(--color-text-light);
     }
 `
@@ -52,19 +49,11 @@ export const Gap = styled.div`
 export const Hamburger = styled.input`
     height: 30px;
     width: 30px;
-    /* position: relative;
-    top: 17px; */
     cursor: pointer;
-    /* @media(min-width: 700px) {
-        display: none;
-        visibility: hidden;
-    } */
     filter: var(--color-invert);
 `
 
 export const SunMoon = styled.input`
-    /* height: 30px;
-    width: 30px; */
     position: relative;
     top: 10%;
     filter: var(--color-invert);

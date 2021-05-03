@@ -8,6 +8,7 @@ export const Container = styled.div`
     border-radius: 30px;
     margin: 20px 0;
     padding: 50px;
+    border: 1px solid rgba(100, 100, 100, .1);
     @media(max-width: 800px) {
         border-radius: 20px;
     }

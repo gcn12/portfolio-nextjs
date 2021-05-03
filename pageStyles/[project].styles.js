@@ -101,6 +101,8 @@ export const LinkGap = styled.div`
 
 export const MainImage = styled.img`
     border: 1px solid var(--background-light);
+    border: 1px solid rgba(0, 0, 0, .04);
+    box-shadow: 0px 5px 8px rgba(20, 20, 20, .07);
     width: auto;
     max-height: 80vh; 
     max-width: 90vw;
@@ -140,10 +142,12 @@ export const SectionParagraph = styled.p`
 `
 
 export const Photo = styled.img`
-    margin-bottom: 128px;
+    margin-bottom: 72px;
     max-height: 90vh;
     max-width: 90vw;
     border: 1px solid var(--background-light);
+    border: 1px solid rgba(0, 0, 0, .04);
+    box-shadow: 0px 5px 8px rgba(20, 20, 20, .07);
     @media(max-width: 800px) {
         margin-bottom: 64px;
     }
@@ -212,6 +216,20 @@ export const PhotoDescriptionImage = styled.img`
     max-width: 30vw;
     height: auto;
     border: 1px solid var(--background-light);
+    border: 1px solid rgba(0, 0, 0, .04);
+    box-shadow: 0px 5px 8px rgba(20, 20, 20, .07);
+    @media(max-width: 800px) {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+`
+
+export const VideoDescriptionImage = styled.video`
+    max-width: 30vw;
+    height: auto;
+    border: 1px solid var(--background-light);
+    border: 1px solid rgba(0, 0, 0, .04);
+    box-shadow: 0px 5px 8px rgba(20, 20, 20, .07);
     @media(max-width: 800px) {
         max-width: 100%;
         margin-bottom: 24px;

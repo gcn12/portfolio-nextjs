@@ -53,7 +53,6 @@ const MyApp = ({ Component, pageProps }) => {
         isModalVisible={isModalVisible}
         setIsModalVisible={setIsModalVisible}
       />
-
       <div style={{minHeight: '80vh'}}>
         <GlobalStyles />
         <Component  

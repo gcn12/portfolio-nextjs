@@ -1,27 +1,3 @@
-// import Document, { Html, Head, Main, NextScript } from 'next/document'
-
-// class MyDocument extends Document {
-//   static async getInitialProps(ctx) {
-//     const initialProps = await Document.getInitialProps(ctx)
-//     return { ...initialProps }
-//   }
-
-//   render() {
-//     return (
-//       <Html>
-//         <Head />
-//         <body className='preload'>
-//           <Main />
-//           <NextScript />
-//         </body>
-//       </Html>
-//     )
-//   }
-// }
-
-// export default MyDocument
-
-
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 

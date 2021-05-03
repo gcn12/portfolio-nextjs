@@ -15,6 +15,7 @@ import {
     PhotoDescriptionImage,
     PhotoDescriptionParagraph,
     PhotoDescriptionHeader,
+    VideoDescriptionImage,
     LinkContainer,
     Photo,
     CreatedWithItem,
@@ -44,7 +45,7 @@ const Project = (props) => {
             else if(project === 'travel') {
                 func = props.setViewedTravel
             }
-            else if(project === 'messaging') {
+            else if(project === 'redraft') {
                 func = props.setViewedMessaging
             }
             setTimeout(()=> func(true), 1000)
@@ -57,7 +58,7 @@ const Project = (props) => {
         }else if(project === 'cinematography' && props.viewedCinematography) {
             setHasPageBeenViewed(true)
         }
-        else if(project === 'messaging' && props.viewedMessaging) {
+        else if(project === 'redraft' && props.viewedMessaging) {
             setHasPageBeenViewed(true)
         }
         else if(project === 'travel' && props.viewedTravel) {
@@ -101,7 +102,7 @@ const Project = (props) => {
                                 <CreatedWithGrid>
                                     {content.items.map((item, index) => {
                                         return(
-                                                <CreatedWithItem key={index}>{item}</CreatedWithItem>
+                                            <CreatedWithItem key={index}>{item}</CreatedWithItem>
                                         )
                                     })}
                                 </CreatedWithGrid>
@@ -127,6 +128,36 @@ const Project = (props) => {
                             <PhotoDescriptionContainer justify='start'>
                                 <PhotoDescriptionHeader size='small'>{content.header}</PhotoDescriptionHeader>
                                 <PhotoDescriptionImage src={content.photoLink} />
+                                <div>
+                                    <PhotoDescriptionHeader size='large'>{content.header}</PhotoDescriptionHeader>
+                                    <Gap2 />
+                                    <div>
+                                        <PhotoDescriptionParagraph>{content.paragraph}</PhotoDescriptionParagraph>
+                                    </div>
+                                </div>
+                            </PhotoDescriptionContainer>
+                            }
+                            {content.type==='videoDescriptionLeft' && 
+                            <PhotoDescriptionContainer justify='end'>
+                                <div>
+                                    <PhotoDescriptionHeader>{content.header}</PhotoDescriptionHeader>
+                                    <Gap />
+                                    <div>
+                                        <PhotoDescriptionParagraph size='large'>{content.paragraph}</PhotoDescriptionParagraph>
+                                    </div>
+                                </div>
+                                <VideoDescriptionImage autoPlay muted playsInline loop>
+                                    <source src={content.link} type='video/mp4' />
+                                </VideoDescriptionImage>
+                                <PhotoDescriptionParagraph size='small'>{content.paragraph}</PhotoDescriptionParagraph>
+                            </PhotoDescriptionContainer>
+                            }
+                            {content.type==='videoDescriptionRight' && 
+                            <PhotoDescriptionContainer justify='start'>
+                                <PhotoDescriptionHeader size='small'>{content.header}</PhotoDescriptionHeader>
+                                <VideoDescriptionImage autoPlay muted playsInline loop>
+                                    <source src={content.link} type='video/mp4' />
+                                </VideoDescriptionImage>
                                 <div>
                                     <PhotoDescriptionHeader size='large'>{content.header}</PhotoDescriptionHeader>
                                     <Gap2 />

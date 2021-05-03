@@ -4,7 +4,7 @@ export const workPages = {
         description: 'Redefining the travel writing experience',
         mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel2.png?alt=media&token=a6edda5b-c440-4fe7-b9f4-511b2e1ca3a4',
         githubLink: 'https://github.com/gcn12/photo-app',
-        projectLink: 'https://gcn12.github.io/photo-app',
+        projectLink: 'https://gcn12.github.io/photo-app/posts/popular/all',
         content: [
             {
                 type: 'section',
@@ -188,38 +188,125 @@ export const workPages = {
             },
         ],
     },
-    messaging: {
-        title: 'Pigeon',
-        description: 'Fast, reliable instant messaging',
-        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging.png?alt=media&token=18bde9d6-c431-45ec-a5a1-4ae6cf7fb222',
-        githubLink: 'https://github.com/gcn12/messaging-app',
-        projectLink: 'https://gcn12.github.io/messaging-app/',
+    redraft: {
+        title: 'Redraft',
+        description: 'Essential screenwriting tools',
+        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScene-4.png?alt=media&token=2902bc09-04d0-4bdd-8a77-d0944dbd0ae3',
+        githubLink: 'https://github.com/gcn12/writing-app',
+        projectLink: 'https://gcn12.github.io/writing-app/',
         content: [
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'Pigeon was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or Google account--and instantly send messages to others. \n \n One of the key features is the ability to send message requests, which can then be accepted or declined. By clicking on a message bubble, users can see when the message was sent. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates for messages and requests, and also handles authentication.', 
+                paragraph: 'Redraft is an app that gives screenwriters the tools they need to deliver their best work. The What You See is What You Get (WYSIWYG) text editor provides a representation of the final result. When the writing is complete, screenplays can be exported as a PDF with industry standard formatting.  \n \n In addition to screenplays, writers can create notes to store research, and outlines to plan their stories. \n \n Redraft was created to be accessible to as many users as possible, allowing for both keyboard and screen-reader use.', 
             },
             {
                 type: 'createdWith',
                 header: 'Created with these technologies',
-                items: ['React.js', 'Google Realtime Database', 'Redux', 'Moment.js', 'Styled-Components'],
+                items: ['React.js', 'Firebase', 'Slate.js', 'React dndKit', 'Redux', 'Reach UI', 'Styled-Components'],
+            },
+            {
+                type: 'section',
+                header: 'Challenges and solutions',
+                paragraph: 'Creating a text editor on the web is a notoriously difficult problem. For the notes section, the built-in HTML textarea was sufficient, but something more extensive was required for the screenplay editor. A library called Slate.js was the perfect solution. The unopinionated nature of Slate.js meant that the editor could display screenplays in the correct format and adjust as the user writes. \n \n In order for users to create their own color themes, there needed to be a single source of truth to store the color values. This is where CSS variables played an important role. Colors are stored in a CSS variable and passed down to components that need them. \n \n Another major challenge was creating the drag-and-drop feature in the outline documents. Creating such a feature from scratch is incredibly difficult and prone to bugs, while many libraries suffer from one flaw or another. Some can only use a single column or row, while are not accessible. The React dnd kit provided a powerful solution and made it possible to reorganize the outline\'s virtual notecards.', 
             },
             {
                 type: 'photo',
-                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging2.png?alt=media&token=2144fbe1-30ec-4c2a-86c5-c47323e0beb3',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FiPhoneXs-003.png?alt=media&token=d53e0d00-0d11-405e-b03e-70502986fd03',
+            },
+            {
+                type: 'videoDescriptionLeft',
+                header: 'Auto-everything',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FRedraftDemo.mov?alt=media&token=3a1b1931-b11a-4d96-a564-c910ab783cc8',
+                paragraph: 'Redraft formats while writers type, allowing them to solely focus on their work. Additionally, the editor provides autocomplete for locations and character names.',
+            },
+            {
+                type: 'videoDescriptionRight',
+                header: 'Drag and drop outlining',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FOutlineDemoVideo.mov?alt=media&token=adb70c4a-72aa-4862-921d-70eddecd629a',
+                paragraph: 'Virtual note cards allow writers to effortlessly plan their stories. Each card can be moved by dragging and dropping, or with a keyboard.',
             },
             {
                 type: 'photoDescriptionLeft',
-                header: 'Know when you\'ve been seen',
-                paragraph: 'Integration with the Realtime Database means that users can see when their messages have been read by the recipient.', 
-                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging_seen.png?alt=media&token=374427f3-a17b-4730-bccf-0290f060c2fd',
+                header: 'Multiple file types',
+                paragraph: 'Redraft uses a folder structure to keep files organized. Within folders, users can create a screenplay, notes, or an outline.', 
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-01%20at%2010.02.50%20AM.png?alt=media&token=f9926740-3f3e-4efe-a4d6-a0716c45d9f4',
+            },
+            {
+                type: 'photoDescriptionRight',
+                header: 'Daily writing goals',
+                paragraph: 'Writers can stay on schedule by defining a writing goal. Progress is displayed on the dashboard for quick access and resets at midnight every day.', 
+                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-01%20at%209.10.38%20AM.png?alt=media&token=a636dfc0-2025-46dd-8c46-1abc27a05900',
+            },
+            {
+                type: 'videoDescriptionLeft',
+                header: 'Custom color themes',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2Fcolors_demo.mov?alt=media&token=3eea1627-ac02-4d45-9c71-97cef2be9f17',
+                paragraph: 'Redraft provides options for writers to customize their experience. Users can select pre-build color themes or create their own. Custom themes can be named and saved for future use.',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'Design and functionality are two weaknesses of this app. Overall, there is a lack of depth and contrast in the interface. The colors could be more vibrant and inviting in order to enhance a user\'s experience. \n \n Fundamentally, this app doesn\'t have any features that are not available with other services. Ideally a project should add something new to the table. In future projects, more time should be spent on determining innovative features in order to present a positive experience.', 
+                paragraph: 'One way to immediately improve the app would be to integrate testing and TypeScript. A combination of the two will lower the chances of bugs and improve reliability. \n \n Although I have past screenwriting and film industry experience, nothing replaces real-world use. So this app would have benefitted from user testing and user feedback from working screenwriters. \n \n A goal for this project had been to write cleaner, and more maintainable functions. By meeting this goal, features were much easier to implement and made for easier debugging. This is a standard that will be maintained in all future projects', 
+            },
+            {
+                type: 'photo',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-02%20at%202.59.57%20PM.png?alt=media&token=198eb34a-9b04-47a8-b306-210e1b04ba7d',
+            },
+            {
+                type: 'photo',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-02%20at%203.06.07%20PM.png?alt=media&token=b2b075ca-0903-407b-9fda-e1ba70ff3224'
+            },
+            {
+                type: 'photo',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-02%20at%203.08.08%20PM.png?alt=media&token=103d369e-cfe3-4f1c-98b1-aa69435b290a'
+            },
+            {
+                type: 'photo',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-02%20at%203.12.11%20PM.png?alt=media&token=5c677108-3ff3-4e0a-8434-3b576c8cc01d'
+            },
+            {
+                type: 'photo',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-02%20at%203.16.03%20PM.png?alt=media&token=699eaa54-3d95-4c35-a9be-9e3e844d3868'
+            },
+            {
+                type: 'photo',
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-02%20at%209.50.21%20PM.png?alt=media&token=fb0e34dc-aea8-43ce-b2f7-f95919d2250a'
             },
         ],
     },
+    // messaging: {
+    //     title: 'Pigeon',
+    //     description: 'Fast, reliable instant messaging',
+    //     mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging.png?alt=media&token=18bde9d6-c431-45ec-a5a1-4ae6cf7fb222',
+    //     githubLink: 'https://github.com/gcn12/messaging-app',
+    //     projectLink: 'https://gcn12.github.io/messaging-app/',
+    //     content: [
+    //         {
+    //             type: 'section',
+    //             header: 'Project overview',
+    //             paragraph: 'Pigeon was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or Google account--and instantly send messages to others. \n \n One of the key features is the ability to send message requests, which can then be accepted or declined. By clicking on a message bubble, users can see when the message was sent. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates for messages and requests, and also handles authentication.', 
+    //         },
+    //         {
+    //             type: 'createdWith',
+    //             header: 'Created with these technologies',
+    //             items: ['React.js', 'Google Realtime Database', 'Redux', 'Moment.js', 'Styled-Components'],
+    //         },
+    //         {
+    //             type: 'photo',
+    //             link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging2.png?alt=media&token=2144fbe1-30ec-4c2a-86c5-c47323e0beb3',
+    //         },
+    //         {
+    //             type: 'photoDescriptionLeft',
+    //             header: 'Know when you\'ve been seen',
+    //             paragraph: 'Integration with the Realtime Database means that users can see when their messages have been read by the recipient.', 
+    //             photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging_seen.png?alt=media&token=374427f3-a17b-4730-bccf-0290f060c2fd',
+    //         },
+    //         {
+    //             type: 'section',
+    //             header: 'Future improvements and key takeaways',
+    //             paragraph: 'Design and functionality are two weaknesses of this app. Overall, there is a lack of depth and contrast in the interface. The colors could be more vibrant and inviting in order to enhance a user\'s experience. \n \n Fundamentally, this app doesn\'t have any features that are not available with other services. Ideally a project should add something new to the table. In future projects, more time should be spent on determining innovative features in order to present a positive experience.', 
+    //         },
+    //     ],
+    // },
 }
