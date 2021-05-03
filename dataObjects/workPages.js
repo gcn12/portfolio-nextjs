@@ -203,7 +203,7 @@ export const workPages = {
             {
                 type: 'createdWith',
                 header: 'Created with these technologies',
-                items: ['React.js', 'Firebase', 'Slate.js', 'React dndKit', 'Redux', 'Reach UI', 'Styled-Components'],
+                items: ['React.js', 'Firebase', 'Slate.js', 'React dnd kit', 'Redux', 'Reach UI', 'Styled-Components'],
             },
             {
                 type: 'section',
