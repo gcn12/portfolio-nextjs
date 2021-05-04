@@ -9,7 +9,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'Voyager is a full-featured app that allows users to post articles, connect with others, and plan their next vacation. This app saves travelers the work of creating their own websites. Instead, they can create an account and begin posting articles in minutes. Those looking for inspiration can browse posts, search by desination, and add articles to their collections.', 
+                paragraph: 'Voyager is a full-featured app that allows users to post articles, connect with others, and plan their next vacation. This app saves travelers the work of creating their own websites. Instead, they can create an account and begin posting articles in minutes. Those looking for inspiration can browse posts, search by destination, and add articles to their collections.', 
             },
             {
                 type: 'createdWith',
@@ -46,7 +46,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'The largest flaw is the lack of accessibility. There are a number of areas a keyboard-only user may not be able to use. Accessibility is something that I began learning about near the end of the project, so moving forward, creating accessible apps will be a priority. \n \n Another improvement could be the overall architecture of the program, in both the front-end and back-end. The original idea for the app was much simpler, but then grew to include more features, many of which interconnected. In creating a larger project, the code became more complex and less organized. In future projects, careful planning will provide a solid app structure and ensure a higher quality of code.', 
+                paragraph: 'The largest flaw is the lack of accessibility. There are several areas a keyboard-only user may not be able to use. Accessibility is something that I began learning about near the end of the project, so moving forward, creating accessible apps will be a priority. \n \n Another improvement could be the overall architecture of the program, in both the front-end and back-end. The original idea for the app was much simpler, but then grew to include more features, many of which interconnected. In creating a larger project, the code became more complex and less organized. In future projects, careful planning will provide a solid app structure and ensure a higher quality of code.', 
             },
             {
                 type: 'photo',
@@ -84,12 +84,12 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'CubeClock is an innovative, modern puzzle timer. The app was designed with input from the puzzle-solving community in order to fit their needs. \n \n The backend features integration with PostgresQL, which allows users to create accounts and to save their solve data. To protect the user\'s information, passwords are hashed and salted with bcrypt. \n \n A unique feature is the integration of Progressive Web App technology, allowing the app to run offline. A user can select the offline mode, which downloads their data. Newly-created data is saved to the device and then uploaded to the database when the user reconnects.', 
+                paragraph: 'CubeClock is an innovative, modern puzzle timer. The app was designed with input from the puzzle-solving community in order to fit their needs. \n \n The backend features integration with PostgreSQL, which allows users to create accounts and to save their solve data. To protect the user\'s information, passwords are hashed and salted with bcrypt. \n \n A unique feature is the integration of Progressive Web App technology, allowing the app to run offline. A user can select the offline mode, which downloads their data. Newly-created data is saved to the device and then uploaded to the database when the user reconnects.', 
             },
             {
                 type: 'createdWith',
                 header: 'Created with these technologies',
-                items: ['React.js', 'Postgres', 'Express', 'Chart.js', 'Grid.js', 'Moment.js', 'bcrypt'],
+                items: ['React.js', 'PostgreSQL', 'Express', 'Chart.js', 'Grid.js', 'Moment.js', 'bcrypt'],
             },
             {
                 type: 'section',
@@ -121,13 +121,13 @@ export const workPages = {
             {
                 type: 'photoDescriptionRight',
                 header: 'Track progress',
-                paragraph: 'Collected and stored data is presented in the form of charts. Solvers can visualize trends in their times and in their solve frequency. To provide more specific results, charts can be sorted by puzzle type and date.', 
+                paragraph: 'Collected and stored data is presented in the form of charts. Solvers can visualize trends in their times and their solve frequency. To provide more specific results, charts can be sorted by puzzle type and date.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer_analytics.png?alt=media&token=57887378-9c46-4794-b231-e3949fb782a3',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'Looking back on this project, there are a number of improvements that can be made. This was my first real development project, and was created when I only had a month or two of experience. The largest inefficiency is that data is stored in a single PostgresQL row. As a result, all of the user\'s data must be downloaded at login and reuploaded after every solve. This can slow down the start times of the app and also causes unnecessary data transfers. \n \n Another issue is that all session data, such as averages, are recalculated when a user visits the dashboard. This is problematic because a user may only need to see a select few sessions, rather than all of them. The calculations being run are also intenstive on the JS engine, since there are a number of nested loops. \n \n The design of the app also leaves something to be desired, as the white and black color combination provides little depth to the interface. In the future, the layout and color schemes could be improved upon to deliver a satisfying user experience.', 
+                paragraph: 'Looking back on this project, there are few improvements that can be made. This was my first real development project and was created when I only had a month or two of experience. The largest inefficiency is that data is stored in a single PostgreSQL row. As a result, all of the user\'s data must be downloaded at login and reuploaded after every solve. This can slow down the start times of the app and also causes unnecessary data transfers. \n \n Another issue is that all session data, such as averages, are recalculated when a user visits the dashboard. This is problematic because a user may only need to see a select few sessions, rather than all of them. The calculations being run are also intensive on the JS engine since there are a number of nested loops. \n \n The design of the app also leaves something to be desired, as the white and black color combination provides little depth to the interface. In the future, the layout and color schemes could be improved upon to deliver a satisfying user experience.', 
             },
         ],
     },
@@ -160,7 +160,7 @@ export const workPages = {
             {
                 type: 'photoDescriptionRight',
                 header: 'Project display',
-                paragraph: 'Each piece of work contains a title, video, and a number of still images from the project. Videos can be embedded from YouTube or Vimeo while maintaining their aspect ratio. Custom video thumbnails are used to enhance the presentation.', 
+                paragraph: 'Each piece of work contains a title, video, and an assortment of still images from the project. Videos can be embedded from YouTube or Vimeo while maintaining their aspect ratio. Custom video thumbnails are used to enhance the presentation.', 
                 photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/cine%2Fcinematography_full_page.png?alt=media&token=53be8fc5-c855-4845-b23a-7305e266c17c',
             },
             {
@@ -198,7 +198,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Project overview',
-                paragraph: 'Redraft is an app that gives screenwriters the tools they need to deliver their best work. The What You See is What You Get (WYSIWYG) text editor provides a representation of the final result. When the writing is complete, screenplays can be exported as a PDF with industry standard formatting.  \n \n In addition to screenplays, writers can create notes to store research, and outlines to plan their stories. \n \n Redraft was created to be accessible to as many users as possible, allowing for both keyboard and screen-reader use.', 
+                paragraph: 'Redraft is an app that gives screenwriters the tools they need to deliver their best work. The What You See Is What You Get (WYSIWYG) text editor provides a representation of the final result. When the writing is complete, screenplays can be exported as a PDF with industry-standard formatting.  \n \n In addition to screenplays, writers can create notes to store research and outlines to plan their stories. \n \n Redraft was created to be accessible to as many users as possible, allowing for both keyboard and screen-reader use.', 
             },
             {
                 type: 'createdWith',
@@ -208,7 +208,7 @@ export const workPages = {
             {
                 type: 'section',
                 header: 'Challenges and solutions',
-                paragraph: 'Creating a text editor on the web is a notoriously difficult problem. For the notes section, the built-in HTML textarea was sufficient, but something more extensive was required for the screenplay editor. A library called Slate.js was the perfect solution. The unopinionated nature of Slate.js meant that the editor could display screenplays in the correct format and adjust as the user writes. \n \n In order for users to create their own color themes, there needed to be a single source of truth to store the color values. This is where CSS variables played an important role. Colors are stored in a CSS variable and passed down to components that need them. \n \n Another major challenge was creating the drag-and-drop feature in the outline documents. Creating such a feature from scratch is incredibly difficult and prone to bugs, while many libraries suffer from one flaw or another. Some can only use a single column or row, while are not accessible. The React dnd kit provided a powerful solution and made it possible to reorganize the outline\'s virtual notecards.', 
+                paragraph: 'Creating a text editor on the web is a notoriously difficult problem. For the notes section, the built-in HTML textarea was sufficient, but something more extensive was required for the screenplay editor. A library called Slate.js was the perfect solution. The unopinionated nature of Slate.js meant that the editor could display screenplays in the correct format and adjust as the user writes. \n \n In order for users to create color themes, there needed to be a single source of truth to store the color values. This is where CSS variables played an important role. Colors are stored in a CSS variable and passed down to components that need them. \n \n Another major challenge was creating the drag-and-drop feature in the outline documents. Creating such a feature from scratch is incredibly difficult and prone to bugs, while many libraries suffer from one flaw or another. Some can only use a single column or row, while are not accessible. The React dnd kit provided a powerful solution and made it possible to reorganize the outline\'s virtual notecards.', 
             },
             {
                 type: 'photo',
@@ -224,7 +224,7 @@ export const workPages = {
                 type: 'videoDescriptionRight',
                 header: 'Drag and drop outlining',
                 link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FOutlineDemoVideo.mov?alt=media&token=adb70c4a-72aa-4862-921d-70eddecd629a',
-                paragraph: 'Virtual note cards allow writers to effortlessly plan their stories. Each card can be moved by dragging and dropping, or with a keyboard.',
+                paragraph: 'Virtual notecards allow writers to effortlessly plan their stories. Each card can be moved by dragging and dropping, or with a keyboard.',
             },
             {
                 type: 'photoDescriptionLeft',
@@ -242,12 +242,12 @@ export const workPages = {
                 type: 'videoDescriptionLeft',
                 header: 'Custom color themes',
                 link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2Fcolors_demo.mov?alt=media&token=3eea1627-ac02-4d45-9c71-97cef2be9f17',
-                paragraph: 'Redraft provides options for writers to customize their experience. Users can select pre-build color themes or create their own. Custom themes can be named and saved for future use.',
+                paragraph: 'Redraft provides options for writers to customize their experience. Users can select pre-built color themes or create their own. Custom themes can be named and saved for future use.',
             },
             {
                 type: 'section',
                 header: 'Future improvements and key takeaways',
-                paragraph: 'One way to immediately improve the app would be to integrate testing and TypeScript. A combination of the two will lower the chances of bugs and improve reliability. \n \n Although I have past screenwriting and film industry experience, nothing replaces real-world use. So this app would have benefitted from user testing and user feedback from working screenwriters. \n \n A goal for this project had been to write cleaner, and more maintainable functions. By meeting this goal, features were much easier to implement and made for easier debugging. This is a standard that will be maintained in all future projects', 
+                paragraph: 'One way to immediately improve the app would be to integrate testing and TypeScript. A combination of the two will lower the chances of bugs and improve reliability. \n \n Although I have past screenwriting and film industry experience, nothing replaces real-world use. So this app would have benefitted from user testing and user feedback from working screenwriters. \n \n A goal for this project had been to write cleaner and more maintainable functions. By meeting this goal, features were much easier to implement and made for easier debugging. This is a standard that will be maintained in all future projects.', 
             },
             {
                 type: 'photo',
