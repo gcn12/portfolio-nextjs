@@ -191,7 +191,7 @@ export const workPages = {
     redraft: {
         title: 'Redraft',
         description: 'Essential screenwriting tools',
-        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2Fscene1.png?alt=media&token=170464ed-dba9-4c77-9b9d-4af29337bd0a',
+        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2Fscene1-2.png?alt=media&token=969fe487-d388-4442-8add-9b8459459f1e',
         githubLink: 'https://github.com/gcn12/writing-app',
         projectLink: 'https://gcn12.github.io/writing-app/',
         content: [
