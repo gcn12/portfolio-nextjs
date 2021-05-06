@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     transition: opacity .7s ease-out;
     opacity: ${props=> props.opacity};
-    margin: 0 10vw;
+    /* margin: 0 10vw; */
     background-image: linear-gradient(${props=>props.workItem.colorDirection}, ${props=> props.isLightMode ? props.workItem.light.colorOne : props.workItem.dark.colorOne}, ${props=> props.isLightMode ? props.workItem.light.colorTwo : props.workItem.dark.colorTwo});
     border-radius: 30px;
     margin: 20px 0;
@@ -11,6 +11,7 @@ export const Container = styled.div`
     border: 1px solid rgba(100, 100, 100, .1);
     @media(max-width: 800px) {
         border-radius: 20px;
+        margin: 20px -5vw;
     }
     @media(max-width: 500px) {
         border-radius: 15px;
