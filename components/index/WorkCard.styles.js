@@ -11,6 +11,8 @@ export const Container = styled.div`
     border: 1px solid rgba(100, 100, 100, .1);
     @media(max-width: 800px) {
         border-radius: 20px;
+    }
+    @media(max-width: 600px) {
         margin: 20px -5vw;
     }
     @media(max-width: 500px) {
