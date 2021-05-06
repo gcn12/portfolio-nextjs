@@ -37,12 +37,12 @@ const Project = (props) => {
     useEffect(()=> {
         let func 
         if((!props.viewedTimer || !props.viewedCinematography || !props.viewedTravel || !props.viewedMessaging) && project) {
-            if(project === 'timer') {
+            if(project === 'cubeclock') {
                 func = props.setViewedTimer
             }else if(project === 'cinematography') {
                 func = props.setViewedCinematography
             }
-            else if(project === 'travel') {
+            else if(project === 'voyager') {
                 func = props.setViewedTravel
             }
             else if(project === 'redraft') {
@@ -53,7 +53,7 @@ const Project = (props) => {
     }, [router.query])
 
     useEffect(()=> {
-        if(project === 'timer' && props.viewedTimer) {
+        if(project === 'cubeclock' && props.viewedTimer) {
             setHasPageBeenViewed(true)
         }else if(project === 'cinematography' && props.viewedCinematography) {
             setHasPageBeenViewed(true)
@@ -61,7 +61,7 @@ const Project = (props) => {
         else if(project === 'redraft' && props.viewedMessaging) {
             setHasPageBeenViewed(true)
         }
-        else if(project === 'travel' && props.viewedTravel) {
+        else if(project === 'voyager' && props.viewedTravel) {
             setHasPageBeenViewed(true)
         } else{
         }

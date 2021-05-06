@@ -1,5 +1,5 @@
 export const workPages = {
-    travel: {
+    voyager: {
         title: 'Voyager',
         description: 'Redefining the travel writing experience',
         mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/travel%2Ftravel2.png?alt=media&token=a6edda5b-c440-4fe7-b9f4-511b2e1ca3a4',
@@ -74,7 +74,7 @@ export const workPages = {
             },
         ],
     },
-    timer: {
+    cubeclock: {
         title: 'Rubik\'s Cube Puzzle Timer',
         description: 'Innovative timer for the puzzle-solving community',
         mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/timer%2Ftimer%202.png?alt=media&token=9c1fc278-d076-41fd-9330-41ab89d5ebaf',

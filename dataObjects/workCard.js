@@ -27,7 +27,7 @@ export const workCard = [
             colorTwo: '#acdbdf',
         },
         colorDirection: 'to bottom right',
-        url: 'travel',
+        url: 'voyager',
     },
     {
         project: 'Cinematography Portfolio',
@@ -57,7 +57,7 @@ export const workCard = [
             colorTwo: '#0d7377',
         },
         colorDirection: 'to top left',
-        url: 'timer',
+        url: 'cubeclock',
     },
     // {
     //     project: 'Pigeon',
