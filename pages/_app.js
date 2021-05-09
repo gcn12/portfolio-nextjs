@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 import { enableBodyScroll } from 'body-scroll-lock'
 import Header from '../components/global/Header'
 import Footer from '../components/global/Footer'
+import Head from 'next/head'
 
 const MyApp = ({ Component, pageProps }) => {
   const [viewedHome, setViewedHome] = useState(false)
@@ -45,6 +46,18 @@ const MyApp = ({ Component, pageProps }) => {
 `
   return (
     <div className='preload'>
+      <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G92PPZPTMV"></script>
+      <script dangerouslySetInnerHTML= {
+        { __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+        gtag('config', 'G-G92PPZPTMV');
+        `}
+      }>
+      </script>
+      </Head>
       <Header 
         isLightMode={isLightMode}
         setIsLightMode={setIsLightMode}
