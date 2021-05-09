@@ -31,15 +31,10 @@ export const LargeText = styled.h1`
     font-family: 'Poppins', sans-serif;
     margin-bottom: 16px;
     @media(max-width: 900px) {
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         font-size: 2.25rem;
-    }
-    @media(max-width: 950px) {
         margin-bottom: 32px;
         font-size: 1.5rem;
-    }
-    @media(max-width: 900px) {
-        margin-bottom: 16px;
     }
 `
 
