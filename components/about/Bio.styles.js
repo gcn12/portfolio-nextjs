@@ -8,7 +8,7 @@ export const Container = styled.div`
     @media(max-width: 1100px) {
         margin: 72px 0 128px 0;
     }
-    @media(max-width: 900px) {
+    @media(max-width: 950px) {
         grid-template-columns: 1fr; 
         justify-items: center;
         margin: 32px 0 128px 0;
@@ -20,7 +20,7 @@ export const Illustration = styled.img`
     width: 80%;
     border-radius: 8px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .3); 
-    @media(max-width: 900px) {
+    @media(max-width: 950px) {
         margin-bottom: 48px;
     }
 `
@@ -30,7 +30,7 @@ export const LargeText = styled.h1`
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 16px;
-    @media(max-width: 900px) {
+    @media(max-width: 950px) {
         margin-bottom: 16px;
         font-size: 2.25rem;
         margin-bottom: 32px;
@@ -44,7 +44,7 @@ export const SmallText = styled.h2`
     font-family: 'Poppins', sans-serif;
     max-width: 600px;
     margin-bottom: 20px;
-    @media(max-width: 900px) {
+    @media(max-width: 950px) {
         font-size: 1.25rem;
     }
 `
