@@ -17,7 +17,9 @@ export const Container = styled.div`
 
 export const Illustration = styled.img`
     height: auto;
-    width: 90%;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, .3); 
     @media(max-width: 900px) {
         margin-bottom: 48px;
     }

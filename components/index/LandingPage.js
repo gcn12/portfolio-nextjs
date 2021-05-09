@@ -20,7 +20,7 @@ const LandingPage = (props) => {
             <div style={{display: 'flex'}}>
                 <div>
                     <LargeText pageLoaded={props.viewedHome}>
-                        I'm <Colored>Gareth Ng,</Colored> a React.js developer.
+                        I'm <Colored>Gareth Ng,</Colored> a front-end developer.
                     </LargeText>
                     <SmallText pageLoaded={props.viewedHome}>
                         I'm focused on performant code and good design.
