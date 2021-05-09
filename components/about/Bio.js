@@ -17,7 +17,7 @@ const Bio = (props) => {
             <div>
                 <LargeText>Thanks for stopping by!</LargeText>
                 <SmallText>
-                I'm Gareth, a front-end developer who specializes in React.js. After briefly working in the film industry as a 
+                I'm Gareth, a front-end developer who specializes in React.js. After working in the film industry as a 
                 camera assistant and <CineLink rel='nonreferrer noopener' target='_blank' href='https://gcn12.github.io/film-portfolio/'>cinematographer</CineLink>, 
                 I decided to make a career change into the programming world. 
                 </SmallText>
