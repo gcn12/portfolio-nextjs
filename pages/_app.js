@@ -1,8 +1,9 @@
 import '../styles/globals.css'
 import { COLORS } from '../pageStyles/globalStyles'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { createGlobalStyle } from 'styled-components'
 import { enableBodyScroll } from 'body-scroll-lock'
+import { useRouter } from 'next/router'
 import Header from '../components/global/Header'
 import Footer from '../components/global/Footer'
 import Head from 'next/head'
@@ -24,6 +25,14 @@ const MyApp = ({ Component, pageProps }) => {
     setTimeout(()=> setIsModalVisible(false), 500)
     enableBodyScroll(document)
   }
+
+  const router = useRouter()
+
+  useEffect(()=> {
+    window.gtag('config', 'G-G92PPZPTMV', {
+      page_path: router.route,
+    })
+  }, [router.route])
 
   const GlobalStyles = createGlobalStyle`
   html {
