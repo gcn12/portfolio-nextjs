@@ -33,7 +33,8 @@ export const CategoryContainer = styled.div`
 export const Category = styled.h3`
     font-size: 1.125rem;
     /* color: #616161; */
-    color: var(--color-text-lightest);
+    /* color: var(--color-text-lightest); */
+    color: var(--color-accent);
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     display: inline-block;
