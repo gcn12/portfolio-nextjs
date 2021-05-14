@@ -48,7 +48,7 @@ const WorkCard = (props) => {
                     </Link>
                     <LazyDiv className={`lazy${props.index}`}></LazyDiv>
                 </div>
-                <PreviewImage src={props.workItem.photo} />
+                <PreviewImage alt='' src={props.workItem.photo} />
                 <span>
 
                 <Link href={`/work/${props.workItem.url}`} passHref={true}>

@@ -79,7 +79,7 @@ const Project = (props) => {
             <Title hasPageBeenViewed={hasPageBeenViewed}>{pageData.title}</Title>
             <Description hasPageBeenViewed={hasPageBeenViewed}>{pageData.description}</Description>
             <ContentContainer opacity={isPageLoaded ? 1 : 0}>
-                <MainImage onLoad={()=>setIsPageLoaded(true)} src={pageData.mainImage} />
+                <MainImage alt='' onLoad={()=>setIsPageLoaded(true)} src={pageData.mainImage} />
                 <LinkContainer>
                     <span>
                         <WorkLink rel='nonreferrer noopener' target='_blank' href={pageData.projectLink}>Visit Live Project</WorkLink>
@@ -109,7 +109,7 @@ const Project = (props) => {
                             </CreatedWithContainer>
                             }
                             {content.type==='photo' &&
-                            <Photo src={content.link} />
+                            <Photo alt='' src={content.link} />
                             }
                             {content.type==='photoDescriptionLeft' && 
                             <PhotoDescriptionContainer justify='end'>
@@ -127,7 +127,7 @@ const Project = (props) => {
                             {content.type==='photoDescriptionRight' && 
                             <PhotoDescriptionContainer justify='start'>
                                 <PhotoDescriptionHeader size='small'>{content.header}</PhotoDescriptionHeader>
-                                <PhotoDescriptionImage src={content.photoLink} />
+                                <PhotoDescriptionImage alt='' src={content.photoLink} />
                                 <div>
                                     <PhotoDescriptionHeader size='large'>{content.header}</PhotoDescriptionHeader>
                                     <Gap2 />
