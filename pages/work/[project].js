@@ -48,7 +48,9 @@ const Project = (props) => {
             else if(project === 'redraft') {
                 func = props.setViewedMessaging
             }
-            setTimeout(()=> func(true), 1000)
+            if(project!=='messaging') {
+                setTimeout(()=> func(true), 1000)
+            }
         }
     }, [router.query])
 
