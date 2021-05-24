@@ -275,38 +275,38 @@ export const workPages = {
             },
         ],
     },
-    messaging: {
-        title: 'Pigeon',
-        description: 'Fast, reliable instant messaging',
-        mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging.png?alt=media&token=18bde9d6-c431-45ec-a5a1-4ae6cf7fb222',
-        githubLink: 'https://github.com/gcn12/messaging-app',
-        projectLink: 'https://gcn12.github.io/messaging-app/',
-        content: [
-            {
-                type: 'section',
-                header: 'Project overview',
-                paragraph: 'Pigeon was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or Google account--and instantly send messages to others. \n \n One of the key features is the ability to send message requests, which can then be accepted or declined. By clicking on a message bubble, users can see when the message was sent. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates for messages and requests, and also handles authentication.', 
-            },
-            {
-                type: 'createdWith',
-                header: 'Created with these technologies',
-                items: ['React.js', 'Google Realtime Database', 'Redux', 'Moment.js', 'Styled-Components'],
-            },
-            {
-                type: 'photo',
-                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging2.png?alt=media&token=2144fbe1-30ec-4c2a-86c5-c47323e0beb3',
-            },
-            {
-                type: 'photoDescriptionLeft',
-                header: 'Know when you\'ve been seen',
-                paragraph: 'Integration with the Realtime Database means that users can see when their messages have been read by the recipient.', 
-                photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging_seen.png?alt=media&token=374427f3-a17b-4730-bccf-0290f060c2fd',
-            },
-            {
-                type: 'section',
-                header: 'Future improvements and key takeaways',
-                paragraph: 'Design and functionality are two weaknesses of this app. Overall, there is a lack of depth and contrast in the interface. The colors could be more vibrant and inviting in order to enhance a user\'s experience. \n \n Fundamentally, this app doesn\'t have any features that are not available with other services. Ideally a project should add something new to the table. In future projects, more time should be spent on determining innovative features in order to present a positive experience.', 
-            },
-        ],
-    },
+    // messaging: {
+    //     title: 'Pigeon',
+    //     description: 'Fast, reliable instant messaging',
+    //     mainImage: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging.png?alt=media&token=18bde9d6-c431-45ec-a5a1-4ae6cf7fb222',
+    //     githubLink: 'https://github.com/gcn12/messaging-app',
+    //     projectLink: 'https://gcn12.github.io/messaging-app/',
+    //     content: [
+    //         {
+    //             type: 'section',
+    //             header: 'Project overview',
+    //             paragraph: 'Pigeon was intended to be a fully-fuctioning instant messenger. It allows users to easily sign up--with an email or Google account--and instantly send messages to others. \n \n One of the key features is the ability to send message requests, which can then be accepted or declined. By clicking on a message bubble, users can see when the message was sent. In the side panel, different conversations can be selected, allowing users to pick up where they left off. \n \n In order to facilitate fast messaging, Google\'s Realtime Database was chosen as the backend solution. It provides near-instant updates for messages and requests, and also handles authentication.', 
+    //         },
+    //         {
+    //             type: 'createdWith',
+    //             header: 'Created with these technologies',
+    //             items: ['React.js', 'Google Realtime Database', 'Redux', 'Moment.js', 'Styled-Components'],
+    //         },
+    //         {
+    //             type: 'photo',
+    //             link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging2.png?alt=media&token=2144fbe1-30ec-4c2a-86c5-c47323e0beb3',
+    //         },
+    //         {
+    //             type: 'photoDescriptionLeft',
+    //             header: 'Know when you\'ve been seen',
+    //             paragraph: 'Integration with the Realtime Database means that users can see when their messages have been read by the recipient.', 
+    //             photoLink: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/messaging%2Fmessaging_seen.png?alt=media&token=374427f3-a17b-4730-bccf-0290f060c2fd',
+    //         },
+    //         {
+    //             type: 'section',
+    //             header: 'Future improvements and key takeaways',
+    //             paragraph: 'Design and functionality are two weaknesses of this app. Overall, there is a lack of depth and contrast in the interface. The colors could be more vibrant and inviting in order to enhance a user\'s experience. \n \n Fundamentally, this app doesn\'t have any features that are not available with other services. Ideally a project should add something new to the table. In future projects, more time should be spent on determining innovative features in order to present a positive experience.', 
+    //         },
+    //     ],
+    // },
 }
