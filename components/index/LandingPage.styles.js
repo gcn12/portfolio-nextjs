@@ -40,17 +40,7 @@ const slideInFast = keyframes`
     }
     100% {
         left: 0px;
-`
-
-const slideInSlow = keyframes`
-    0% {
-        left: -20px;
     }
-    66% {
-        left: -20px;
-    }
-    100% {
-        left: 0px;
 `
 
 export const LargeText = styled.h1`
