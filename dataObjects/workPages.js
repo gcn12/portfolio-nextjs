@@ -267,7 +267,7 @@ export const workPages = {
             },
             {
                 type: 'photo',
-                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-05-02%20at%203.16.03%20PM.png?alt=media&token=699eaa54-3d95-4c35-a9be-9e3e844d3868'
+                link: 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/redraft%2FScreen%20Shot%202021-07-24%20at%209.27.45%20AM.png?alt=media&token=14fe3ff3-4e14-4d8c-a852-ed3b9b9113ca'
             },
             {
                 type: 'photo',
