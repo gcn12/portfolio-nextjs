@@ -1,1 +1,1 @@
-export const RESUME = 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/Resume%20Do%20not%20delete.pdf?alt=media&token=d2029bb0-a509-44f8-8e3a-bee5c756d552'
+export const RESUME = 'https://firebasestorage.googleapis.com/v0/b/portfolio-assets.appspot.com/o/Gareth%20Ng.pdf?alt=media&token=14dcfece-7464-4edf-bc52-5740946e4571'
