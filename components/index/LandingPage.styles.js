@@ -104,6 +104,7 @@ export const Colored = styled.span`
 	);
 	color: transparent;
 	background-clip: text;
+	-webkit-background-clip: text;
 	white-space: nowrap;
 `;
 
