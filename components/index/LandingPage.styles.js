@@ -119,11 +119,9 @@ export const ButtonContainer = styled.div`
 
 export const OrangeButton = styled.a`
 	font-size: 1.5rem;
-
 	font-weight: 300;
 	padding: 16px 24px;
 	border: none;
-	/* background-color: var(--color-accent); */
 	color: var(--color-text-inverted);
 	border-radius: 10px;
 	cursor: pointer;
@@ -132,6 +130,7 @@ export const OrangeButton = styled.a`
 	opacity: ${(props) => (props.pageLoaded ? 1 : 0)};
 	transition: background-image 500ms ease-in-out;
 	animation: ${(props) => (props.pageLoadedScale ? scaleUp : null)} 1.5s;
+	position: relative;
 
 	background-image: linear-gradient(
 		to bottom right,
@@ -147,12 +146,28 @@ export const OrangeButton = styled.a`
 	@media (max-width: 500px) {
 		font-size: 1.125rem;
 	}
-	&:hover {
+	z-index: 1;
+	&::before {
+		color: var(--color-text-inverted);
+		border-radius: 10px;
+		position: absolute;
 		background-image: linear-gradient(
-			to bottom left,
-			var(--color-accent),
+			to top left,
+			var(--color-accent) 30%,
 			var(--color-accent-light),
-			var(--color-accent-light)
+			var(--color-accent-lightest)
 		);
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+		z-index: -1;
+		opacity: 0;
+		transition: 400ms ease-in-out;
+	}
+
+	&:hover::before {
+		opacity: 1;
 	}
 `;

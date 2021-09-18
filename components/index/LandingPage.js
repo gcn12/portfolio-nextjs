@@ -14,6 +14,7 @@ const LandingPage = (props) => {
 		props.setViewedHome(true);
 		setTimeout(() => props.setHomeButtonScaled(true), 2000);
 	}, []);
+
 	return (
 		<Container>
 			<div style={{ display: "flex" }}>

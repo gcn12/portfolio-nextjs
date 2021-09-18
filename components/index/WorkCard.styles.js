@@ -81,14 +81,14 @@ export const OrangeButton = styled.a`
 		var(--color-accent-light)
 	);
 	background-color: transparent;
-	&:hover {
+	/* &:hover {
 		background-image: linear-gradient(
 			to bottom left,
 			var(--color-accent),
 			var(--color-accent-light),
 			var(--color-accent-light)
 		);
-	}
+	} */
 	visibility: ${(props) =>
 		props.screenSize === "small" ? "hidden" : "visible"};
 	display: ${(props) =>
@@ -105,6 +105,32 @@ export const OrangeButton = styled.a`
 	}
 	@media (max-width: 500px) {
 		font-size: 0.75rem;
+	}
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		color: var(--color-text-inverted);
+		border-radius: 10px;
+		position: absolute;
+		background-image: linear-gradient(
+			to top left,
+			var(--color-accent),
+			var(--color-accent-light),
+			var(--color-accent-light)
+		);
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+		z-index: -1;
+		opacity: 0;
+		transition: 400ms ease-in-out;
+	}
+
+	&:hover::before {
+		opacity: 1;
 	}
 `;
 
