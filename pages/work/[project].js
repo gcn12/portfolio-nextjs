@@ -107,7 +107,7 @@ const Project = (props) => {
 						</LinkContainer>
 						{pageData.content.map((content, index) => {
 							return (
-								<div key={index}>
+								<div style={{ width: "100%" }} key={index}>
 									{content.type === "section" && (
 										<SectionContainer>
 											<SectionHeader>{content.header}</SectionHeader>
