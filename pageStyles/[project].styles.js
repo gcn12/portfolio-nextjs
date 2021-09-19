@@ -146,7 +146,7 @@ export const SectionParagraph = styled.p`
 export const Photo = styled.img`
 	margin-bottom: 72px;
 	max-height: 90vh;
-	max-width: 100%;
+	max-width: 90vw;
 	border: 1px solid var(--background-light);
 	box-shadow: 0px 5px 8px rgba(20, 20, 20, 0.07);
 	border-radius: 15px;

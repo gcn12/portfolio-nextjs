@@ -135,7 +135,9 @@ const Project = (props) => {
 										</CreatedWithContainer>
 									)}
 									{content.type === "photo" && (
-										<Photo alt="" src={content.link} />
+										<div style={{ display: "flex", justifyContent: "center" }}>
+											<Photo alt="" src={content.link} />
+										</div>
 									)}
 									{content.type === "photoDescriptionLeft" && (
 										<PhotoDescriptionContainer justify="end">
