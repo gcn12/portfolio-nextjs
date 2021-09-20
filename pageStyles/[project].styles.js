@@ -146,10 +146,10 @@ export const SectionParagraph = styled.p`
 export const PhotoContainer = styled.div`
 	display: flex;
 	justify-content: center;
-	align-self: center;
 `;
 
 export const Photo = styled.img`
+	align-self: center;
 	margin-bottom: 72px;
 	max-height: 90vh;
 	max-width: 90vw;
