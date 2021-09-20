@@ -143,9 +143,15 @@ export const SectionParagraph = styled.p`
 	white-space: pre-line;
 `;
 
+export const PhotoContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-self: center;
+`;
+
 export const Photo = styled.img`
 	margin-bottom: 72px;
-	/* max-height: 90vh; */
+	max-height: 90vh;
 	max-width: 90vw;
 	border: 1px solid var(--background-light);
 	box-shadow: 0px 5px 8px rgba(20, 20, 20, 0.07);

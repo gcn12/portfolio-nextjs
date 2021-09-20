@@ -25,6 +25,7 @@ import {
 	LinkGap,
 	Gap,
 	Gap2,
+	PhotoContainer,
 } from "../../pageStyles/[project].styles";
 
 const Project = (props) => {
@@ -135,9 +136,15 @@ const Project = (props) => {
 										</CreatedWithContainer>
 									)}
 									{content.type === "photo" && (
-										<div style={{ display: "flex", justifyContent: "center" }}>
+										<PhotoContainer
+											style={{
+												display: "flex",
+												justifyContent: "center",
+												alignSelf: "center",
+											}}
+										>
 											<Photo alt="" src={content.link} />
-										</div>
+										</PhotoContainer>
 									)}
 									{content.type === "photoDescriptionLeft" && (
 										<PhotoDescriptionContainer justify="end">
