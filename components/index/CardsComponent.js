@@ -1,18 +1,23 @@
-import { workCard } from '../../dataObjects/workCard'
-import WorkCard from './WorkCard'
+import { workCard } from "../../dataObjects/workCard";
+import WorkCard from "./WorkCard";
 
 const CardsComponent = (props) => {
-    return(
-        <div>
-            {workCard.map((workItem, index)=> {
-                return(
-                    <div className='lazy' key={index}>
-                        <WorkCard isLightMode={props.isLightMode} viewedHome={props.viewedHome} index={index} workItem={workItem} />
-                    </div>
-                )
-            })}
-        </div>
-    )
-}
+  return (
+    <div>
+      {workCard.map((workItem, index) => {
+        return (
+          <div className="lazy" key={index}>
+            <WorkCard
+              isLightMode={props.isLightMode}
+              viewedHome={props.viewedHome}
+              index={index}
+              workItem={workItem}
+            />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
-export default CardsComponent
+export default CardsComponent;
